@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Комаров](https://up.htmlacademy.ru/adaptive/15/user/29334).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Ожерельев](https://up.htmlacademy.ru/adaptive/15/user/29002).
 
 ---
 
