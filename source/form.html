@@ -21,15 +21,16 @@
       </nav>
     </header>
     <main class="page-form">
-      <!-- <section class="page-intro"> ??? наверное див, т.к. не полноценная секция -->
-      <div class="page-intro">
+      <!-- README: <section class="page-intro"> ??? наверное див, т.к. не полноценная секция -->
+      <div class="page-intro page-form__intro">
         <h1 class="page-intro__header1">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <p class="page-intro__lead">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
       </div>
       <!-- </section> -->
       <section class="competition-form">
         <h2 class="competition-form__header2 visually-hidden">Форма для участия в конкурсе</h2>
-        <p class="competition-form__lead">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-        <form class="competition-form__form contestant-data" action="https://echo.htmlacademy.ru/"  method="POST">
+        <form class="competition-form__form contestant-data" action="https://echo.htmlacademy.ru/" method="POST">
+          <!-- README: возможно fieldset, но не понятно можно ли его стилизовать так -->
           <div class="contestant-data__fullname">
             <label class="contestant-data__textlabel">Фамилия:<input class="contestant-data__lastname" type="text" placeholder="Укажите фамилию *"></label>
             <label class="contestant-data__textlabel">Имя:<input class="contestant-data__name" type="text" placeholder="Введите ваше имя *"></label>
