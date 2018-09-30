@@ -21,76 +21,86 @@
       </nav>
     </header>
     <main class="page-form">
-      <!-- README: <section class="page-intro"> ??? наверное див, т.к. не полноценная секция -->
       <div class="page-intro page-form__intro">
-        <h1 class="page-intro__header1">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="page-intro__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <p class="page-intro__lead">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
       </div>
-      <!-- </section> -->
       <section class="competition-form">
-        <h2 class="competition-form__header2 visually-hidden">Форма для участия в конкурсе</h2>
+        <h2 class="competition-form__header visually-hidden">Форма для участия в конкурсе</h2>
         <form class="competition-form__form contestant-data" action="https://echo.htmlacademy.ru/" method="POST">
           <!-- README: возможно fieldset, но не понятно можно ли его стилизовать так -->
-          <div class="contestant-data__fullname">
-            <label class="contestant-data__textlabel">Фамилия:<input class="contestant-data__lastname" type="text" placeholder="Укажите фамилию *"></label>
-            <label class="contestant-data__textlabel">Имя:<input class="contestant-data__name" type="text" placeholder="Введите ваше имя *"></label>
-            <label class="contestant-data__textlabel">Отчество:<input class="contestant-data__patronymic" type="text" placeholder="Ну и отчество тоже"></label>
+          <div class="contestant-data__fullname fullname">
+            <label class="fullname__title input-title">
+              Фамилия:
+              <input class="fullname__input text-input" type="text" placeholder="Укажите фамилию *">
+            </label>
+            <label class="fullname__title input-title">
+              Имя:
+              <input class="fullname__input text-input" type="text" placeholder="Введите ваше имя *">
+            </label>
+            <label class="fullname__title input-title">
+              Отчество:
+              <input class="fullname__input text-input" type="text" placeholder="Ну и отчество тоже">
+            </label>
           </div>
-          <div class="contestant-data__achievements">
-            <p class="contestant-data__lead">Ваши безбашенные достижения в путешествии</p>
-            <label class="contestant-data__checkboxlabel">
-              <input class="contestant-data__checkbox visually-hidden" type="checkbox" name="isSelfie" value="1" checked>
-              <span class="contestant-data__checkboxindicator"></span>
+          <div class="contestant-data__achievements achievements">
+            <p class="achievements__lead">Ваши безбашенные достижения в путешествии</p>
+            <label class="achievements__checkboxlabel">
+              <input class="achievements__checkbox visually-hidden" type="checkbox" name="isSelfie" value="1" checked>
+              <span class="achievements__checkboxindicator checkboxindicator"></span>
               Сделал селфи с акулой
             </label>
-            <label class="contestant-data__checkboxlabel">
-              <input class="contestant-data__checkbox visually-hidden" type="checkbox" name="isBurnt" value="1" checked>
-              <span class="contestant-data__checkboxindicator"></span>
+            <label class="achievements__checkboxlabel">
+              <input class="achievements__checkbox visually-hidden" type="checkbox" name="isBurnt" value="1" checked>
+              <span class="achievements__checkboxindicator checkboxindicator"></span>
               Обгорел на пляже
             </label>
-            <label class="contestant-data__checkboxlabel">
-              <input class="contestant-data__checkbox visually-hidden" type="checkbox" name="isSeeChak" value="1">
-              <span class="contestant-data__checkboxindicator"></span>
+            <label class="achievements__checkboxlabel">
+              <input class="achievements__checkbox visually-hidden" type="checkbox" name="isSeeChak" value="1">
+              <span class="achievements__checkboxindicator checkboxindicator"></span>
               Видел Чака Норриса
             </label>
-            <label class="contestant-data__checkboxlabel">
-              <input class="contestant-data__checkbox visually-hidden" type="checkbox" name="isBoughtSouvenirs" value="1">
-              <span class="contestant-data__checkboxindicator"></span>
+            <label class="achievements__checkboxlabel">
+              <input class="achievements__checkbox visually-hidden" type="checkbox" name="isBoughtSouvenirs" value="1">
+              <span class="achievements__checkboxindicator checkboxindicator"></span>
               Накупил сувениров
             </label>
-            <label class="contestant-data__checkboxlabel">
-              <input class="contestant-data__checkbox visually-hidden" type="checkbox" name="isHeldTower" value="1" checked>
-              <span class="contestant-data__checkboxindicator"></span>
+            <label class="achievements__checkboxlabel">
+              <input class="achievements__checkbox visually-hidden" type="checkbox" name="isHeldTower" value="1" checked>
+              <span class="achievements__checkboxindicator checkboxindicator"></span>
               Удержал башню
             </label>
-            <label class="contestant-data__checkboxlabel">
-              <input class="contestant-data__checkbox visually-hidden" type="checkbox" name="isSmashedHotel" value="1">
-              <span class="contestant-data__checkboxindicator"></span>
+            <label class="achievements__checkboxlabel">
+              <input class="achievements__checkbox visually-hidden" type="checkbox" name="isSmashedHotel" value="1">
+              <span class="achievements__checkboxindicator checkboxindicator"></span>
               Разгромил отель
             </label>
           </div>
-          <div class="contestant-data__contacts">
-            <label class="contestant-data__textlabel">Номер телефона<input class="contestant-data__phone" type="tel" placeholder="Номер, пожалуйста"></label>
-            <label class="contestant-data__textlabel">Адрес почты<input class="contestant-data__email" type="email" placeholder="Введите почту *"></label>
+          <div class="contestant-data__contacts contacts">
+            <label class="contacts__title input-title">Номер телефона<input class="contestant-data__phone" type="tel" placeholder="Номер, пожалуйста"></label>
+            <label class="contacts__title  input-title">Адрес почты<input class="contestant-data__email" type="email" placeholder="Введите почту *"></label>
           </div>
-          <div class="contestant-data__mobile-platform">
-            <p class="contestant-data__lead">С каким приложением путешествовали?</p>
-            <label><input class="contestant-data__radio" type="radio" name="mobilePlatform" value="ios" checked>
-              <span class="contestant-data__radio-indicator"></span>
+          <div class="contestant-data__mobile-platform mobile-platform">
+            <p class="mobile-platform__lead">С каким приложением путешествовали?</p>
+            <label class="mobile-platform__radio-label">
+              <input class="mobile-platform__radio" type="radio" name="mobilePlatform" value="ios" checked>
+              <span class="mobile-platform__radio-indicator"></span>
               Pink для iOS
             </label>
-            <label><input class="contestant-data__radio" type="radio" name="mobilePlatform" value="android">
-              <span class="contestant-data__radio-indicator"></span>
+            <label>
+              <input class="mobile-platform__radio" type="radio" name="mobilePlatform" value="android">
+              <span class="mobile-platform__radio-indicator radio-indicator"></span>
               Pink на Android
             </label>
-            <label><input class="contestant-data__radio" type="radio" name="mobilePlatform" value="windows">
-              <span class="contestant-data__radio-indicator"></span>
+            <label>
+              <input class="contestant-data__radio" type="radio" name="mobilePlatform" value="windows">
+              <span class="contestant-data__radio-indicator radio-indicator"></span>
               Windows Phone
             </label>
           </div>
-          <div class="contestant-data__feedback">
-            <p class="contestant-data__lead">Опишите свои эмоции</p>
-            <textarea class="contestant-data__textarea" name="emotionsFeedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <div class="contestant-data__feedback feedback">
+            <p class="feedback__lead">Опишите свои эмоции</p>
+            <textarea class="feedback__textarea text-input" name="emotionsFeedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
           <div class="contestant-data__submit">
             <button class="contestant-data__submit-button" type="submit" name="formSubmit" value="submit">Отправить форму</button>
