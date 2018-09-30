@@ -29,7 +29,7 @@
         <h2 class="competition-form__header visually-hidden">Форма для участия в конкурсе</h2>
         <form class="competition-form__form contestant-data" action="https://echo.htmlacademy.ru/" method="POST">
           <!-- README: возможно fieldset, но не понятно можно ли его стилизовать так -->
-          <div class="contestant-data__fullname fullname">
+          <div class="fullname">
             <label class="fullname__title input-title">
               Фамилия:
               <input class="fullname__input text-input" type="text" placeholder="Укажите фамилию *">
@@ -43,7 +43,7 @@
               <input class="fullname__input text-input" type="text" placeholder="Ну и отчество тоже">
             </label>
           </div>
-          <div class="contestant-data__achievements achievements">
+          <div class="achievements">
             <p class="achievements__lead">Ваши безбашенные достижения в путешествии</p>
             <label class="achievements__checkboxlabel">
               <input class="achievements__checkbox visually-hidden" type="checkbox" name="isSelfie" value="1" checked>
@@ -76,11 +76,11 @@
               Разгромил отель
             </label>
           </div>
-          <div class="contestant-data__contacts contacts">
+          <div class="contacts">
             <label class="contacts__title input-title">Номер телефона<input class="contestant-data__phone" type="tel" placeholder="Номер, пожалуйста"></label>
             <label class="contacts__title  input-title">Адрес почты<input class="contestant-data__email" type="email" placeholder="Введите почту *"></label>
           </div>
-          <div class="contestant-data__mobile-platform mobile-platform">
+          <div class="mobile-platform">
             <p class="mobile-platform__lead">С каким приложением путешествовали?</p>
             <label class="mobile-platform__radio-label">
               <input class="mobile-platform__radio" type="radio" name="mobilePlatform" value="ios" checked>
@@ -98,7 +98,7 @@
               Windows Phone
             </label>
           </div>
-          <div class="contestant-data__feedback feedback">
+          <div class="feedback">
             <p class="feedback__lead">Опишите свои эмоции</p>
             <textarea class="feedback__textarea text-input" name="emotionsFeedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
