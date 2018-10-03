@@ -1,0 +1,20 @@
+.download-buttons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.download-buttons__link {
+  flex-grow: 0;
+  flex-basis: 47px;
+  margin: 0 17px;
+}
+
+.download-buttons__link--text {
+  flex-grow: 1;
+  flex-basis: 280px;
+  margin: 0 20px;
+}

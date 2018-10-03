@@ -1,3 +1,20 @@
-body {
-  background: blue;
-}
+$cl-black: #000000;
+$cl-white: #ffffff;
+$cl-white-light: rgba(255, 255, 255, 0.3);
+$cl-pink: #d22856;
+$cl-pink-light: rgba(210, 40, 86, 0.3);
+$cl-grey: #283645;
+$cl-grey-light: rgba(40, 54, 69, 0.3);
+$cl-grey-bg: #f2f2f2;
+$cl-blue-dark: #1d2631;
+$cl-blue-light: rgba(29, 38, 49, 0.3);
+
+@import "fonts.scss";
+@import "page-body.scss";
+@import "menu-list.scss";
+@import "page-intro.scss";
+@import "visually-hidden.scss";
+@import "download.scss";
+@import "download-buttons.scss";
+@import "features.scss";
+@import "features-list";
