@@ -1,0 +1,29 @@
+.contacts {
+  padding: 0 20px;
+}
+
+.contacts__lead,
+.contacts__header {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.contacts__list {
+  @include list-reset;
+}
+
+.contacts__contact-header {
+  font-size: 18px;
+  font-weight: bold;
+  //font-family: "Open Sans Bold", sans-serif;
+  text-align: center;
+}
+
+.contacts__link {
+  color: $cl-pink;
+  font-size: 24px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}

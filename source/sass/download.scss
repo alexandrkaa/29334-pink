@@ -1,3 +1,12 @@
 .download {
   background-color: $cl-blue-dark;
+  padding: 28px 20px 32px 20px;
+}
+
+.download__platforms {
+  color: $cl-white;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  font-family: "Open Sans Light", sans-serif;
 }

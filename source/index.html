@@ -30,27 +30,30 @@
     </header>
     <main class="page-main">
       <div class="page-intro page-main__intro">
-        <h1 class="page-intro__header1 visually-hidden">Приложение PINK - раскрась серые будни в яркий цвет!</h1>
+        <h1 class="page-intro__header visually-hidden">Приложение PINK - раскрась серые будни в яркий цвет!</h1>
       </div>
       <section class="download">
         <h2 class="visually-hidden">Скачать приложение PINK</h2>
         <ul class="download-buttons">
-          <li class="download-buttons__link download-buttons__link--text">
-            <a href="https://itunes.apple.com/ru/genre/ios/id36?mt=8">Скачать приложение</a>
+          <li class="download-buttons__item download-buttons__item--text">
+            <a class="download-buttons__link" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8">Скачать приложение</a>
           </li>
-          <li class="download-buttons__link download-buttons__link--appstore">
-            <a href="https://itunes.apple.com/ru/genre/ios/id36?mt=8">
-              <span class="visually-hidden">Скачать приложение в AppStore</span>
+          <li class="download-buttons__item download-buttons__item--icon">
+            <a class="download-buttons__link" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8">
+              <img src="img/logo-apple.svg" width="47" height="57" alt="Скачать приложение в AppStore">
+              <!-- <span class="visually-hidden">Скачать приложение в AppStore</span> -->
             </a>
           </li>
-          <li class="download-buttons__link download-buttons__link--googleplay">
-            <a href="https://play.google.com/store?hl=ru">
-              <span class="visually-hidden">Скачать приложение в GooglePlay</span>
+          <li class="download-buttons__item download-buttons__item--icon">
+            <a class="download-buttons__link" href="https://play.google.com/store?hl=ru">
+              <img src="img/logo-android.svg" alt="Скачать приложение в GooglePlay">
+              <!-- <span class="visually-hidden">Скачать приложение в GooglePlay</span> -->
             </a>
           </li>
-          <li class="download-buttons__link download-buttons__link--windowsstore">
-            <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">
-              <span class="visually-hidden">Скачать приложение в MicrosoftStore</span>
+          <li class="download-buttons__item download-buttons__item--icon">
+            <a class="download-buttons__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">
+              <img src="img/logo-microsoft.svg" alt="Скачать приложение в MicrosoftStore">
+              <!-- <span class="visually-hidden">Скачать приложение в MicrosoftStore</span> -->
             </a>
           </li>
         </ul>
@@ -59,22 +62,22 @@
         </p>
       </section>
       <section class="features">
-        <h2 class="features__header2 visually-hidden">Что может приложение PINK?</h2>
+        <h2 class="features__header visually-hidden">Что может приложение PINK?</h2>
         <p class="features__lead">Устали от серости мегаполиса?</p>
         <p class="features__lead">Нам есть, что вам предложить!</p>
         <ul class="features-list">
           <li class="features-list__item">
-            <!--img src="#" alt=""-->
+            <img class="features-list__image features-list__image--hidden" src="#" alt="Скриншот работы приложения с исходным фото">
             <p class="features-list__lead">Поднимает настроение</p>
             <p class="features-list__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="features-list__item">
-            <!--img src="#" alt=""-->
+            <img class="features-list__image features-list__image--hidden" src="#" alt="Скриншот работы приложения после применения фильтров">
             <p class="features-list__lead">Меняет мир вокруг</p>
             <p class="features-list__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="features-list__item">
-            <img src="#" alt="Скриншот работы приложения после применения фильтров и смйлика">
+            <img class="features-list__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Скриншот работы приложения после применения фильтров и смйлика">
             <p class="features-list__lead">Заводит новых друзей</p>
             <p class="features-list__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
@@ -82,9 +85,9 @@
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
-          <h2 class="reviews__header2 visually-hidden">Отзывы</h2>
+          <h2 class="reviews__header visually-hidden">Отзывы</h2>
           <ul class="reviews-list slider__list">
-            <li class="reviews-list__item slider__item">
+            <li class="reviews-list__item slider__item slider__item--active">
               <p class="reviews-list__name">Николай Петров</p>
               <p class="reviews-list__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
@@ -105,7 +108,7 @@
         </div>
       </section>
       <section class="prices">
-        <h2 class="prices__header2 visually-hidden">Стоимость приложения</h2>
+        <h2 class="prices__header visually-hidden">Стоимость приложения</h2>
         <div class="prices__wrapper slider">
           <table class="prices-table">
             <thead>
@@ -178,19 +181,19 @@
       </section>
       <section class="contacts">
         <p class="contacts__lead">Остались вопросы?</p>
-        <h2 class="contacts__header2">Свяжитесь с нами!</h2>
+        <h2 class="contacts__header">Свяжитесь с нами!</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <h3 class="contatcs__contact-header">Звоните:</h3>
-            <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+            <h3 class="contacts__contact-header">Звоните:</h3>
+            <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__item">
-            <h3 class="contatcs__contact-header">Пишите:</h3>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <h3 class="contacts__contact-header">Пишите:</h3>
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
-            <h3 class="contatcs__contact-header">Приезжайте в гости:</h3>
-            <a href="https://yandex.ru/maps/-/CBBfmSX8-D">ул. Большая Конюшенная, 19/8</a>
+            <h3 class="contacts__contact-header">Приезжайте в гости:</h3>
+            <a class="contacts__link" href="https://yandex.ru/maps/-/CBBfmSX8-D">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa62314778d88666b6965195fc751d3b3da6359c04f633d625b15169b2de146fe&amp;source=constructor"></iframe>

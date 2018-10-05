@@ -2,6 +2,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 80px;
 }
 
 .features-list__lead {
@@ -10,8 +11,30 @@
   font-weight: bold;
   font-family: "Open Sans Bold", sans-serif;
   text-align: center;
+  margin: 0;
+  margin-top: 37px;
 }
 
 .features-list__description {
   text-align: center;
+  margin: 0;
+  margin-top: 9px;
+}
+
+.features-list__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.features-list__item:last-of-type .features-list__description {
+  margin-bottom: 39px;
+}
+
+.features-list__image {
+  order: 3;
+  margin: 0 auto;
+}
+
+.features-list__image--hidden {
+  display: none;
 }

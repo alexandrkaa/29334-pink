@@ -2,4 +2,13 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  min-height: 462px;
+}
+
+.page-intro__header {
+  color: $cl-white;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
 }
