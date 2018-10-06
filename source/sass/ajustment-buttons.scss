@@ -1,0 +1,28 @@
+.ajustment-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ajustment-buttons__button {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+.ajustment-buttons__button--range {
+  margin-top: 38px;
+  width: 240px;
+  height: auto;
+  margin-bottom: 35px;
+}
+
+.ajustment-buttons__submit {
+  display: flex;
+  flex-direction: column;
+  padding: 26px 20px;
+}
+
+.ajustment-buttons__submit-button,
+.ajustment-buttons__submit-reset {
+  margin: 12px 0;
+}

@@ -1,0 +1,19 @@
+.contestant-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.contestant-data__submit-button {
+  margin: 0 20px;
+  margin-bottom: 40px;
+  display: block;
+  background-color: $cl-green;
+  border: 2px solid $cl-green;
+  color: $cl-white;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  width: 280px;
+  padding: 16px 0;
+}

@@ -1,0 +1,11 @@
+.photos__list {
+  @include list-reset;
+}
+
+.photos__lead-wrapper {
+  margin: 45px 0;
+}
+
+.photos__lead {
+  text-align: center;
+}
