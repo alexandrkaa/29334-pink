@@ -11,6 +11,7 @@ $cl-blue-dark: #1d2631;
 $cl-blue-light: rgba(29, 38, 49, 0.3);
 $cl-green: #2aab6d;
 
+@import "normalize";
 @import "mixin.scss";
 @import "global.scss";
 @import "blocks/achievements.scss";
@@ -33,7 +34,6 @@ $cl-green: #2aab6d;
 @import "blocks/main-header.scss";
 @import "blocks/menu-list.scss";
 @import "blocks/mobile-platform.scss";
-@import "normalize";
 @import "blocks/page-form.scss";
 @import "blocks/page-intro.scss";
 @import "blocks/page-main";
