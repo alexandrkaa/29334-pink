@@ -1,0 +1,18 @@
+.reviews-list {
+  @include list-reset;
+}
+
+.reviews-list__name {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  margin-top: 45px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Open Sans Bold", sans-serif;
+}
+
+.reviews-list__review {
+  font-size: 14px;
+  line-height: 30px;
+}

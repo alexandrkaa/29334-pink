@@ -1,0 +1,42 @@
+.download-buttons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // align-content: flex-start;
+  // align-items: flex-start;
+  justify-content: center;
+}
+
+.download-buttons__item {
+  flex-grow: 0;
+  width: 47px;
+  margin: 0 17px;
+}
+
+.download-buttons__item--text {
+  flex-grow: 1;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  padding: 15px 0;
+  text-align: center;
+  color: $cl-white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  font-family: "Open Sans Bold", sans-serif;
+}
+
+.download-buttons__item--icon {
+  min-height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-buttons__link {
+  display: block;
+}

@@ -1,0 +1,21 @@
+.text-input {
+  border: 2px solid $cl-grey-border;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $cl-grey;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  width: 280px;
+}
+
+.text-input--textarea {
+  min-height: 200px;
+}
+
+.text-input::placeholder,
+.text-input:-ms-input-placeholder,
+.text-input::-ms-input-placeholder {
+  color: $cl-grey;
+  opacity: 1; /* Firefox */
+}

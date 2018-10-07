@@ -1,0 +1,25 @@
+.social-list {
+  @include list-reset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.social-list__item {
+  width: 46px;
+  height: 46px;
+  border: 2px solid $cl-grey-light;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.social-list__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}

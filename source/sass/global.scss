@@ -1,0 +1,16 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  min-width: 320px;
+  background-color: $cl-white;
+  margin: 0 auto;
+  padding: 0;
+  color: $cl-grey;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

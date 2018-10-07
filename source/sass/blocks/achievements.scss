@@ -1,0 +1,18 @@
+.achievements {
+  background-color: $cl-grey-bg;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.achievements__lead {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $cl-pink;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.achievements__checkbox-indicator {
+  margin-right: 31px;
+}
