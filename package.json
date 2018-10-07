@@ -12,7 +12,8 @@
     "gulp-sass": "4.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "9.6.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "npm": "^6.4.1"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -38,7 +39,6 @@
     "node": "8.12"
   },
   "dependencies": {
-    "node-normalize-scss": "^8.0.0",
-    "npm": "^6.4.1"
+    "node-normalize-scss": "^8.0.0"
   }
 }

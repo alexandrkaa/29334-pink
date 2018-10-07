@@ -8,11 +8,14 @@
   position: relative;
 }
 
-.photo--panorama .photo__description {
-  margin: 0 20px;
-}
+// .photo--panorama .photo__description {
+//   margin: 0 20px;
+// }
 
 .photo__description {
+  .photo--panorama & {
+    margin: 0 20px;
+  }
   background-color: $cl-grey-bg;
   padding: 25px 20px;
 }
