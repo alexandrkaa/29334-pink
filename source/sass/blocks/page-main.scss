@@ -2,3 +2,52 @@
   width: 320px;
   margin: 0 auto;
 }
+
+.page-main__intro-wrapper {
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom center, bottom center;
+  min-height: 462px;
+  background-color: $cl-grey;
+}
+
+// Стили планшета
+@media (min-width: 768px) {
+  .page-main {
+    width: 768px;
+  }
+
+  .page-main__intro-wrapper {
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, bottom center;
+    min-height: 729px;
+    background-color: $cl-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+}
+
+// Стили десктоп
+@media (min-width: 1200px) {
+  .page-main {
+    width: 1200px;
+  }
+
+  .page-main__intro-wrapper {
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, bottom center;
+    background-size: auto, cover;
+    min-height: 853px;
+    background-color: $cl-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 120px;
+  }
+}

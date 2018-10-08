@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -29,38 +30,41 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-intro page-main__intro">
-        <h1 class="page-intro__header visually-hidden">Приложение PINK - раскрась серые будни в яркий цвет!</h1>
+      <div class="page-main__intro-wrapper">
+        <section class="page-intro page-main__intro">
+          <h1 class="page-intro__header visually-hidden">Приложение PINK - раскрась серые будни в яркий цвет!</h1>
+          <p class="page-intro__lead">Взгляните на жизнь иначе!</p>
+        </section>
+        <section class="download">
+          <h2 class="visually-hidden">Скачать приложение PINK</h2>
+          <ul class="download-buttons">
+            <li class="download-buttons__item download-buttons__item--text">
+              <a class="download-buttons__link" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8">Скачать приложение</a>
+            </li>
+            <li class="download-buttons__item download-buttons__item--icon">
+              <a class="download-buttons__link" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8">
+                <img src="img/logo-apple.svg" width="47" height="57" alt="Скачать приложение в AppStore">
+                <!-- <span class="visually-hidden">Скачать приложение в AppStore</span> -->
+              </a>
+            </li>
+            <li class="download-buttons__item download-buttons__item--icon">
+              <a class="download-buttons__link" href="https://play.google.com/store?hl=ru">
+                <img src="img/logo-android.svg" alt="Скачать приложение в GooglePlay">
+                <!-- <span class="visually-hidden">Скачать приложение в GooglePlay</span> -->
+              </a>
+            </li>
+            <li class="download-buttons__item download-buttons__item--icon">
+              <a class="download-buttons__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">
+                <img src="img/logo-microsoft.svg" alt="Скачать приложение в MicrosoftStore">
+                <!-- <span class="visually-hidden">Скачать приложение в MicrosoftStore</span> -->
+              </a>
+            </li>
+          </ul>
+          <p class="download__platforms">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </section>
       </div>
-      <section class="download">
-        <h2 class="visually-hidden">Скачать приложение PINK</h2>
-        <ul class="download-buttons">
-          <li class="download-buttons__item download-buttons__item--text">
-            <a class="download-buttons__link" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8">Скачать приложение</a>
-          </li>
-          <li class="download-buttons__item download-buttons__item--icon">
-            <a class="download-buttons__link" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8">
-              <img src="img/logo-apple.svg" width="47" height="57" alt="Скачать приложение в AppStore">
-              <!-- <span class="visually-hidden">Скачать приложение в AppStore</span> -->
-            </a>
-          </li>
-          <li class="download-buttons__item download-buttons__item--icon">
-            <a class="download-buttons__link" href="https://play.google.com/store?hl=ru">
-              <img src="img/logo-android.svg" alt="Скачать приложение в GooglePlay">
-              <!-- <span class="visually-hidden">Скачать приложение в GooglePlay</span> -->
-            </a>
-          </li>
-          <li class="download-buttons__item download-buttons__item--icon">
-            <a class="download-buttons__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">
-              <img src="img/logo-microsoft.svg" alt="Скачать приложение в MicrosoftStore">
-              <!-- <span class="visually-hidden">Скачать приложение в MicrosoftStore</span> -->
-            </a>
-          </li>
-        </ul>
-        <p class="download__platforms">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </section>
       <section class="features">
         <h2 class="features__header visually-hidden">Что может приложение PINK?</h2>
         <p class="features__lead">Устали от серости мегаполиса?</p>

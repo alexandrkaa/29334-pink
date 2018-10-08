@@ -10,8 +10,7 @@
 }
 
 .menu-list__item {
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  width: 320px;
+  box-shadow: 01px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
   height: 63px;
   display: flex;
   justify-content: center;
@@ -27,4 +26,11 @@
   line-height: 32px;
   font-weight: bold;
   font-family: "Open Sans Bold", sans-serif;
+}
+
+// стили десктоп
+@media (min-width: 1200px) {
+  .menu-list {
+    flex-direction: row;
+  }
 }
