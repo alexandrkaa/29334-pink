@@ -1,3 +1,11 @@
 .logo {
-  display: block;
+  .main-header & {
+    height: 69px;
+  }
+  display: flex;
+}
+
+.logo__image {
+  margin: auto 0;
+  margin-left: 20px;
 }
