@@ -1,0 +1,25 @@
+.remark {
+  & a {
+    color: $cl-pink;
+    text-decoration: underline;
+    font: inherit;
+  }
+  padding: 0 20px;
+  padding-left: 384px;
+  padding-top: 104px;
+  background: url("../img/icon-timer.svg") no-repeat 20px 60px, url("../img/icon-editor-diagram-fill.svg") no-repeat 20px 60px;
+  display: none;
+}
+
+.remark_lead {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .remark {
+    display: block;
+  }
+}
