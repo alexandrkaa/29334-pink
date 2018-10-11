@@ -7,3 +7,9 @@
 .editor__image {
   margin: 0 20px;
 }
+
+@media (min-width: 768px) {
+  .editor {
+    display: flex;
+  }
+}
