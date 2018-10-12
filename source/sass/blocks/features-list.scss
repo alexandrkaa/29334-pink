@@ -30,11 +30,13 @@
   margin-bottom: 39px;
 }
 
-.features-list__image {
+.features-list__image-wrapper {
   order: 3;
   margin: 0 auto;
+  height: 273px;
+  overflow: hidden;
 }
 
-.features-list__image--hidden {
+.features-list__image-wrapper--hidden {
   display: none;
 }

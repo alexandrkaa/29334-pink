@@ -1,28 +1,33 @@
-.page-main {
+.page {
   width: 320px;
   margin: 0 auto;
 }
 
-.page-main__intro {
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom left, bottom center;
+.page__intro {
+  .page--main & {
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom left, bottom center;
+  }
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
   min-height: 462px;
   background-color: $cl-grey;
 }
 
 // Стили планшета
 @media (min-width: 768px) {
-  .page-main {
+  .page {
     width: 768px;
   }
 
-  .page-main__intro {
+  .page__intro {
     background: none;
     min-height: 0;
   }
 
-  .page-main__intro-wrapper {
+  .page__intro-wrapper {
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: bottom center, bottom center;
@@ -38,11 +43,11 @@
 
 // Стили десктоп
 @media (min-width: 1200px) {
-  .page-main {
+  .page {
     width: 1200px;
   }
 
-  .page-main__intro-wrapper {
+  .page__intro-wrapper {
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: bottom center, bottom center;

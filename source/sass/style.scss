@@ -10,6 +10,9 @@ $cl-grey-border: #e5e5e5;
 $cl-blue-dark: #1d2631;
 $cl-blue-light: rgba(29, 38, 49, 0.3);
 $cl-green: #2aab6d;
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desctop-width: 1200px;
 
 @import "normalize";
 @import "mixin.scss";
@@ -38,7 +41,7 @@ $cl-green: #2aab6d;
 @import "blocks/mobile-platform.scss";
 @import "blocks/page-form.scss";
 @import "blocks/page-intro.scss";
-@import "blocks/page-main";
+@import "blocks/page.scss";
 //@import "blocks/page-photo.scss";
 @import "blocks/photo-editor.scss";
 @import "blocks/photo.scss";
