@@ -1,0 +1,50 @@
+.form-group {
+  & .form-group__title {
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $cl-pink;
+    text-align: center;
+    padding: 40px 0;
+  }
+  border: 0;
+  padding: 0;
+  margin: 0;
+  margin-inline-end: unset;
+  margin-inline-start: unset;
+}
+
+.form-group__title--contacts {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-group {
+    & .form-group__title {
+      padding: 13px 25px;
+    }
+    border: 2px solid $cl-grey-border;
+    padding: 0 60px;
+  }
+
+  .form-group--feedback,
+  .form-group--achievements {
+    padding-bottom: 53px;
+    padding-top: 40px;
+  }
+
+  .form-group__title--contacts {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-group__fields {
+    & label {
+      flex-basis: 33.333333%;
+    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

@@ -3,3 +3,11 @@
   padding-top: 125px;
   background: linear-gradient(174deg, $cl-white 0%, $cl-white 35px, $cl-grey-bg 35px, $cl-grey-bg 100%);
 }
+
+@media (min-width: $tablet-width) {
+  .prices {
+    background: linear-gradient(174deg, $cl-white 0%, $cl-white 80px, $cl-grey-bg 80px, $cl-grey-bg 100%);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

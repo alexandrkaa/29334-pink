@@ -12,7 +12,7 @@
 }
 
 // Стили планшета
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .download {
     width: 300px;
     background-color: transparent;

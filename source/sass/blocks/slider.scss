@@ -9,3 +9,9 @@
 .slider__item--active {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .slider__item--active {
+    display: flex;
+  }
+}

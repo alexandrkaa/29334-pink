@@ -23,7 +23,11 @@
   font-family: "Open Sans Light", sans-serif;
 }
 
-@media (min-width: 768px) {
+.page-intro__sublead {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
   .page-intro__lead {
     .page-main & {
       display: block;
@@ -33,5 +37,15 @@
     font-size: 40px;
     line-height: normal;
     width: 300px;
+  }
+
+  .page-intro__header {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-intro__sublead {
+    display: inline;
   }
 }

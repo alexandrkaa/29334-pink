@@ -19,3 +19,16 @@
   color: $cl-grey;
   opacity: 1; /* Firefox */
 }
+
+@media (min-width: $tablet-width) {
+  .text-input {
+    margin: 0;
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  .text-input--form-contacts,
+  .text-input--textarea {
+    margin-left: 0;
+  }
+}

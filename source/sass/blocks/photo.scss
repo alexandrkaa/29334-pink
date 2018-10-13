@@ -34,13 +34,11 @@
 
 .photo__username {
   font-weight: bold;
-  font-family: "Open Sans Bold", sans-serif;
   margin: 0;
 }
 
 .photo__uploadtime {
   font-size: 12px;
-  font-family: "Open Sans Light", sans-serif;
   text-transform: uppercase;
   font-weight: 100;
 }
@@ -65,16 +63,28 @@
   font-size: 12px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .photo {
     padding: 0;
   }
 
   .photo--regular {
-    width: 354px;
+    width: 300px;
+  }
+
+  .photo__description {
+    padding: 20px;
   }
 
   .photo__description-text {
     min-height: 155px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__description {
+    .photo--panorama & {
+      margin: 0 120px;
+    }
   }
 }

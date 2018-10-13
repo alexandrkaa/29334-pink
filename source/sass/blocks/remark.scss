@@ -4,10 +4,10 @@
     text-decoration: underline;
     font: inherit;
   }
-  padding: 0 20px;
-  padding-left: 384px;
-  padding-top: 104px;
-  background: url("../img/icon-timer.svg") no-repeat 20px 60px, url("../img/icon-editor-diagram-fill.svg") no-repeat 20px 60px;
+  padding-right: 0 20px;
+  padding-top: 58px;
+  padding-bottom: 104px;
+  min-height: 276px;
   display: none;
 }
 
@@ -18,8 +18,37 @@
   margin-top: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .remark {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .remark__timer,
+  .remark__description {
+    width: 364px;
+    min-height: 276px;
+  }
+
+  .remark__timer {
+    background: url("../img/icon-timer.svg") no-repeat 0 0;
+    background-size: 238px 276px;
+    width: 238px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .remark {
+    padding: 0 120px;
+  }
+
+  .remark__timer,
+  .remark__description {
+    width: 480px;
+    min-height: 345px;
+  }
+
+  .remark__timer {
+    background-size: 298px 345px;
   }
 }

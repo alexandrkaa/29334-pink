@@ -1,3 +1,6 @@
+.editor {
+  background-color: $cl-grey-bg;
+}
 .editor__ajustment {
   padding: 0 40px;
   margin-top: 45px;
@@ -8,8 +11,9 @@
   margin: 0 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .editor {
     display: flex;
+    padding: 55px 0;
   }
 }
