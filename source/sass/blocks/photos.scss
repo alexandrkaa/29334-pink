@@ -18,19 +18,25 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 20px;
+    margin: 0 -10px;
   }
 
   .photos__item {
-    width: calc(50% - 10px);
+    width: (100% / 2);
+    padding: 0 10px;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: $desktop-width) {
   .photos__list {
     padding: 0 120px;
+    margin: 0 -10px;
   }
 
   .photos__item {
-    width: calc(33.333333% - 20px);
+    width: (100% /3);
+    padding: 0 10px;
+    box-sizing: border-box;
   }
 }

@@ -5,13 +5,29 @@
   display: block;
   width: 69px;
   height: 69px;
-  background: transparent url("../img/icon-menu-cross.svg") no-repeat center center;
-  background-size: 24px 24px;
   border: 0;
+  background-color: transparent;
 }
 
-// стили десктоп
-@media (min-width: 1200px) {
+.main-nav__icon {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav--opened {
+  .main-nav__icon--opened {
+    display: block;
+  }
+}
+
+.main-nav--closed {
+  .main-nav__icon--closed {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .main-nav__toggle {
     display: none;
   }
