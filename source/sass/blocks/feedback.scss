@@ -11,3 +11,9 @@
   text-align: center;
   margin: 40px 0;
 }
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    padding: 0 10px;
+  }
+}

@@ -13,3 +13,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-contacts {
+    padding: 0 10px;
+  }
+}

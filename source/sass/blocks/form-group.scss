@@ -41,12 +41,13 @@
 
 @media (min-width: 1200px) {
   .form-group__fields {
-    & label {
-      flex-basis: 33.333333%;
-    }
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .form-group__checkbox-field {
+    width: 33.333333%;
   }
 }
