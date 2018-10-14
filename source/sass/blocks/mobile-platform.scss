@@ -16,3 +16,9 @@
 .mobile-platform__radio-indicator {
   margin-right: 31px;
 }
+
+@media (min-width: $tablet-width) {
+  .mobile-platform {
+    background-color: $cl-white;
+  }
+}

@@ -7,3 +7,9 @@
 .competition-form__star {
   color: $cl-pink;
 }
+
+@media (min-width: $tablet-width) {
+  .competition-form__required {
+    margin: 0;
+  }
+}

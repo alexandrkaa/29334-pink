@@ -1,0 +1,34 @@
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 69px;
+  height: 69px;
+  border: 0;
+  background-color: transparent;
+}
+
+.main-nav__icon {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav--opened {
+  .main-nav__icon--opened {
+    display: block;
+  }
+}
+
+.main-nav--closed {
+  .main-nav__icon--closed {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}

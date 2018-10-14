@@ -1,3 +1,11 @@
 .reviews {
   padding: 0 20px;
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding: 0 120px;
+    padding-top: 190px;
+    background: $cl-white url("../img/icon-quotes.svg") no-repeat center 72px;
+  }
+}

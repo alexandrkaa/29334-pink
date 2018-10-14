@@ -1,7 +1,17 @@
+.slider {
+  overflow: hidden;
+}
+
 .slider__item {
   display: none;
 }
 
 .slider__item--active {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__item--active {
+    display: flex;
+  }
 }

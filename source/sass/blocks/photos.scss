@@ -8,4 +8,35 @@
 
 .photos__lead {
   text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media (min-width: 768px) {
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 0 -10px;
+  }
+
+  .photos__item {
+    width: (100% / 2);
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__list {
+    padding: 0 120px;
+    margin: 0 -10px;
+  }
+
+  .photos__item {
+    width: (100% /3);
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
 }

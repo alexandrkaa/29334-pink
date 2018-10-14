@@ -1,4 +1,9 @@
 .photo-editor {
-  background-color: $cl-grey-bg;
   padding-top: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .photo-editor {
+    padding: 0 120px;
+  }
 }

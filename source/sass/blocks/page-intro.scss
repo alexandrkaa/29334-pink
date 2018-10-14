@@ -1,8 +1,5 @@
 .page-intro {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  min-height: 462px;
+  margin-top: -64px;
 }
 
 .page-intro__header {
@@ -15,9 +12,40 @@
 }
 
 .page-intro__lead {
+  .page--main & {
+    display: none;
+  }
   background-color: $cl-white;
   font-size: 14px;
   line-height: 30px;
   padding: 50px 20px;
   text-align: center;
+  font-family: "Open Sans Light", sans-serif;
+}
+
+.page-intro__sublead {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-intro__lead {
+    .page-main & {
+      display: block;
+    }
+    background-color: transparent;
+    color: $cl-white;
+    font-size: 40px;
+    line-height: normal;
+    width: 300px;
+  }
+
+  .page-intro__header {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-intro__sublead {
+    display: inline;
+  }
 }

@@ -4,7 +4,36 @@
 }
 
 .features__lead {
+  br {
+    display: none;
+  }
   font-size: 24px;
   margin: 40px 0;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    position: relative;
+  }
+
+  .features__lead {
+    br {
+      display: inline;
+    }
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    position: static;
+    background: linear-gradient(174deg, $cl-white 0%, $cl-white 290px, $cl-grey-bg 290px, $cl-grey-bg 100%);
+  }
+
+  .features__lead {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }

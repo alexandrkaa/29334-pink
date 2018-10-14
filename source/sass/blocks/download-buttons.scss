@@ -17,17 +17,38 @@
 }
 
 .download-buttons__item--text {
+  & a {
+    font: inherit;
+    text-decoration: none;
+    text-align: center;
+    color: $cl-white;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    font-family: "Open Sans Bold", sans-serif;
+    border: 3px solid $cl-white;
+    border-radius: 28px;
+    padding: 15px 0;
+  }
+
+  & a:visited {
+    color: $cl-white;
+  }
+
+  & a:hover,
+  & a:focus {
+    color: $cl-pink;
+    background-color: $cl-white;
+  }
+
+  & a:active {
+    color: $cl-pink-light;
+  }
   flex-grow: 1;
   width: 280px;
   margin: 0 auto;
   margin-bottom: 32px;
-  padding: 15px 0;
-  text-align: center;
-  color: $cl-white;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
-  font-family: "Open Sans Bold", sans-serif;
+  box-sizing: border-box;
 }
 
 .download-buttons__item--icon {

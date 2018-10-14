@@ -1,0 +1,14 @@
+.logo {
+  box-shadow: 0 1px 0 0 #000000;
+  margin-bottom: 1px;
+  display: flex;
+
+  .main-header & {
+    height: 69px;
+  }
+}
+
+.logo__image {
+  margin: auto 0;
+  margin-left: 20px;
+}
