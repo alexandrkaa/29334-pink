@@ -4,7 +4,7 @@
 }
 
 .features__lead {
-  & br {
+  br {
     display: none;
   }
   font-size: 24px;
@@ -18,7 +18,7 @@
   }
 
   .features__lead {
-    & br {
+    br {
       display: inline;
     }
     font-size: 40px;

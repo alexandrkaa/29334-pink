@@ -35,10 +35,10 @@
   margin: 0 auto;
   height: 273px;
   overflow: hidden;
-}
 
-.features-list__image-wrapper--hidden {
-  display: none;
+  &--hidden {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -71,14 +71,15 @@
   }
 
   .features-list__image-wrapper {
-    & picture,
-    & img {
-      margin: 0 auto;
-      display: block;
-    }
     order: 0;
     margin: 0;
     position: static;
+
+    picture,
+    img {
+      margin: 0 auto;
+      display: block;
+    }
   }
 
   .features-list__image-wrapper--hidden {

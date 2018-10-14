@@ -16,7 +16,6 @@
   background-color: $cl-grey;
 }
 
-// Стили планшета
 @media (min-width: $tablet-width) {
   .page {
     width: 660px;
@@ -47,7 +46,6 @@
   }
 }
 
-// Стили десктоп
 @media (min-width: $desktop-width) {
   .page {
     width: 1200px;
