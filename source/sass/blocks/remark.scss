@@ -1,9 +1,4 @@
 .remark {
-  & a {
-    color: $cl-pink;
-    text-decoration: underline;
-    font: inherit;
-  }
   padding-right: 0 20px;
   padding-top: 58px;
   padding-bottom: 104px;
@@ -11,7 +6,13 @@
   display: none;
 }
 
-.remark_lead {
+.remark__link {
+  color: $cl-pink;
+  text-decoration: underline;
+  font: inherit;
+}
+
+.remark__lead {
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;

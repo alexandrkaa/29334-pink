@@ -11,15 +11,9 @@
   font-family: "Open Sans Light", sans-serif;
 }
 
-// Стили планшета
 @media (min-width: $tablet-width) {
   .download {
     width: 300px;
     background-color: transparent;
   }
 }
-
-// стили десктоп
-// @media (min-width: 1200px) {
-//
-// }

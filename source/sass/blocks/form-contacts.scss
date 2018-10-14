@@ -1,17 +1,6 @@
 .form-contacts {
-  & legend {
-    display: none;
-  }
   padding: 0 20px;
   margin-top: 40px;
-}
-
-@media (min-width: $tablet-width) {
-  .form-contacts {
-    & legend {
-      display: block;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
