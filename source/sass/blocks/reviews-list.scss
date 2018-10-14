@@ -5,7 +5,7 @@
 .reviews-list__name {
   font-size: 18px;
   line-height: 30px;
-  margin: 0;
+  margin: 18px 0;
   text-align: center;
   font-weight: bold;
   color: #000000;
@@ -20,6 +20,7 @@
 .reviews-list__review {
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {

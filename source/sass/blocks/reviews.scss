@@ -1,5 +1,10 @@
 .reviews {
-  padding: 0 20px;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.reviews__toggles {
+  margin: 22px;
 }
 
 @media (min-width: $desktop-width) {

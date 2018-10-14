@@ -1,6 +1,7 @@
 .contacts {
   //padding: 0 20px;
   padding: 0;
+  padding-top: 25px;
 }
 
 .contacts__lead,
@@ -9,12 +10,11 @@
   font-weight: normal;
   text-align: center;
   padding: 0;
-  margin: 25px;
+  margin: 24px;
 }
 
 .contacts__lead {
   margin-bottom: 0;
-  margin-top: 50px;
 }
 
 .contacts__header {
@@ -31,11 +31,15 @@
   padding-bottom: 61px;
 }
 
+.contacts__item {
+  padding: 10px;
+}
+
 .contacts__contact-header {
   font-size: 18px;
   font-weight: bold;
-  //font-family: "Open Sans Bold", sans-serif;
   text-align: center;
+  margin: 5px 0;
 }
 
 .contacts__link {
@@ -49,8 +53,17 @@
 .contacts__map {
   border: 0;
   width: 100%;
-  margin-top: -30px;
+  height: 200px;
+  overflow: hidden;
+  margin-top: -33px;
   display: block;
+}
+
+.contacts__online-map {
+  border: 0;
+  width: 100%;
+  height: 200%;
+  background-color: transparent;
 }
 
 @media (min-width: $tablet-width) {

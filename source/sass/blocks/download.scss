@@ -1,6 +1,6 @@
 .download {
   background-color: $cl-blue-dark;
-  padding: 28px 20px 32px 20px;
+  padding: 26px 20px 22px 20px;
 }
 
 .download__platforms {
@@ -9,6 +9,8 @@
   line-height: 24px;
   text-align: center;
   font-family: "Open Sans Light", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 @media (min-width: $tablet-width) {

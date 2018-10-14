@@ -1,6 +1,7 @@
 .features {
-  background: linear-gradient(174deg, $cl-white 0%, $cl-white 205px, $cl-grey-bg 205px, $cl-grey-bg 100%);
-  padding: 0 20px;
+  background: linear-gradient(174deg, $cl-white 0%, $cl-white 248px, $cl-grey-bg 248px, $cl-grey-bg 100%);
+  padding: 20px;
+  padding-bottom: 0;
 }
 
 .features__lead {
@@ -8,7 +9,8 @@
     display: none;
   }
   font-size: 24px;
-  margin: 40px 0;
+  margin-bottom: 40px;
+  margin-top: 23px;
   text-align: center;
 }
 
