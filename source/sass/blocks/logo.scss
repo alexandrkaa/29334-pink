@@ -12,3 +12,11 @@
   margin: auto 0;
   margin-left: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .logo {
+    .main-header & {
+      height: 110px;
+    }
+  }
+}

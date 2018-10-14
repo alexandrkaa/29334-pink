@@ -29,6 +29,13 @@
   font-weight: bold;
 }
 
+@media (min-width: $tablet-width) {
+  .menu-list__item {
+    margin-bottom: 1px;
+    height: 63px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .menu-list {
     flex-direction: row;

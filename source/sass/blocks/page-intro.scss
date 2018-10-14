@@ -29,7 +29,7 @@
 
 @media (min-width: $tablet-width) {
   .page-intro__lead {
-    .page-main & {
+    .page--main & {
       display: block;
     }
     background-color: transparent;

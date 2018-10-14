@@ -68,6 +68,21 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    width: 65px;
+    height: 110px;
+
+    .main-nav--opened &::before,
+    .main-nav--opened &::after {
+      top: 55px;
+      left: 20px;
+      width: 29px;
+      height: 4px;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-nav {
     margin-left: auto;
