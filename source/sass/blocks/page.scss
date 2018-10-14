@@ -4,17 +4,20 @@
 }
 
 .page__intro {
-  .page--main & {
-    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: bottom left, bottom center;
-  }
+  min-height: 462px;
+}
+
+.page__intro-wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
-  min-height: 462px;
   background-color: $cl-grey;
-  padding: 0 20px;
+
+  &--pagemain {
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 177px, center top;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -23,23 +26,22 @@
   }
 
   .page__intro {
-    background: none;
     min-height: 0;
   }
 
   .page__intro-wrapper {
-    .page--main & {
-      background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-      background-repeat: no-repeat, no-repeat;
-      background-position: bottom center, bottom center;
-      min-height: 729px;
-    }
     background-image: url("../img/bg-back-tablet@1x.jpg");
     min-height: 729px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 0 20px;
+
+    &--pagemain {
+      background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+      background-position: center 185px, center top;
+    }
   }
 }
 
@@ -49,12 +51,14 @@
   }
 
   .page__intro-wrapper {
-    .page--main & {
-      background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-    }
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: auto, cover;
     min-height: 853px;
     padding: 0 120px;
+
+    &--pagemain {
+      background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+      background-position: center 208px, center top;
+    }
   }
 }
