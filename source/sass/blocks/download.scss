@@ -27,3 +27,14 @@
     margin-top: 35px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .download {
+    padding: 0 10px;
+    margin-bottom: 0;
+  }
+
+  .download__platforms {
+    margin-top: 55px;
+  }
+}

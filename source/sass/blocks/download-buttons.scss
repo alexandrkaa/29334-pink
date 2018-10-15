@@ -70,3 +70,9 @@
     width: 300px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .download-buttons__item--text {
+    margin-bottom: 65px;
+  }
+}
