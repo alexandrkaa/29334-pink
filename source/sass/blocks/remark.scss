@@ -1,8 +1,6 @@
 .remark {
   padding-right: 0 20px;
-  padding-top: 58px;
-  padding-bottom: 104px;
-  min-height: 276px;
+  padding-top: 45px;
   display: none;
 }
 
@@ -27,14 +25,60 @@
 
   .remark__timer,
   .remark__description {
-    width: 364px;
-    min-height: 276px;
+    width: 50%;
+  }
+
+  .remark__description {
+    margin-top: 51px;
+  }
+
+  .remark__text {
+    margin: 10px 0;
+  }
+
+  .remark__lead {
+    margin-bottom: 10px;
   }
 
   .remark__timer {
-    background: url("../img/icon-timer.svg") no-repeat 0 0;
+    background: url("../img/icon-timer.svg") no-repeat 22px 0;
     background-size: 238px 276px;
-    width: 238px;
+    min-height: 276px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 203px;
+      height: 203px;
+      position: absolute;
+      top: 55px;
+      left: 39px;
+      background-color: $cl-pink;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      width: 176px;
+      height: 176px;
+      position: absolute;
+      top: 68px;
+      left: 52px;
+      background-color: $cl-white;
+      border-radius: 50%;
+    }
+  }
+
+  .remark__banner-hours {
+    font-size: 96px;
+    line-height: 150px;
+    font-weight: bold;
+    color: $cl-pink;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 75px;
+    left: 83px;
   }
 }
 

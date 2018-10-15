@@ -60,3 +60,13 @@
 .download-buttons__link {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .download-buttons__item--text {
+    margin-bottom: 47px;
+  }
+
+  .download-buttons {
+    width: 300px;
+  }
+}

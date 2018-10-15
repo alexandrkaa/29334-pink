@@ -17,6 +17,8 @@
 @media (min-width: $tablet-width) {
   .features {
     position: relative;
+    background: linear-gradient(176deg, $cl-white 0%, $cl-white 285px, $cl-grey-bg 285px, $cl-grey-bg 100%);
+    padding-top: 40px;
   }
 
   .features__lead {
@@ -25,13 +27,14 @@
     }
     font-size: 40px;
     line-height: 40px;
+    margin: 10px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features {
     position: static;
-    background: linear-gradient(174deg, $cl-white 0%, $cl-white 290px, $cl-grey-bg 290px, $cl-grey-bg 100%);
+    background: linear-gradient(176deg, $cl-white 0%, $cl-white 290px, $cl-grey-bg 290px, $cl-grey-bg 100%);
   }
 
   .features__lead {

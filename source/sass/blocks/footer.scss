@@ -55,6 +55,29 @@
   .footer__social-links,
   .footer__copyright {
     margin: 0;
+    width: 25%;
+  }
+
+  .footer__logo {
+    .logo {
+      box-shadow: none;
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer__copyright {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer__social-links {
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+
+  .footer__copyright-logo-link {
+    display: block;
+    margin-top: 10px;
   }
 }
 

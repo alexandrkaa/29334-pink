@@ -45,6 +45,18 @@
   .features-list {
     width: 310px;
     margin-left: 310px;
+    margin-top: 100px;
+    min-height: 443px;
+  }
+
+  .features-list__lead {
+    margin-top: 35px;
+    text-align: left;
+  }
+
+  .features-list__description {
+    text-align: left;
+    margin-top: 10px;
   }
 
   .features-list__image-wrapper {
@@ -52,6 +64,10 @@
     position: absolute;
     left: 20px;
     bottom: 0;
+  }
+
+  .features-list__item:last-of-type .features-list__description {
+    margin-bottom: 44px;
   }
 }
 

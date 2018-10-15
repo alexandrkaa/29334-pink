@@ -7,6 +7,12 @@
   margin: 22px;
 }
 
+@media (min-width: $tablet-width) {
+  .reviews__toggles {
+    margin: 17px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .reviews {
     padding: 0 120px;
