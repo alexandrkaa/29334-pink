@@ -82,15 +82,27 @@
 }
 
 @media (min-width: $desktop-width) {
-  .footer--hidden {
-    display: flex;
-  }
-
   .footer {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
-    width: 920px;
-    padding: 0;
+    width: 940px;
+    min-height: 190px;
+    padding: 0 130px;
+
+    &--hidden {
+      display: flex;
+    }
+  }
+
+  .footer__developed-by {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .footer__logo,
+  .footer__social-links,
+  .footer__copyright {
+    width: (100% / 3);
   }
 }

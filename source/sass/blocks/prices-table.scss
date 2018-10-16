@@ -147,3 +147,29 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .prices-table__cell {
+    .prices-table__row--head & {
+      padding: 16px;
+    }
+
+    height: 60px;
+    padding: 7px 20px;
+  }
+
+  .prices-table__package-name {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .prices-table__price {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .prices-table__feature-name {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

@@ -18,7 +18,10 @@
 
 @media (min-width: $desktop-width) {
   .prices {
-    padding-left: 120px;
-    padding-right: 120px;
+    background: linear-gradient(176deg, $cl-white 0%, $cl-white 147px, $cl-grey-bg 147px, $cl-grey-bg 100%);
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 210px;
+    padding-bottom: 95px;
   }
 }
