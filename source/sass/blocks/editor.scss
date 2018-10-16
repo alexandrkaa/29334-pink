@@ -1,15 +1,19 @@
 .editor {
   background-color: $cl-grey-bg;
+  padding: 20px 0;
 }
 
 .editor__ajustment {
   padding: 0 40px;
-  margin-top: 45px;
   border-bottom: 1px solid #dddfe0;
 }
 
 .editor__image {
   margin: 0 20px;
+}
+
+.editor__controls-wrapper {
+  margin-top: 25px;
 }
 
 @media (min-width: $tablet-width) {

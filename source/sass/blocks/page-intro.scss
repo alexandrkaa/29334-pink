@@ -8,7 +8,10 @@
   font-weight: normal;
   text-align: center;
   margin: 0;
-  padding: 105px 20px;
+  line-height: 28px;
+  padding: 87px 20px;
+  padding-top: 95px;
+  padding-bottom: 73px;
 }
 
 .page-intro__lead {
@@ -22,7 +25,8 @@
   background-color: $cl-white;
   font-size: 14px;
   line-height: 30px;
-  padding: 50px 20px;
+  //padding: 50px 20px;
+  padding: 48px 20px;
   text-align: center;
   font-family: "Open Sans Light", sans-serif;
 }

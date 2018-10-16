@@ -7,10 +7,56 @@
   width: 80px;
   height: 80px;
   display: block;
+  border: 0;
+  background-color: $cl-grey-bg;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.ajustment-buttons__button--crop {
+  background-image: url("../img/icon-editor-crop.svg");
+}
+
+.ajustment-buttons__button--fill {
+  background-image: url("../img/icon-editor-fill.svg");
+}
+
+.ajustment-buttons__button--contrast {
+  background-image: url("../img/icon-editor-contrast.svg");
+}
+
+.ajustment-buttons__button--range::-webkit-slider-thumb {
+  border: 2px solid $cl-pink;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: $cl-white;
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+/* All the same stuff for Firefox */
+.ajustment-buttons__button--range::-moz-range-thumb {
+  border: 2px solid $cl-pink;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: $cl-white;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+.ajustment-buttons__button--range::-ms-thumb {
+  border: 2px solid $cl-pink;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: $cl-white;
+  cursor: pointer;
 }
 
 .ajustment-buttons__button--range {
-  margin-top: 38px;
+  margin-top: 15px;
   width: 240px;
   height: auto;
   margin-bottom: 35px;

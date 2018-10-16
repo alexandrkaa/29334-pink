@@ -1,15 +1,20 @@
+.photos {
+  margin-top: -55px;
+}
+
 .photos__list {
   @include list-reset;
 }
 
 .photos__lead-wrapper {
-  margin: 45px 0;
+  margin: 43px 0;
 }
 
 .photos__lead {
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
