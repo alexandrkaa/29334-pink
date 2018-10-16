@@ -13,6 +13,10 @@
   text-align: center;
   margin: 0;
   margin-top: 37px;
+
+  br {
+    display: none;
+  }
 }
 
 .features-list__description {
@@ -72,18 +76,34 @@
 }
 
 @media (min-width: $desktop-width) {
-  .features {
-    padding: 0 120px;
-  }
-
-  .features-list__description {
-    margin-bottom: 39px;
-  }
-
   .features-list {
     width: auto;
     margin: 0;
     display: flex;
+    margin-top: 136px;
+  }
+
+  .features-list__item {
+    width: (100% /3);
+  }
+
+  .features-list__lead {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+
+    br {
+      display: inline;
+    }
+  }
+
+  .features-list__description {
+    margin-bottom: 39px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 40px;
   }
 
   .features-list__image-wrapper {

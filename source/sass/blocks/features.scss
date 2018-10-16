@@ -35,6 +35,8 @@
   .features {
     position: static;
     background: linear-gradient(176deg, $cl-white 0%, $cl-white 290px, $cl-grey-bg 290px, $cl-grey-bg 100%);
+    padding: 0 120px;
+    padding-top: 60px;
   }
 
   .features__lead {

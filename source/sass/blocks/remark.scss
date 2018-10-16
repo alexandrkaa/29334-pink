@@ -85,15 +85,61 @@
 @media (min-width: $desktop-width) {
   .remark {
     padding: 0 120px;
-  }
-
-  .remark__timer,
-  .remark__description {
-    width: 480px;
-    min-height: 345px;
+    padding-bottom: 50px;
+    background-color: $cl-grey-bg;
   }
 
   .remark__timer {
-    background-size: 298px 345px;
+    background-size: 300px 345px;
+    min-height: 345px;
+    width: 39%;
+    margin: 20px 0;
+    background-position: 10px top;
+
+    &::before {
+      width: 255px;
+      height: 255px;
+      top: 70px;
+      left: 32px;
+    }
+
+    &::after {
+      width: 221px;
+      height: 221px;
+      top: 87px;
+      left: 47px;
+    }
+
+    .remark__banner-hours {
+      font-size: 120px;
+      line-height: 187px;
+      top: 95px;
+      left: 90px;
+    }
+  }
+
+  .remark__description {
+    width: 61%;
+    margin-top: 115px;
+  }
+
+  .remark__lead {
+    font-size: 30px;
+    line-height: 30px;
+    br {
+      display: none;
+    }
+  }
+
+  .remark__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 25px 0;
+    margin-bottom: 30px;
+  }
+
+  .remark__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
