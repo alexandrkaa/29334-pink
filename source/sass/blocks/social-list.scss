@@ -23,3 +23,10 @@
   align-items: center;
   box-sizing: border-box;
 }
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}

@@ -85,10 +85,6 @@
   margin-bottom: 6px;
 }
 
-.prices-table__toggles {
-  margin: 26px 0;
-}
-
 @media (min-width: $tablet-width) {
   .prices-table {
     width: 100%;
@@ -141,10 +137,6 @@
 
   .prices-table__price {
     font-size: 18px;
-  }
-
-  .prices-table__toggles {
-    display: none;
   }
 }
 

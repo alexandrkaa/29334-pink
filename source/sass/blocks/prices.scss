@@ -5,6 +5,10 @@
   background: linear-gradient(176deg, $cl-white 0%, $cl-white 35px, $cl-grey-bg 35px, $cl-grey-bg 100%);
 }
 
+.prices__toggles {
+  margin: 26px 0;
+}
+
 @media (min-width: $tablet-width) {
   .prices {
     background: linear-gradient(176deg, $cl-white 0%, $cl-white 70px, $cl-grey-bg 70px, $cl-grey-bg 100%);
@@ -13,6 +17,10 @@
     padding-top: 110px;
     padding-bottom: 60px;
     margin-top: -30px;
+
+    .prices__toggles {
+      display: none;
+    }
   }
 }
 
@@ -23,5 +31,9 @@
     padding-right: 130px;
     padding-top: 210px;
     padding-bottom: 95px;
+
+    .prices__toggles {
+      display: none;
+    }
   }
 }
