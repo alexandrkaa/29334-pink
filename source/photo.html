@@ -55,7 +55,7 @@
           <span class="photo__label">Панорама дня</span>
           <div class="photo__description">
             <p class="photo__username">Анна <time class="photo__uploadtime" datetime="2018-09-30T11:22:33+03:00">(5 минут назад)</time></p>
-            <p class="photo__description-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="photo__description-text photo__description-text--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="photo__like-wrapper">
               <button class="photo__heart" type="button">
                 <span class="visually-hidden">Лайкнуть</span>
@@ -186,13 +186,14 @@
           <img class="editor__image" src="img/photo-road-mobile@1x.jpg" alt="Загруженное изображение">
           <div class="editor__controls-wrapper">
             <div class="editor__ajustment ajustment-buttons">
-              <!-- README: Возможно чекбокс для удобства стилизации, но семантически, мне кажется, это кнопки -->
               <button class="ajustment-buttons__button ajustment-buttons__button--crop ajustment-buttons__crop--checked" type="button" name="buttonCrop">
                 <span class="visually-hidden">Обрезать изображение</span>
               </button>
+              <input class="ajustment-buttons__button ajustment-buttons__button--range" type="range" min="1" max="100" value="90" name="ajustmentRange">
               <button class="ajustment-buttons__button ajustment-buttons__button--fill" type="button" name="buttonFill">
                 <span class="visually-hidden">Залить изображение цветом</span>
               </button>
+              <input class="ajustment-buttons__button ajustment-buttons__button--range" type="range" min="1" max="100" value="85" name="ajustmentRange">
               <button class="ajustment-buttons__button ajustment-buttons__button--contrast" type="button" name="buttonContrast">
                 <span class="visually-hidden">Изменить контраст изображения</span>
               </button>

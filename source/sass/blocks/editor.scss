@@ -5,7 +5,6 @@
 
 .editor__ajustment {
   padding: 0 40px;
-  border-bottom: 1px solid #dddfe0;
 }
 
 .editor__image {
@@ -19,6 +18,11 @@
 @media (min-width: $tablet-width) {
   .editor {
     display: flex;
-    padding: 55px 0;
+    padding: 58px 0;
+    padding-bottom: 25px;
+  }
+
+  .editor__controls-wrapper {
+    margin-top: 9px;
   }
 }

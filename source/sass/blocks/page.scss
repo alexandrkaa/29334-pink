@@ -29,6 +29,7 @@
   .page__intro {
     min-height: 0;
     margin-bottom: 30px;
+    margin-top: 180px;
 
     .page--main & {
       margin-top: 200px;
@@ -40,7 +41,7 @@
     min-height: 729px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     padding: 0;
     margin-top: -110px;
@@ -49,6 +50,7 @@
       background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
       background-position: center 185px, center top;
       padding: 0 20px;
+      justify-content: center;
     }
   }
 }

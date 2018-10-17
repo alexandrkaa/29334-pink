@@ -28,12 +28,17 @@
 // http://danielstern.ca/range.css/?ref=css-tricks#/
 // https://github.com/darlanrod/input-range-scss
 .ajustment-buttons__button--range {
+  display: none;
   margin: 6px 0;
   margin-top: 20px;
   width: 240px;
   height: auto;
   margin-bottom: 35px;
   -webkit-appearance: none;
+
+  &:last-of-type {
+    display: block;
+  }
 }
 
 .ajustment-buttons__button--range:focus {
@@ -166,4 +171,49 @@
 .ajustment-buttons__form-controls--reset {
   color: $cl-grey-border;
   border-color: $cl-grey-border;
+}
+
+@media (min-width: $tablet-width) {
+  .ajustment-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .ajustment-buttons__button:not(.ajustment-buttons__button--range) {
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+    background-position: center center;
+    position: relative;
+    margin-right: 28px;
+    margin-left: 7px;
+    margin-bottom: 48px;
+
+    &::after {
+      content: "";
+      width: 260px;
+      height: 1px;
+      background-color: $cl-grey-border;
+      display: block;
+      top: 47px;
+      left: 0;
+      position: absolute;
+    }
+  }
+
+  .ajustment-buttons__button--contrast {
+    background-size: 17px 17px;
+  }
+
+  .ajustment-buttons__button--range {
+    display: block;
+    flex-grow: 1;
+    width: calc(100% - 60px);
+    margin-top: 11px;
+  }
+
+  .ajustment-buttons__form-controls {
+    margin: 14px 20px;
+  }
 }

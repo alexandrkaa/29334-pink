@@ -17,7 +17,7 @@
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .photos__list {
     display: flex;
     flex-wrap: wrap;
@@ -30,6 +30,17 @@
     width: (100% / 2);
     padding: 0 10px;
     box-sizing: border-box;
+  }
+
+  .photos__lead {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photos {
+    margin-top: -63px;
   }
 }
 

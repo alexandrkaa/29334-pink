@@ -74,12 +74,73 @@
     padding: 0;
   }
 
-  .photo__description {
-    padding: 20px;
+  //tmp
+  .photo__image {
+    min-height: 300px;
+  }
+  //tmp
+
+  .photo__label {
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: bold;
+    top: 58px;
   }
 
-  .photo__description-text {
-    min-height: 155px;
+  .photo__description {
+    padding: 25px;
+    min-height: 105px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo__like-wrapper {
+    display: flex;
+    margin-top: auto;
+  }
+
+  .photo__like-counter {
+    order: 1;
+  }
+
+  .photo__heart {
+    order: 2;
+    margin-left: auto;
+    margin-right: 7px;
+  }
+
+  .photo--panorama {
+    .photo__description {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 20px 28px;
+      min-height: 0;
+    }
+
+    .photo__username {
+      order: 1;
+    }
+
+    .photo__like-wrapper {
+      order: 2;
+      margin-left: auto;
+      margin-top: 4px;
+    }
+
+    .photo__heart {
+      margin: 3px 0;
+      margin-left: 17px;
+    }
+
+    .photo__description-text {
+      min-height: 0;
+      order: 3;
+      width: 100%;
+      padding-bottom: 5px;
+    }
+
+    margin-bottom: 50px;
   }
 }
 
