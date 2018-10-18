@@ -8,33 +8,35 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <nav class="main-header__nav main-nav main-nav--opened">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть или закрыть меню</span>
-        </button>
-        <ul class="main-nav__list menu-list">
-          <li class="menu-list__item menu-list__item--active">
-            <a class="menu-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="http://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="main-header__logo logo" href="index.html">
-        <picture class="logo__image">
-          <source media="(min-width: 320px)" srcset="img/logo-pink-white-mobile.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-          <img src="img/logo-pink-white-mobile.svg" alt="Логотип приложения PINK">
-        </picture>
-      </a>
+      <div class="main-header__wrapper">
+        <nav class="main-header__nav main-nav main-nav--opened">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть или закрыть меню</span>
+          </button>
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item menu-list__item--active">
+              <a class="menu-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="http://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="main-header__logo logo" href="index.html">
+          <picture class="logo__image">
+            <source media="(min-width: 320px)" srcset="img/logo-pink-white-mobile.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип приложения PINK">
+          </picture>
+        </a>
+      </div>
     </header>
     <main class="page page--main">
       <div class="page__intro-wrapper page__intro-wrapper--pagemain">

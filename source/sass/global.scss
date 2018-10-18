@@ -15,14 +15,14 @@ img {
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   body {
-    min-width: 768px;
+    min-width: $tablet-width;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   body {
-    min-width: 1200px;
+    min-width: $desktop-width;
   }
 }

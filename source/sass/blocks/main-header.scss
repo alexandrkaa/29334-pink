@@ -1,6 +1,9 @@
 .main-header {
   width: 320px;
   margin: 0 auto;
+}
+
+.main-header__wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -23,13 +26,19 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    width: 1200px;
-    padding: 0 120px;
+    width: auto;
+    margin: 0 auto;
+    min-height: 110px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-header__wrapper {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 10px;
     box-sizing: border-box;
     display: flex;
-    min-height: 110px;
     align-items: center;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.3);
   }
 }
