@@ -7,6 +7,10 @@
   margin: 22px;
 }
 
+.reviews__control {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .reviews__toggles {
     margin: 17px;
@@ -15,9 +19,13 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding: 0 120px;
+    padding: 0 10px;
     padding-top: 120px;
     background: $cl-white url("../img/icon-quotes.svg") no-repeat center 72px;
+  }
+
+  .reviews__control {
+    display: block;
   }
 
   .reviews__toggles {

@@ -99,11 +99,15 @@
   }
 
   .features-list__description {
-    margin-bottom: 39px;
+    margin-bottom: 0;
     text-align: center;
     font-size: 18px;
     line-height: 30px;
-    padding: 0 40px;
+    padding: 0 30px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   .features-list__image-wrapper {

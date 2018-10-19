@@ -2,6 +2,7 @@
   padding: 0 20px;
   padding-top: 45px;
   display: none;
+  background-color: $cl-white;
 }
 
 .remark__link {
@@ -21,6 +22,8 @@
   .remark {
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    padding-top: 45px;
   }
 
   .remark__timer,
@@ -84,7 +87,8 @@
 
 @media (min-width: $desktop-width) {
   .remark {
-    padding: 0;
+    padding: 45px 0;
+    padding-bottom: 70px;
     background-color: $cl-grey-bg;
   }
 
@@ -92,21 +96,23 @@
     background-size: 300px 345px;
     min-height: 345px;
     width: 39%;
-    margin: 20px 0;
+    margin: 0;
+    padding: 0;
+    margin-top: -25px;
     background-position: 10px top;
 
     &::before {
       width: 255px;
       height: 255px;
       top: 70px;
-      left: 32px;
+      left: 31px;
     }
 
     &::after {
       width: 221px;
       height: 221px;
       top: 87px;
-      left: 47px;
+      left: 49px;
     }
 
     .remark__banner-hours {
@@ -119,12 +125,13 @@
 
   .remark__description {
     width: 61%;
-    margin-top: 115px;
+    margin-top: 70px;
   }
 
   .remark__lead {
     font-size: 30px;
     line-height: 30px;
+
     br {
       display: none;
     }

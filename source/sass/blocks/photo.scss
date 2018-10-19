@@ -74,11 +74,11 @@
     padding: 0;
   }
 
-  //tmp
+  // !!! tmp
   .photo__image {
     min-height: 300px;
   }
-  //tmp
+  // !!! tmp
 
   .photo__label {
     font-size: 12px;
@@ -145,9 +145,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photo--panorama {
+    margin-top: -220px;
+  }
+
   .photo__description {
     .photo--panorama & {
-      margin: 0 120px;
+      margin: 0 10px;
     }
   }
 }

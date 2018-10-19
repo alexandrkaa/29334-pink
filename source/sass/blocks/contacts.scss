@@ -1,5 +1,4 @@
 .contacts {
-  //padding: 0 20px;
   padding: 0;
   padding-top: 25px;
 }
@@ -10,7 +9,7 @@
   font-weight: normal;
   text-align: center;
   padding: 0;
-  margin: 24px;
+  margin: 20px;
 }
 
 .contacts__lead {
@@ -28,7 +27,7 @@
   position: relative;
   z-index: 1;
   padding: 0 20px;
-  padding-bottom: 61px;
+  padding-bottom: 70px;
 }
 
 .contacts__item {
@@ -128,8 +127,9 @@
 @media (min-width: $desktop-width) {
   .contacts__list {
     justify-content: space-between;
-    padding: 0 155px;
+    padding: 0;
     padding-bottom: 150px;
+    margin-bottom: 25px;
   }
 
   .contacts__lead,
@@ -172,11 +172,11 @@
   }
 
   .contacts__map {
-    min-height: 510px;
-    margin-top: -124px;
+    min-height: 480px;
+    margin-top: -125px;
   }
 
   .contacts__online-map {
-    min-height: 510px;
+    min-height: 480px;
   }
 }

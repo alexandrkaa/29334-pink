@@ -4,55 +4,57 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="main-header">
-      <nav class="main-header__nav main-nav main-nav--opened">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть или закрыть меню</span>
-        </button>
-        <ul class="main-nav__list menu-list">
-          <li class="menu-list__item menu-list__item--active">
-            <a class="menu-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="http://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="main-header__logo logo" href="index.html">
-        <picture class="logo__image">
-          <source media="(min-width: 320px)" srcset="img/logo-pink-white-mobile.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-          <img src="img/logo-pink-white-mobile.svg" alt="Логотип приложения PINK">
-        </picture>
-      </a>
+      <div class="main-header__wrapper">
+        <nav class="main-header__nav main-nav main-nav--opened">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть или закрыть меню</span>
+          </button>
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item menu-list__item--active">
+              <a class="menu-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="http://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="main-header__logo logo" href="index.html">
+          <picture class="logo__image">
+            <source media="(max-width: 659px)" srcset="img/logo-pink-white-mobile.svg">
+            <source media="(max-width: 959px))" srcset="img/logo-pink-white-tablet.svg">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <img src="img/logo-pink-white-mobile.svg" alt="Логотип приложения PINK">
+          </picture>
+        </a>
+      </div>
     </header>
     <main class="page page--photo-page">
       <div class="page__intro-wrapper">
         <section class="page-intro page__intro">
           <h1 class="page-intro__header">Фотографии пользователей</h1>
-          <p class="page-intro__lead">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <p class="page-intro__lead">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
         </section>
       </div>
       <section class="photos">
         <h2 class="photos__header visually-hidden">Последние фото из приложения PINK</h2>
         <div class="photo photo--panorama">
           <picture>
-            <source media="(min-width: 320px)" srcset="img/panorama-mobile@1x.jpg 1x">
-            <source media="(min-width: 768px)" srcset="img/panorama-tablet@1x.jpg 1x">
-            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x">
+            <source srcset="img/panorama-mobile@1x.jpg" media="(max-width: 659px)">
+            <source srcset="img/panorama-tablet@1x.jpg" media="(max-width: 959px)">
+            <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 960px)">
             <img class="photo__image" src="img/panorama-mobile@1x.jpg" alt="Фото перед прыжком вниз">
           </picture>
           <span class="photo__label">Панорама дня</span>
@@ -70,9 +72,9 @@
         <ul class="photos__list">
           <li class="photos__item photo photo--regular">
             <picture>
-              <source media="(min-width: 320px)" srcset="img/photo-car-mobile@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/photo-car-tablet@1x.jpg 1x">
-              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x">
+              <source media="(max-width: 659px)" srcset="img/photo-car-mobile@1x.jpg 1x">
+              <source media="(max-width: 959px)" srcset="img/photo-car-tablet@1x.jpg 1x">
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x">
               <img class="photo__image" src="img/photo-car-mobile@1x.jpg" alt="Фото автомобиля">
             </picture>
             <div class="photo__description">
@@ -88,9 +90,9 @@
           </li>
           <li class="photos__item photo photo--regular">
             <picture>
-              <source media="(min-width: 320px)" srcset="img/photo-drumset-mobile@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/photo-drumset-tablet@1x.jpg 1x">
-              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x">
+              <source media="(max-width: 659px)" srcset="img/photo-drumset-mobile@1x.jpg 1x">
+              <source media="(max-width: 959px)" srcset="img/photo-drumset-tablet@1x.jpg 1x">
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x">
               <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" alt="Фото абарабанной установки">
             </picture>
             <div class="photo__description">
@@ -106,9 +108,9 @@
           </li>
           <li class="photos__item photo photo--regular">
             <picture>
-              <source media="(min-width: 320px)" srcset="img/photo-window-mobile@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/photo-window-tablet@1x.jpg 1x">
-              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x">
+              <source media="(max-width: 659px)" srcset="img/photo-window-mobile@1x.jpg 1x">
+              <source media="(max-width: 959px)" srcset="img/photo-window-tablet@1x.jpg 1x">
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x">
               <img class="photo__image" src="img/photo-window-mobile@1x.jpg" alt="Фото небоскребов через стеклянный потолок">
             </picture>
             <div class="photo__description">
@@ -124,9 +126,9 @@
           </li>
           <li class="photos__item photo photo--regular">
             <picture>
-              <source media="(min-width: 320px)" srcset="img/photo-fair-mobile@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/photo-fair-tablet@1x.jpg 1x">
-              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x">
+              <source media="(max-width: 659px)" srcset="img/photo-fair-mobile@1x.jpg 1x">
+              <source media="(max-width: 959px)" srcset="img/photo-fair-tablet@1x.jpg 1x">
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x">
               <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" alt="Фото кубанской бахчи">
             </picture>
             <div class="photo__description">
@@ -142,9 +144,9 @@
           </li>
           <li class="photos__item photo photo--regular">
             <picture>
-              <source media="(min-width: 320px)" srcset="img/photo-pov-mobile@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/photo-pov-tablet@1x.jpg 1x">
-              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x">
+              <source media="(max-width: 659px)" srcset="img/photo-pov-mobile@1x.jpg 1x">
+              <source media="(max-width: 959px)" srcset="img/photo-pov-tablet@1x.jpg 1x">
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x">
               <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" alt="Фото с гор">
             </picture>
             <div class="photo__description">
@@ -160,9 +162,9 @@
           </li>
           <li class="photos__item photo photo--regular">
             <picture>
-              <source media="(min-width: 320px)" srcset="img/photo-wing-mobile@1x.jpg 1x">
-              <source media="(min-width: 768px)" srcset="img/photo-wing-tablet@1x.jpg 1x">
-              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x">
+              <source media="(max-width: 659px)" srcset="img/photo-wing-mobile@1x.jpg 1x">
+              <source media="(max-width: 959px)" srcset="img/photo-wing-tablet@1x.jpg 1x">
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x">
               <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" alt="Фото крыла самолета из иллюминатора на восходе">
             </picture>
             <div class="photo__description">
@@ -210,7 +212,7 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer--hidden">
       <div class="footer__logo">
         <a href="index.html" class="logo">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">

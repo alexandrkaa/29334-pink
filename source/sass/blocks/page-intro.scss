@@ -79,4 +79,20 @@
   .page-intro__sublead {
     display: inline;
   }
+
+  .page-intro__header {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .page-intro__lead {
+    padding: 90px 0;
+    margin-top: 103px;
+    font-size: 18px;
+    line-height: 30px;
+
+    br {
+      display: inline;
+    }
+  }
 }
