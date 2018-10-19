@@ -32,7 +32,7 @@
     margin-top: 180px;
 
     .page--main & {
-      margin-top: 200px;
+      margin-top: 60px;
     }
   }
 
@@ -49,7 +49,7 @@
     &--pagemain {
       background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
       background-position: center 185px, center top;
-      padding: 0 20px;
+      padding: 0;
       justify-content: center;
     }
   }
