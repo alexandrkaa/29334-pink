@@ -1,5 +1,5 @@
 .remark {
-  padding-right: 0 20px;
+  padding: 0 20px;
   padding-top: 45px;
   display: none;
 }
@@ -84,8 +84,7 @@
 
 @media (min-width: $desktop-width) {
   .remark {
-    padding: 0 120px;
-    padding-bottom: 50px;
+    padding: 0;
     background-color: $cl-grey-bg;
   }
 

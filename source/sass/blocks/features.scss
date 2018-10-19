@@ -38,6 +38,7 @@
     background: linear-gradient(176deg, $cl-white 0%, $cl-white 290px, $cl-grey-bg 290px, $cl-grey-bg 100%);
     margin: 0 auto;
     padding-top: 60px;
+    box-sizing: border-box;
   }
 
   .features__lead {

@@ -57,16 +57,20 @@
 
 @media (min-width: $desktop-width) {
   .page {
-    width: auto;
+    width: 100%;
     min-width: $desktop-width;
     margin: 0 auto;
   }
 
   .page__intro {
     width: 50%;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     margin-top: 100px;
     padding-left: 10px;
+
+    .page--main & {
+      margin-top: -40px;
+    }
   }
 
   .page-intro__lead {
@@ -78,11 +82,14 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: auto, cover;
     min-height: 853px;
-    padding: 0 120px;
+    padding: 0;
 
     &--pagemain {
       background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-      background-position: 145px 208px, top center;
+      background-position: 26px 208px, top center;
+      .page-intro__lead--pagemain {
+        padding: 0;
+      }
     }
   }
 }

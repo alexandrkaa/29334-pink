@@ -94,7 +94,7 @@
     margin: 0 auto;
     width: 940px;
     min-height: 190px;
-    //padding: 0 130px;
+    box-sizing: border-box;
 
     &--hidden {
       display: flex;
