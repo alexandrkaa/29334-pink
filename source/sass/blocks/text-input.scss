@@ -36,3 +36,18 @@
     margin-left: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .text-input {
+    margin-left: 18px;
+
+    &--form-contacts {
+      margin-left: 0;
+    }
+
+    &--textarea {
+      margin: 0;
+      min-height: 128px;
+    }
+  }
+}

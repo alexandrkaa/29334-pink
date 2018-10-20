@@ -41,7 +41,7 @@
 
   .contestant-data__form-contacts {
     order: 3;
-    margin-top: 33px;
+    margin-top: 43px;
 
     .form-group {
       padding: 25px 38px;
@@ -75,33 +75,47 @@
 
 @media (min-width: $desktop-width) {
   .contestant-data {
-    padding: 0 120px;
+    padding: 0 10px;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .contestant-data__fullname {
-    flex-grow: 1;
+    width: 435px;
+    margin-right: 72px;
+    margin-top: 35px;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
   .contestant-data__achievements {
     flex-grow: 2;
+    padding: 0;
   }
 
   .contestant-data__form-contacts {
     flex-grow: 2;
+    margin-top: 43px;
+
+    .form-group {
+      padding: 21px 38px;
+      padding-bottom: 14px;
+    }
   }
 
   .contestant-data__mobile-platform {
     flex-grow: 1;
+    margin-top: 10px;
   }
 
   .contestant-data__feedback {
     flex-grow: 2;
+    margin-top: 0;
   }
 
   .contestant-data__submit {
     width: 100%;
-    padding: 0 10px;
+    padding: 0;
+    margin-bottom: 0;
   }
 }

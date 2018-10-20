@@ -48,7 +48,7 @@
 
 @media (min-width: $tablet-width) {
   .input-radio {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
 
     &:last-child {
       margin-bottom: 0;
@@ -57,5 +57,23 @@
 
   .input-radio__title {
     padding-left: 60px;
+    margin-left: 0;
+    margin-top: 0;
+    min-height: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input-radio {
+    margin-bottom: 17px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .input-radio__title {
+    margin-left: 50px;
+    margin-top: 15px;
   }
 }

@@ -10,6 +10,10 @@
   margin: 14px 0;
 }
 
+.competition-form__required-additional {
+  display: none;
+}
+
 .competition-form__popup {
   margin: 0 auto;
 }
@@ -25,5 +29,18 @@
 
   .competition-form__required {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition-form {
+    width: $desktop-width;
+    margin: 0 auto;
+    margin-top: -135px;
+  }
+
+  .competition-form__required-additional {
+    display: inline;
+    vertical-align: top;
   }
 }

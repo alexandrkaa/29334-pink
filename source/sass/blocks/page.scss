@@ -71,6 +71,12 @@
     width: 100%;
     min-width: $desktop-width;
     margin: 0 auto;
+
+    &--form {
+      .page-intro {
+        margin-top: 278px;
+      }
+    }
   }
 
   .page__intro {

@@ -33,8 +33,8 @@
         </nav>
         <a class="main-header__logo logo" href="index.html">
           <picture class="logo__image">
-            <source media="(min-width: 320px)" srcset="img/logo-pink-white-mobile.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <source media="(max-width: 659px)" srcset="img/logo-pink-white-mobile.svg">
+            <source media="(max-width: 959px)" srcset="img/logo-pink-white-tablet.svg">
             <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
             <img src="img/logo-pink-white-mobile.svg" alt="Логотип приложения PINK">
           </picture>
@@ -70,27 +70,27 @@
               <legend class="form-group__title">Ваши безбашенные достижения в путешествии</legend>
               <!-- https://bugzilla.mozilla.org/show_bug.cgi?id=1230207 -->
               <div class="form-group__fields">
-                <div class="input-checkbox form-group__checkbox-field">
+                <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isSelfie">
                   <input class="input-checkbox__input visually-hidden" id="achievements__isSelfie" type="checkbox" name="isSelfie" value="1" checked>
                   <label class="input-checkbox__title" for="achievements__isSelfie">Сделал селфи с акулой</label>
                 </div>
-                <div class="input-checkbox form-group__checkbox-field">
+                <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isBurnt">
                   <input class="input-checkbox__input visually-hidden" id="achievements__isBurnt" type="checkbox" name="isBurnt" value="1" checked>
                   <label class="input-checkbox__title" for="achievements__isBurnt">Обгорел на пляже</label>
                 </div>
-                <div class="input-checkbox form-group__checkbox-field">
+                <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isSeeChak">
                   <input class="input-checkbox__input visually-hidden" id="achievements__isSeeChak" type="checkbox" name="isSeeChak" value="1">
                   <label class="input-checkbox__title" for="achievements__isSeeChak">Видел Чака Норриса</label>
                 </div>
-                <div class="input-checkbox form-group__checkbox-field">
+                <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isBoughtSouvenirs">
                   <input class="input-checkbox__input visually-hidden" id="achievements__isBoughtSouvenirs" type="checkbox" name="isBoughtSouvenirs" value="1">
                   <label class="input-checkbox__title" for="achievements__isBoughtSouvenirs">Накупил сувениров</label>
                 </div>
-                <div class="input-checkbox form-group__checkbox-field">
+                <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isHeldTower">
                   <input class="input-checkbox__input visually-hidden" id="achievements__isHeldTower" type="checkbox" name="isHeldTower" value="1" checked>
                   <label class="input-checkbox__title" for="achievements__isHeldTower">Удержал башню</label>
                 </div>
-                <div class="input-checkbox form-group__checkbox-field">
+                <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isSmashedHotel">
                   <input class="input-checkbox__input visually-hidden" id="achievements__isSmashedHotel" type="checkbox" name="isSmashedHotel" value="1" >
                   <label class="input-checkbox__title" for="achievements__isSmashedHotel">Разгромил отель</label>
                 </div>
@@ -100,14 +100,16 @@
           <div class="contestant-data__form-contacts form-contacts">
             <fieldset class="form-group">
               <legend class="form-group__title form-group__title--contacts">Контактная информация</legend>
-              <label class="textinput-title textinput-title--form-contacts textinput-title--phone">
-                <span>Номер телефона</span>
-                <input class="text-input text-input--form-contacts" type="tel" placeholder="Номер, пожалуйста">
-              </label>
-              <label class="textinput-title textinput-title--form-contacts textinput-title--email">
-                <span>Адрес почты</span>
-                <input class="text-input text-input--form-contacts" type="email" placeholder="Введите почту *">
-              </label>
+              <div class="form-group__fields">
+                <label class="textinput-title textinput-title--form-contacts textinput-title--phone">
+                  <span>Номер телефона</span>
+                  <input class="text-input text-input--form-contacts" type="tel" placeholder="Номер, пожалуйста">
+                </label>
+                <label class="textinput-title textinput-title--form-contacts textinput-title--email">
+                  <span>Адрес почты</span>
+                  <input class="text-input text-input--form-contacts" type="email" placeholder="Введите почту *">
+                </label>
+              </div>
             </fieldset>
           </div>
           <div class="contestant-data__mobile-platform mobile-platform">
@@ -136,7 +138,7 @@
           <div class="contestant-data__submit">
             <button class="contestant-data__submit-button submit-button" type="submit" name="formSubmit" value="submit">Отправить форму</button>
             <p class="competition-form__required">
-              <span class="competition-form__star">*</span> — обязательные поля
+              <span class="competition-form__star">*</span> — обязательные <span class="competition-form__required-additional">для заполнения</span> поля
             </p>
           </div>
         </form>
@@ -147,7 +149,7 @@
             <button class="popup__close submit-button" type="button" name="button">ЗАКРЫТЬ ОКНО</button>
           </footer>
         </div>
-        <div class="popup popup--fail popup--visible competition-form__popup">
+        <div class="popup popup--fail competition-form__popup"><!--popup--visible-->
           <header class="popup__header">Что-то пошло не так!</header>
           <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <footer class="popup__footer">

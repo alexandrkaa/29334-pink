@@ -62,3 +62,26 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .textinput-title {
+    padding: 0;
+    margin-bottom: 55px;
+
+    &--form-contacts {
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: 370px;
+      margin-bottom: 0;
+
+      &::after {
+        right: 1px;
+      }
+
+      span {
+        margin-top: 12px;
+        text-indent: 17px;
+      }
+    }
+  }
+}

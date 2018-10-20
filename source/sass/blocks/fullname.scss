@@ -11,3 +11,9 @@
     padding-bottom: 25px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .fullname {
+    padding: 0;
+  }
+}

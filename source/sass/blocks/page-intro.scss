@@ -103,12 +103,11 @@
   }
 
   .page-intro__header {
-    max-width: 50%;
     margin: 0 auto;
   }
 
   .page-intro__lead {
-    padding: 90px 0;
+    padding: 90px 95px;
     margin-top: 103px;
     font-size: 18px;
     line-height: 30px;
@@ -116,6 +115,10 @@
     &--pagemain {
       font-size: 40px;
       line-height: 48px;
+    }
+
+    .page--form & {
+      margin-top: 102px;
     }
 
     br {
