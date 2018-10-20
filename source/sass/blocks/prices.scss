@@ -26,12 +26,12 @@
 
 @media (min-width: $desktop-width) {
   .prices {
-    //background: linear-gradient(176deg, $cl-white 0%, $cl-white 147px, $cl-grey-bg 147px, $cl-grey-bg 100%);
     background: $cl-grey-bg url("../img/bg-triangle-white.svg") no-repeat center top;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 145px;
     padding-bottom: 95px;
+    background-size: contain;
 
     .prices__toggles {
       display: none;
