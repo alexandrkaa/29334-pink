@@ -7,6 +7,8 @@
   padding-top: 44px;
   top: 100px;
   text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
 
   &--visible {
     display: block;
@@ -37,4 +39,36 @@
     padding-top: 7px;
   }
   padding: 48px 20px;
+}
+
+.popup__close {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .popup {
+    width: 460px;
+  }
+
+  .popup__header {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 50px;
+    margin-bottom: 20px;
+
+    .popup--fail & {
+      padding: 0 110px;
+    }
+  }
+
+  .popup__text {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    padding: 0 60px;
+  }
+
+  .popup__footer {
+    padding: 50px 20px;
+  }
 }
