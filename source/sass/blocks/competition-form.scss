@@ -34,9 +34,13 @@
 
 @media (min-width: $desktop-width) {
   .competition-form {
+    margin-top: -135px;
+    background-color: $cl-white;
+  }
+
+  .competition-form__wrapper {
     width: $desktop-width;
     margin: 0 auto;
-    margin-top: -135px;
   }
 
   .competition-form__required-additional {

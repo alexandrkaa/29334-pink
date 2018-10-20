@@ -49,112 +49,114 @@
         </section>
       </div>
       <section class="competition-form">
-        <h2 class="competition-form__header visually-hidden">Форма для участия в конкурсе</h2>
-        <form class="competition-form__form contestant-data" action="https://echo.htmlacademy.ru/" method="POST">
-          <div class="contestant-data__fullname fullname">
-            <label class="textinput-title">
-              <span>Фамилия:</span>
-              <input class="text-input" type="text" placeholder="Укажите фамилию *">
-            </label>
-            <label class="textinput-title">
-              <span>Имя:</span>
-              <input class="text-input" type="text" placeholder="Введите ваше имя *">
-            </label>
-            <label class="textinput-title">
-              <span>Отчество:</span>
-              <input class="text-input" type="text" placeholder="Ну и отчество тоже">
-            </label>
-          </div>
-          <div class="contestant-data__achievements achievements">
-            <fieldset class="form-group form-group--achievements">
-              <legend class="form-group__title">Ваши безбашенные достижения в путешествии</legend>
-              <!-- https://bugzilla.mozilla.org/show_bug.cgi?id=1230207 -->
-              <div class="form-group__fields">
-                <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isSelfie">
-                  <input class="input-checkbox__input visually-hidden" id="achievements__isSelfie" type="checkbox" name="isSelfie" value="1" checked>
-                  <label class="input-checkbox__title" for="achievements__isSelfie">Сделал селфи с акулой</label>
+        <div class="competition-form__wrapper">
+          <h2 class="competition-form__header visually-hidden">Форма для участия в конкурсе</h2>
+          <form class="competition-form__form contestant-data" action="https://echo.htmlacademy.ru/" method="POST">
+            <div class="contestant-data__fullname fullname">
+              <label class="textinput-title">
+                <span>Фамилия:</span>
+                <input class="text-input" type="text" placeholder="Укажите фамилию *">
+              </label>
+              <label class="textinput-title">
+                <span>Имя:</span>
+                <input class="text-input" type="text" placeholder="Введите ваше имя *">
+              </label>
+              <label class="textinput-title">
+                <span>Отчество:</span>
+                <input class="text-input" type="text" placeholder="Ну и отчество тоже">
+              </label>
+            </div>
+            <div class="contestant-data__achievements achievements">
+              <fieldset class="form-group form-group--achievements">
+                <legend class="form-group__title">Ваши безбашенные достижения в путешествии</legend>
+                <!-- https://bugzilla.mozilla.org/show_bug.cgi?id=1230207 -->
+                <div class="form-group__fields">
+                  <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isSelfie">
+                    <input class="input-checkbox__input visually-hidden" id="achievements__isSelfie" type="checkbox" name="isSelfie" value="1" checked>
+                    <label class="input-checkbox__title" for="achievements__isSelfie">Сделал селфи с акулой</label>
+                  </div>
+                  <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isBurnt">
+                    <input class="input-checkbox__input visually-hidden" id="achievements__isBurnt" type="checkbox" name="isBurnt" value="1" checked>
+                    <label class="input-checkbox__title" for="achievements__isBurnt">Обгорел на пляже</label>
+                  </div>
+                  <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isSeeChak">
+                    <input class="input-checkbox__input visually-hidden" id="achievements__isSeeChak" type="checkbox" name="isSeeChak" value="1">
+                    <label class="input-checkbox__title" for="achievements__isSeeChak">Видел Чака Норриса</label>
+                  </div>
+                  <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isBoughtSouvenirs">
+                    <input class="input-checkbox__input visually-hidden" id="achievements__isBoughtSouvenirs" type="checkbox" name="isBoughtSouvenirs" value="1">
+                    <label class="input-checkbox__title" for="achievements__isBoughtSouvenirs">Накупил сувениров</label>
+                  </div>
+                  <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isHeldTower">
+                    <input class="input-checkbox__input visually-hidden" id="achievements__isHeldTower" type="checkbox" name="isHeldTower" value="1" checked>
+                    <label class="input-checkbox__title" for="achievements__isHeldTower">Удержал башню</label>
+                  </div>
+                  <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isSmashedHotel">
+                    <input class="input-checkbox__input visually-hidden" id="achievements__isSmashedHotel" type="checkbox" name="isSmashedHotel" value="1" >
+                    <label class="input-checkbox__title" for="achievements__isSmashedHotel">Разгромил отель</label>
+                  </div>
                 </div>
-                <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isBurnt">
-                  <input class="input-checkbox__input visually-hidden" id="achievements__isBurnt" type="checkbox" name="isBurnt" value="1" checked>
-                  <label class="input-checkbox__title" for="achievements__isBurnt">Обгорел на пляже</label>
+              </fieldset>
+            </div>
+            <div class="contestant-data__form-contacts form-contacts">
+              <fieldset class="form-group">
+                <legend class="form-group__title form-group__title--contacts">Контактная информация</legend>
+                <div class="form-group__fields">
+                  <label class="textinput-title textinput-title--form-contacts textinput-title--phone">
+                    <span>Номер телефона</span>
+                    <input class="text-input text-input--form-contacts" type="tel" placeholder="Номер, пожалуйста">
+                  </label>
+                  <label class="textinput-title textinput-title--form-contacts textinput-title--email">
+                    <span>Адрес почты</span>
+                    <input class="text-input text-input--form-contacts" type="email" placeholder="Введите почту *">
+                  </label>
                 </div>
-                <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isSeeChak">
-                  <input class="input-checkbox__input visually-hidden" id="achievements__isSeeChak" type="checkbox" name="isSeeChak" value="1">
-                  <label class="input-checkbox__title" for="achievements__isSeeChak">Видел Чака Норриса</label>
+              </fieldset>
+            </div>
+            <div class="contestant-data__mobile-platform mobile-platform">
+              <fieldset class="form-group">
+                <legend class="form-group__title">С каким приложением путешествовали?</legend>
+                <div class="input-radio">
+                  <input class="input-radio__input visually-hidden" id="mobilePlatform__ios" type="radio" name="mobilePlatform" value="ios" checked>
+                  <label class="input-radio__title" for="mobilePlatform__ios">Pink для iOS</label>
                 </div>
-                <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isBoughtSouvenirs">
-                  <input class="input-checkbox__input visually-hidden" id="achievements__isBoughtSouvenirs" type="checkbox" name="isBoughtSouvenirs" value="1">
-                  <label class="input-checkbox__title" for="achievements__isBoughtSouvenirs">Накупил сувениров</label>
+                <div class="input-radio">
+                  <input class="input-radio__input visually-hidden" id="mobilePlatform__android" type="radio" name="mobilePlatform" value="android">
+                  <label class="input-radio__title" for="mobilePlatform__android">Pink на Android</label>
                 </div>
-                <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isHeldTower">
-                  <input class="input-checkbox__input visually-hidden" id="achievements__isHeldTower" type="checkbox" name="isHeldTower" value="1" checked>
-                  <label class="input-checkbox__title" for="achievements__isHeldTower">Удержал башню</label>
+                <div class="input-radio">
+                  <input class="input-radio__input visually-hidden" id="mobilePlatform__windowsphone" type="radio" name="mobilePlatform" value="windows">
+                  <label class="input-radio__title" for="mobilePlatform__windowsphone">Windows Phone</label>
                 </div>
-                <div class="input-checkbox form-group__checkbox-field form-group__checkbox-field--isSmashedHotel">
-                  <input class="input-checkbox__input visually-hidden" id="achievements__isSmashedHotel" type="checkbox" name="isSmashedHotel" value="1" >
-                  <label class="input-checkbox__title" for="achievements__isSmashedHotel">Разгромил отель</label>
-                </div>
-              </div>
-            </fieldset>
+              </fieldset>
+            </div>
+            <div class="contestant-data__feedback feedback">
+              <fieldset class="form-group form-group--feedback">
+                <legend class="form-group__title">Опишите свои эмоции</legend>
+                  <textarea class="text-input text-input--textarea" name="emotionsFeedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </fieldset>
+            </div>
+            <div class="contestant-data__submit">
+              <button class="contestant-data__submit-button submit-button" type="submit" name="formSubmit" value="submit">Отправить форму</button>
+              <p class="competition-form__required">
+                <span class="competition-form__star">*</span> — обязательные <span class="competition-form__required-additional">для заполнения</span> поля
+              </p>
+            </div>
+          </form>
+          <div class="popup popup--success competition-form__popup">
+            <header class="popup__header">Ваша заявка отправлена</header>
+            <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+            <footer class="popup__footer">
+              <button class="popup__close submit-button" type="button" name="button">ЗАКРЫТЬ ОКНО</button>
+            </footer>
           </div>
-          <div class="contestant-data__form-contacts form-contacts">
-            <fieldset class="form-group">
-              <legend class="form-group__title form-group__title--contacts">Контактная информация</legend>
-              <div class="form-group__fields">
-                <label class="textinput-title textinput-title--form-contacts textinput-title--phone">
-                  <span>Номер телефона</span>
-                  <input class="text-input text-input--form-contacts" type="tel" placeholder="Номер, пожалуйста">
-                </label>
-                <label class="textinput-title textinput-title--form-contacts textinput-title--email">
-                  <span>Адрес почты</span>
-                  <input class="text-input text-input--form-contacts" type="email" placeholder="Введите почту *">
-                </label>
-              </div>
-            </fieldset>
+          <div class="popup popup--fail competition-form__popup"><!--popup--visible-->
+            <header class="popup__header">Что-то пошло не так!</header>
+            <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <footer class="popup__footer">
+              <button class="popup__close submit-button" type="button" name="button">OK</button>
+            </footer>
           </div>
-          <div class="contestant-data__mobile-platform mobile-platform">
-            <fieldset class="form-group">
-              <legend class="form-group__title">С каким приложением путешествовали?</legend>
-              <div class="input-radio">
-                <input class="input-radio__input visually-hidden" id="mobilePlatform__ios" type="radio" name="mobilePlatform" value="ios" checked>
-                <label class="input-radio__title" for="mobilePlatform__ios">Pink для iOS</label>
-              </div>
-              <div class="input-radio">
-                <input class="input-radio__input visually-hidden" id="mobilePlatform__android" type="radio" name="mobilePlatform" value="android">
-                <label class="input-radio__title" for="mobilePlatform__android">Pink на Android</label>
-              </div>
-              <div class="input-radio">
-                <input class="input-radio__input visually-hidden" id="mobilePlatform__windowsphone" type="radio" name="mobilePlatform" value="windows">
-                <label class="input-radio__title" for="mobilePlatform__windowsphone">Windows Phone</label>
-              </div>
-            </fieldset>
-          </div>
-          <div class="contestant-data__feedback feedback">
-            <fieldset class="form-group form-group--feedback">
-              <legend class="form-group__title">Опишите свои эмоции</legend>
-                <textarea class="text-input text-input--textarea" name="emotionsFeedback" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </fieldset>
-          </div>
-          <div class="contestant-data__submit">
-            <button class="contestant-data__submit-button submit-button" type="submit" name="formSubmit" value="submit">Отправить форму</button>
-            <p class="competition-form__required">
-              <span class="competition-form__star">*</span> — обязательные <span class="competition-form__required-additional">для заполнения</span> поля
-            </p>
-          </div>
-        </form>
-        <div class="popup popup--success competition-form__popup">
-          <header class="popup__header">Ваша заявка отправлена</header>
-          <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-          <footer class="popup__footer">
-            <button class="popup__close submit-button" type="button" name="button">ЗАКРЫТЬ ОКНО</button>
-          </footer>
-        </div>
-        <div class="popup popup--fail competition-form__popup"><!--popup--visible-->
-          <header class="popup__header">Что-то пошло не так!</header>
-          <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <footer class="popup__footer">
-            <button class="popup__close submit-button" type="button" name="button">OK</button>
-          </footer>
         </div>
       </section>
     </main>

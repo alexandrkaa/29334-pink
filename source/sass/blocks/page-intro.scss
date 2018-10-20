@@ -56,10 +56,6 @@
       padding-bottom: 48px;
     }
 
-    br {
-      display: inline;
-    }
-
     .page__intro-wrapper--pagemain & {
       width: 300px;
       padding: 0 20px;
@@ -89,6 +85,12 @@
 
     .page--form & {
       padding: 0;
+    }
+
+    .page--photo-page & {
+      padding: 0;
+      padding-left: 140px;
+      padding-right: 140px;
     }
   }
 
@@ -124,10 +126,6 @@
 
     .page--form & {
       margin-top: 102px;
-    }
-
-    .page--photo-page & {
-      margin-top: 30px;
     }
 
     br {

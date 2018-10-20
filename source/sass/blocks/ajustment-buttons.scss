@@ -1,6 +1,8 @@
 .ajustment-buttons {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
 }
 
 .ajustment-buttons__button {
@@ -11,6 +13,16 @@
   background-color: $cl-grey-bg;
   background-position: center center;
   background-repeat: no-repeat;
+
+  &--checked {
+    & + .ajustment-buttons__button--range {
+      display: block;
+      position: absolute;
+      top: 97px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .ajustment-buttons__button--crop {
@@ -29,16 +41,11 @@
 // https://github.com/darlanrod/input-range-scss
 .ajustment-buttons__button--range {
   display: none;
-  margin: 6px 0;
-  margin-top: 20px;
+  margin: 0;
   width: 240px;
   height: auto;
   margin-bottom: 35px;
   -webkit-appearance: none;
-
-  &:last-of-type {
-    display: block;
-  }
 }
 
 .ajustment-buttons__button--range:focus {
@@ -149,6 +156,7 @@
   flex-direction: column;
   padding: 26px 20px;
   padding-bottom: 12px;
+  margin-top: 56px;
 }
 
 .ajustment-buttons__form-controls {
@@ -173,32 +181,47 @@
   border-color: $cl-grey-border;
 }
 
+.ajustment-buttons__button-wrapper {
+  display: flex;
+}
+
 @media (min-width: $tablet-width) {
   .ajustment-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    display: block;
+    position: static;
+  }
+
+  .ajustment-buttons__button-wrapper {
+    margin-bottom: 49px;
+  }
+
+  .ajustment-buttons__submit {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 47px;
   }
 
   .ajustment-buttons__button:not(.ajustment-buttons__button--range) {
     width: 24px;
     height: 24px;
-    background-size: 24px 24px;
     background-position: center center;
     position: relative;
     margin-right: 28px;
     margin-left: 7px;
-    margin-bottom: 48px;
+  }
 
-    &::after {
-      content: "";
-      width: 260px;
-      height: 1px;
-      background-color: $cl-grey-border;
-      display: block;
-      top: 47px;
-      left: 0;
-      position: absolute;
+  .ajustment-buttons__button {
+    background-size: 24px 24px;
+    width: 100%;
+
+    &--checked {
+      & + .ajustment-buttons__button--range {
+        display: block;
+        position: static;
+        top: 0;
+        left: 0%;
+        transform: translateX(0);
+      }
     }
   }
 
@@ -208,9 +231,7 @@
 
   .ajustment-buttons__button--range {
     display: block;
-    flex-grow: 1;
-    width: calc(100% - 60px);
-    margin-top: 11px;
+    margin: 0;
   }
 
   .ajustment-buttons__form-controls {
@@ -219,11 +240,37 @@
 }
 
 @media (min-width: $desktop-width) {
+  .ajustment-buttons__button-wrapper {
+    margin-bottom: 25px;
+    border-bottom: 1px solid $cl-grey-border;
+  }
+
   .ajustment-buttons__button:not(.ajustment-buttons__button--range) {
     width: 44px;
     height: 44px;
     margin: 0;
+    margin-right: 55px;
+  }
+
+  .ajustment-buttons__button--range {
+    margin-right: 30px;
+  }
+
+  .ajustment-buttons__button {
     background-size: 44px 44px;
-    margin-bottom: 30px;
+  }
+
+  .ajustment-buttons__button--contrast {
+    background-size: 32px 32px;
+  }
+
+  .ajustment-buttons__submit {
+    flex-direction: row;
+    margin-top: 120px;
+  }
+
+  .ajustment-buttons__form-controls {
+    min-width: 183px;
+    box-sizing: border-box;
   }
 }

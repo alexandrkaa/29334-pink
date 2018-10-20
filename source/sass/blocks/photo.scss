@@ -74,12 +74,6 @@
     padding: 0;
   }
 
-  // !!! tmp
-  .photo__image {
-    min-height: 300px;
-  }
-  // !!! tmp
-
   .photo__label {
     font-size: 12px;
     line-height: 36px;
@@ -110,6 +104,14 @@
   }
 
   .photo--panorama {
+    overflow: hidden;
+
+    .photo__image {
+      max-width: none;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+
     .photo__description {
       display: flex;
       flex-direction: row;
@@ -142,6 +144,10 @@
 
     margin-bottom: 50px;
   }
+
+  .editor__image {
+    max-width: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -156,15 +162,8 @@
 
   .photo--panorama {
     margin-top: -220px;
-    overflow: hidden;
     background-color: $cl-white;
     margin-bottom: 50px;
-
-    .photo__image {
-      max-width: none;
-      margin-left: 50%;
-      transform: translateX(-50%);
-    }
 
     .photo__description {
       max-width: 1200px;

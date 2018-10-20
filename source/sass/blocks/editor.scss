@@ -13,6 +13,8 @@
 
 .editor__controls-wrapper {
   margin-top: 25px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
@@ -25,6 +27,10 @@
   .editor__controls-wrapper {
     margin-top: 9px;
   }
+
+  .editor__ajustment {
+    padding-left: 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -32,8 +38,13 @@
     padding-left: 80px;
   }
 
+  .editor__ajustment {
+    padding-right: 60px;
+    padding-left: 33px;
+  }
+
   .editor__controls-wrapper {
-    padding-left: 50px;
+    padding-left: 60px;
     margin-top: 0;
   }
 
