@@ -1,3 +1,40 @@
 .popup {
   display: none;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  position: fixed;
+  background-color: $cl-white;
+  width: $mobile-width;
+  padding-top: 44px;
+  top: 100px;
+  text-align: center;
+
+  &--visible {
+    display: block;
+  }
+}
+
+.popup__header {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 0 20px;
+  margin-bottom: 25px;
+}
+
+.popup__text {
+  padding: 0 20px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.popup__footer {
+  .popup--success & {
+    background-color: $cl-grey-bg;
+  }
+
+  .popup--fail & {
+    padding-bottom: 50px;
+    padding-top: 7px;
+  }
+  padding: 48px 20px;
 }
