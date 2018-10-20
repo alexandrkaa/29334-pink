@@ -45,7 +45,7 @@
   width: 240px;
   height: auto;
   margin-bottom: 35px;
-  -webkit-appearance: none;
+  //-webkit-appearance: none;
 }
 
 .ajustment-buttons__button--range:focus {
@@ -63,7 +63,7 @@
 }
 
 .ajustment-buttons__button--range::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  //-webkit-appearance: none;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
   border: 2px solid #d4325d;
   height: 14px;
