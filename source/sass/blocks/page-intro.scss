@@ -51,6 +51,11 @@
       color: $cl-white;
     }
 
+    .page--form & {
+      margin-top: 85px;
+      padding-bottom: 48px;
+    }
+
     br {
       display: inline;
     }
@@ -81,6 +86,14 @@
     padding: 0;
     font-size: 50px;
     line-height: 60px;
+
+    .page--form & {
+      padding: 0;
+    }
+  }
+
+  .page-intro__sublead {
+    display: block;
   }
 }
 

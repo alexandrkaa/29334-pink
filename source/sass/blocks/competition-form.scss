@@ -19,6 +19,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .competition-form {
+    margin-top: 5px;
+  }
+
   .competition-form__required {
     margin: 0;
   }

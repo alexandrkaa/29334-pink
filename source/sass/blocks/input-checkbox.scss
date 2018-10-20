@@ -43,3 +43,9 @@
     background-color: transparent;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .input-checkbox__title {
+    padding-left: 60px;
+  }
+}

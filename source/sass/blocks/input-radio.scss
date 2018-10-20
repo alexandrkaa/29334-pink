@@ -45,3 +45,17 @@
     background-color: $cl-pink;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .input-radio {
+    margin-bottom: 37px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .input-radio__title {
+    padding-left: 60px;
+  }
+}

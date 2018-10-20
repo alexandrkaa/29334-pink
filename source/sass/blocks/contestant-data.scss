@@ -35,10 +35,17 @@
 
   .contestant-data__achievements {
     order: 4;
+    margin-top: 45px;
+    padding: 0 20px;
   }
 
   .contestant-data__form-contacts {
     order: 3;
+    margin-top: 33px;
+
+    .form-group {
+      padding: 25px 38px;
+    }
   }
 
   .contestant-data__mobile-platform {
@@ -47,6 +54,8 @@
 
   .contestant-data__feedback {
     order: 5;
+    margin-top: 45px;
+    margin-bottom: 0;
   }
 
   .contestant-data__submit {
@@ -55,6 +64,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    margin-top: 67px;
+    margin-bottom: 50px;
   }
 
   .contestant-data__submit-button {

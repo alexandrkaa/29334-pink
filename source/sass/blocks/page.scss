@@ -36,6 +36,17 @@
     }
   }
 
+  .page--form {
+    .page__intro-wrapper {
+      margin-top: -235px;
+    }
+
+    .page-intro {
+      margin-top: 300px;
+      margin-bottom: 0;
+    }
+  }
+
   .page__intro-wrapper {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     min-height: 729px;

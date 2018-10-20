@@ -8,5 +8,11 @@
   text-transform: uppercase;
   border-radius: 2px;
   width: 280px;
-  padding: 16px 0;
+  padding: 15px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .submit-button {
+    width: 300px;
+  }
 }

@@ -26,21 +26,31 @@
 @media (min-width: $tablet-width) {
   .form-group {
     border: 2px solid $cl-grey-border;
-    padding: 0 60px;
+    padding: 33px 58px;
+    padding-bottom: 52px;
+
+    &--feedback {
+      padding-bottom: 43px;
+      padding-top: 20px;
+    }
+
+    &--achievements {
+      padding-top: 32px;
+      padding-bottom: 5px;
+    }
   }
 
   .form-group__title {
-    padding: 13px 25px;
-  }
+    padding: 13px 35px;
 
-  .form-group--feedback,
-  .form-group--achievements {
-    padding-bottom: 53px;
-    padding-top: 40px;
-  }
+    &--contacts {
+      display: block;
+    }
 
-  .form-group__title--contacts {
-    display: block;
+    .form-group--feedback & {
+      padding-bottom: 15px;
+      padding-top: 11px;
+    }
   }
 }
 
