@@ -2,7 +2,9 @@
   padding: 0;
   padding-top: 100px;
   padding-bottom: 12px;
-  background: linear-gradient(176deg, $cl-white 0%, $cl-white 35px, $cl-grey-bg 35px, $cl-grey-bg 100%);
+  //background: linear-gradient(176deg, $cl-white 0%, $cl-white 35px, $cl-grey-bg 35px, $cl-grey-bg 100%);
+  background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat center top;
+  background-size: contain;
 }
 
 .prices__toggles {
@@ -11,7 +13,6 @@
 
 @media (min-width: $tablet-width) {
   .prices {
-    background: linear-gradient(176deg, $cl-white 0%, $cl-white 70px, $cl-grey-bg 70px, $cl-grey-bg 100%);
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 110px;
@@ -26,12 +27,10 @@
 
 @media (min-width: $desktop-width) {
   .prices {
-    background: $cl-grey-bg url("../img/bg-triangle-white.svg") no-repeat center top;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 145px;
     padding-bottom: 95px;
-    background-size: contain;
 
     .prices__toggles {
       display: none;
