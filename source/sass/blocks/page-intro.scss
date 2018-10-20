@@ -9,9 +9,18 @@
   text-align: center;
   margin: 0;
   line-height: 28px;
-  padding: 87px 20px;
-  padding-top: 95px;
-  padding-bottom: 73px;
+
+  .page--photo-page & {
+    padding: 87px 20px;
+    padding-top: 95px;
+    padding-bottom: 73px;
+  }
+
+  .page--form & {
+    padding: 0 20px;
+    padding-top: 95px;
+    margin-bottom: 55px;
+  }
 }
 
 .page-intro__lead {
@@ -90,6 +99,11 @@
     margin-top: 103px;
     font-size: 18px;
     line-height: 30px;
+
+    &--pagemain {
+      font-size: 40px;
+      line-height: 48px;
+    }
 
     br {
       display: inline;

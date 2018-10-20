@@ -1,7 +1,13 @@
+.competition-form {
+  margin-top: -70px;
+  background-color: $cl-white;
+}
+
 .competition-form__required {
   text-align: center;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 14px 0;
 }
 
 .competition-form__star {
