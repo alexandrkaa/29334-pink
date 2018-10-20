@@ -26,3 +26,19 @@
     margin-top: 9px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .editor {
+    padding-left: 80px;
+  }
+
+  .editor__controls-wrapper {
+    padding-left: 50px;
+    margin-top: 0;
+  }
+
+  .editor__image {
+    margin: 0;
+    max-width: none;
+  }
+}

@@ -145,13 +145,36 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photo--panorama {
-    margin-top: -220px;
+  .photo {
+    margin-bottom: 0;
   }
 
-  .photo__description {
-    .photo--panorama & {
+  .photo__description-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .photo--panorama {
+    margin-top: -220px;
+    overflow: hidden;
+    background-color: $cl-white;
+    margin-bottom: 50px;
+
+    .photo__image {
+      max-width: none;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .photo__description {
+      max-width: 1200px;
+      box-sizing: border-box;
       margin: 0 10px;
     }
+  }
+
+  .photo__label {
+    top: 53px;
+    right: 10px;
   }
 }

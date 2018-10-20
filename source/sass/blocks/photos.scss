@@ -45,14 +45,30 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photos {
+    padding-bottom: 65px;
+  }
+
+  .photos__list-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
   .photos__list {
-    padding: 0 120px;
+    padding: 0 10px;
     margin: 0 -10px;
+    max-width: 960px;
   }
 
   .photos__item {
     width: (100% /3);
     padding: 0 10px;
     box-sizing: border-box;
+    margin-bottom: 52px;
+  }
+
+  .photos__lead-wrapper {
+    margin-top: 9px;
+    margin-bottom: 0;
   }
 }
