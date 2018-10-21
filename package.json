@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "node-normalize-scss": "^8.0.0",
+    "node.normalize.scss": "^3.0.3",
     "normalize-scss": "^7.0.1",
     "npx": "^10.2.0"
   }

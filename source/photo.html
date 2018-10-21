@@ -8,6 +8,7 @@
   </head>
   <body class="page-body">
     <div style="display:none">
+      <include src="build/img/logo-sprite.svg"></include>
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="main-header">
@@ -32,12 +33,9 @@
           </ul>
         </nav>
         <a class="main-header__logo logo" href="index.html">
-          <picture class="logo__image">
-            <source media="(max-width: 659px)" srcset="img/logo-pink-white-mobile.svg">
-            <source media="(max-width: 959px))" srcset="img/logo-pink-white-tablet.svg">
-            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-            <img src="img/logo-pink-white-mobile.svg" alt="Логотип приложения PINK">
-          </picture>
+          <svg class="main-header__logo-image logo__image" width="147px" height="41px">
+            <use xlink:href="#header-logo"></use>
+          </svg>
         </a>
       </div>
     </header>
@@ -263,13 +261,11 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__logo">
-        <a href="index.html" class="logo logo--footer">
-          <picture class="logo__image">
-            <source media="(max-width: 959px)" srcset="img/logo-pink-blue-mobile.svg">
-            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения PINK">
-          </picture>
+      <div class="footer__logo-block">
+        <a class="footer__logo" href="index.html">
+          <svg class="footer__logo-image logo__image" width="147px" height="41px">
+            <use xlink:href="#footer-logo"></use>
+          </svg>
         </a>
       </div>
       <div class="footer__social-links">

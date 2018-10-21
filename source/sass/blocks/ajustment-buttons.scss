@@ -62,7 +62,9 @@
   width: 240px;
   height: auto;
   margin-bottom: 35px;
+  /* stylelint-disable */
   -webkit-appearance: none;
+  /* stylelint-enable */
 }
 
 .ajustment-buttons__button--range:focus {
@@ -80,7 +82,9 @@
 }
 
 .ajustment-buttons__button--range::-webkit-slider-thumb {
+  /* stylelint-disable */
   -webkit-appearance: none;
+  /* stylelint-enable */
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
   border: 2px solid #d4325d;
   height: 14px;
@@ -209,7 +213,6 @@
   }
 
   .ajustment-buttons__button-wrapper {
-    //margin-bottom: 50px;
     height: 22px;
     border-bottom: 1px solid $cl-grey-border;
     padding-bottom: 24px;
@@ -227,13 +230,6 @@
     padding: 0 10px;
     margin-top: 0;
   }
-
-  // .ajustment-buttons__button:not(.ajustment-buttons__button--range) {
-  //   background-position: center center;
-  //   position: relative;
-  //   margin-right: 28px;
-  //   margin-left: 4px;
-  // }
 
   .ajustment-buttons__icon {
     fill: $cl-pink;

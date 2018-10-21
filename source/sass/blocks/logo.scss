@@ -11,10 +11,6 @@
   }
 }
 
-.logo__image {
-  margin: auto 0;
-  margin-left: 20px;
-}
 
 @media (min-width: $tablet-width) {
   .logo {
@@ -25,9 +21,19 @@
       margin-bottom: 15px;
     }
   }
+
+  .logo__image {
+    margin: auto 0;
+    margin-left: 20px;
+  }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
+  .logo {
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
   .logo__image {
     margin-left: 0;
   }
