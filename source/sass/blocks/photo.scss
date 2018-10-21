@@ -173,3 +173,9 @@
     right: 10px;
   }
 }
+
+@media (min-width: 1200px) {
+  .photo__label {
+    right: calc((100% - 1200px) / 2 + 10px);
+  }
+}
