@@ -20,16 +20,18 @@
 @media (min-width: $tablet-width) {
   .editor {
     display: flex;
-    padding: 58px 0;
-    padding-bottom: 25px;
+    padding: 60px 0;
+    padding-bottom: 38px;
   }
 
   .editor__controls-wrapper {
-    margin-top: 9px;
+    margin-top: 10px;
   }
 
   .editor__ajustment {
-    padding-left: 20px;
+    padding-left: 28px;
+    padding-right: 20px;
+    margin-bottom: 50px;
   }
 
   .editor__image {
@@ -40,6 +42,8 @@
 @media (min-width: $desktop-width) {
   .editor {
     padding-left: 80px;
+    padding-top: 55px;
+    padding-bottom: 30px;
   }
 
   .editor__ajustment {
