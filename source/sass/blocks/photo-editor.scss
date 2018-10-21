@@ -1,9 +1,16 @@
 .photo-editor {
-  padding-top: 20px;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-editor {
+    padding: 25px 0;
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .photo-editor {
-    padding: 0 120px;
+    padding: 0 10px;
   }
 }

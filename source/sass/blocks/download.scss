@@ -1,6 +1,6 @@
 .download {
   background-color: $cl-blue-dark;
-  padding: 28px 20px 32px 20px;
+  padding: 26px 20px 22px 20px;
 }
 
 .download__platforms {
@@ -8,12 +8,33 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  font-family: "Open Sans Light", sans-serif;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 @media (min-width: $tablet-width) {
   .download {
-    width: 300px;
+    width: 310px;
     background-color: transparent;
+    padding: 0 20px;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+
+  .download__platforms {
+    font-size: 18px;
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    padding: 0 10px;
+    margin-bottom: 0;
+  }
+
+  .download__platforms {
+    margin-top: 55px;
   }
 }

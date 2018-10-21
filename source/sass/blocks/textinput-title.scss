@@ -13,18 +13,75 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 52px;
     padding: 0 20px;
     text-indent: 0;
-  }
 
-  .textinput-title--form-contacts {
-    & span {
-      order: 1;
-      margin-top: 10px;
+    &:last-child {
+      margin-bottom: 0;
     }
-    flex-direction: column;
-    text-indent: 22px;
-    align-items: flex-start;
+
+    &--form-contacts {
+      margin-bottom: 30px;
+
+      & span {
+        order: 1;
+        margin-top: 10px;
+      }
+
+      flex-direction: column;
+      text-indent: 22px;
+      align-items: flex-start;
+
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 60px;
+        height: 60px;
+        display: block;
+        position: absolute;
+        top: 1px;
+        right: 21px;
+        background-color: $cl-grey-bg;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--phone {
+      &::after {
+        background-image: url("../img/icon-phone.svg");
+      }
+    }
+
+    &--email {
+      &::after {
+        background-image: url("../img/icon-mail.svg");
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textinput-title {
+    padding: 0;
+    margin-bottom: 55px;
+
+    &--form-contacts {
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: 370px;
+      margin-bottom: 0;
+
+      &::after {
+        right: 1px;
+      }
+
+      span {
+        margin-top: 12px;
+        text-indent: 17px;
+      }
+    }
   }
 }

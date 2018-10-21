@@ -2,13 +2,33 @@
   box-shadow: 0 1px 0 0 #000000;
   margin-bottom: 1px;
   display: flex;
+  height: 65px;
 
-  .main-header & {
-    height: 69px;
+  &--footer {
+    box-shadow: none;
+    justify-content: center;
+    height: auto;
   }
 }
 
 .logo__image {
   margin: auto 0;
   margin-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    height: 110px;
+
+    &--footer {
+      height: auto;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    margin-left: 0;
+  }
 }

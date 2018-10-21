@@ -1,6 +1,7 @@
 .features {
-  background: linear-gradient(174deg, $cl-white 0%, $cl-white 205px, $cl-grey-bg 205px, $cl-grey-bg 100%);
-  padding: 0 20px;
+  background: linear-gradient(174deg, $cl-white 0%, $cl-white 248px, $cl-grey-bg 248px, $cl-grey-bg 100%);
+  padding: 20px;
+  padding-bottom: 0;
 }
 
 .features__lead {
@@ -8,13 +9,16 @@
     display: none;
   }
   font-size: 24px;
-  margin: 40px 0;
+  margin-bottom: 40px;
+  margin-top: 23px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .features {
     position: relative;
+    background: linear-gradient(176deg, $cl-white 0%, $cl-white 285px, $cl-grey-bg 285px, $cl-grey-bg 100%);
+    padding-top: 40px;
   }
 
   .features__lead {
@@ -23,13 +27,18 @@
     }
     font-size: 40px;
     line-height: 40px;
+    margin: 10px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features {
+    min-width: $desktop-width;
     position: static;
-    background: linear-gradient(174deg, $cl-white 0%, $cl-white 290px, $cl-grey-bg 290px, $cl-grey-bg 100%);
+    background: linear-gradient(176deg, $cl-white 0%, $cl-white 400px, $cl-grey-bg 400px, $cl-grey-bg 100%);
+    margin: 0 auto;
+    padding-top: 60px;
+    box-sizing: border-box;
   }
 
   .features__lead {

@@ -1,11 +1,34 @@
 .reviews {
-  padding: 0 20px;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.reviews__toggles {
+  margin: 22px;
+}
+
+.reviews__control {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__toggles {
+    margin: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding: 0 120px;
-    padding-top: 190px;
+    padding: 0 10px;
+    padding-top: 120px;
     background: $cl-white url("../img/icon-quotes.svg") no-repeat center 72px;
+  }
+
+  .reviews__control {
+    display: block;
+  }
+
+  .reviews__toggles {
+    display: none;
   }
 }

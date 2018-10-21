@@ -3,19 +3,29 @@
   flex-direction: column;
 }
 
+.contestant-data__achievements {
+  margin-top: 15px;
+}
+
+.contestant-data__form-contacts {
+  margin-top: 30px;
+}
+
+.contestant-data__mobile-platform {
+  margin-top: 20px;
+}
+
+.contestant-data__feedback {
+  margin-top: 0;
+}
+
+.contestant-data__submit {
+  padding-top: 3px;
+}
+
 .contestant-data__submit-button {
   margin: 0 20px;
-  margin-bottom: 40px;
-  display: block;
-  background-color: $cl-green;
-  border: 2px solid $cl-green;
-  color: $cl-white;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  border-radius: 2px;
-  width: 280px;
-  padding: 16px 0;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
@@ -25,10 +35,17 @@
 
   .contestant-data__achievements {
     order: 4;
+    margin-top: 45px;
+    padding: 0 20px;
   }
 
   .contestant-data__form-contacts {
     order: 3;
+    margin-top: 43px;
+
+    .form-group {
+      padding: 25px 38px;
+    }
   }
 
   .contestant-data__mobile-platform {
@@ -37,6 +54,8 @@
 
   .contestant-data__feedback {
     order: 5;
+    margin-top: 45px;
+    margin-bottom: 0;
   }
 
   .contestant-data__submit {
@@ -45,6 +64,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    margin-top: 67px;
+    margin-bottom: 50px;
   }
 
   .contestant-data__submit-button {
@@ -54,33 +75,47 @@
 
 @media (min-width: $desktop-width) {
   .contestant-data {
-    padding: 0 120px;
+    padding: 0 10px;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .contestant-data__fullname {
-    flex-grow: 1;
+    width: 435px;
+    margin-right: 72px;
+    margin-top: 35px;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
   .contestant-data__achievements {
     flex-grow: 2;
+    padding: 0;
   }
 
   .contestant-data__form-contacts {
     flex-grow: 2;
+    margin-top: 43px;
+
+    .form-group {
+      padding: 21px 38px;
+      padding-bottom: 14px;
+    }
   }
 
   .contestant-data__mobile-platform {
     flex-grow: 1;
+    margin-top: 10px;
   }
 
   .contestant-data__feedback {
     flex-grow: 2;
+    margin-top: 0;
   }
 
   .contestant-data__submit {
     width: 100%;
-    padding: 0 10px;
+    padding: 0;
+    margin-bottom: 0;
   }
 }

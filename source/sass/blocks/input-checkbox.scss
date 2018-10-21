@@ -9,8 +9,9 @@
 
 .input-checkbox__title {
   display: flex;
-  padding-left: 60px;
+  padding-left: 70px;
   position: relative;
+  min-height: 40px;
 
   &::before {
     content: "";
@@ -41,5 +42,17 @@
   &::after {
     display: block;
     background-color: transparent;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .input-checkbox__title {
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input-checkbox__title {
+    padding-left: 65px;
   }
 }

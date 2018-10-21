@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 74px;
+  margin-right: 74px;
 }
 
 .social-list__item {
@@ -22,4 +22,11 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
 }

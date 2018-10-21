@@ -1,7 +1,5 @@
 .feedback {
   padding: 0 20px;
-  margin-bottom: 13px;
-  margin-top: 40px;
 }
 
 .feedback__lead {
@@ -14,6 +12,6 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
-    padding: 0 10px;
+    padding: 0;
   }
 }

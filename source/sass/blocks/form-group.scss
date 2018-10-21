@@ -11,7 +11,12 @@
   text-transform: uppercase;
   color: $cl-pink;
   text-align: center;
-  padding: 40px 0;
+  padding: 40px 20px;
+
+  .form-group--feedback & {
+    padding-bottom: 15px;
+    padding-top: 38px;
+  }
 }
 
 .form-group__title--contacts {
@@ -21,25 +26,59 @@
 @media (min-width: $tablet-width) {
   .form-group {
     border: 2px solid $cl-grey-border;
-    padding: 0 60px;
+    padding: 33px 58px;
+    padding-bottom: 52px;
+
+    &--feedback {
+      padding-bottom: 43px;
+      padding-top: 20px;
+    }
+
+    &--achievements {
+      padding-top: 32px;
+      padding-bottom: 5px;
+    }
   }
 
   .form-group__title {
-    padding: 13px 25px;
-  }
+    padding: 13px 35px;
 
-  .form-group--feedback,
-  .form-group--achievements {
-    padding-bottom: 53px;
-    padding-top: 40px;
-  }
+    &--contacts {
+      display: block;
+    }
 
-  .form-group__title--contacts {
-    display: block;
+    .form-group--feedback & {
+      padding-bottom: 15px;
+      padding-top: 11px;
+    }
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
+  .form-group {
+    padding: 20px;
+    padding-bottom: 55px;
+
+    &--form-contacts {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    &--achievements {
+      padding: 20px 58px 55px 58px;
+
+      .form-group__fields {
+        margin-top: 9px;
+        justify-content: space-between;
+      }
+    }
+
+    &--feedback {
+      padding: 20px 58px;
+      padding-bottom: 35px;
+    }
+  }
+
   .form-group__fields {
     display: flex;
     flex-direction: row;
@@ -48,6 +87,34 @@
   }
 
   .form-group__checkbox-field {
-    width: 33.333333%;
+    width: auto;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+
+    &--isSelfie {
+      order: 1;
+    }
+
+    &--isSeeChak {
+      order: 2;
+      margin-right: 5px;
+    }
+
+    &--isHeldTower {
+      order: 3;
+    }
+
+    &--isBurnt {
+      order: 4;
+      margin-right: 30px;
+    }
+
+    &--isBoughtSouvenirs {
+      order: 5;
+    }
+
+    &--isSmashedHotel {
+      order: 6;
+    }
   }
 }

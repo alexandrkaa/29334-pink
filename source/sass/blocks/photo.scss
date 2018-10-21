@@ -13,7 +13,7 @@
     margin: 0 20px;
   }
   background-color: $cl-grey-bg;
-  padding: 25px 20px;
+  padding: 20px;
 }
 
 .photo__label {
@@ -29,7 +29,6 @@
   text-align: center;
   top: 0;
   right: 20px;
-  padding: 4px 0;
 }
 
 .photo__username {
@@ -50,10 +49,17 @@
 .photo__like-wrapper {
   margin: 0;
   display: flex;
+  margin-top: 7px;
 }
 
 .photo__heart {
-  margin-right: 20px;
+  margin: auto 0;
+  margin-right: 19px;
+  margin-left: -3px;
+  width: 13px;
+  height: 15px;
+  border: 0;
+  background: url("../img/icon-heart.svg") no-repeat center center;
 }
 
 .photo__like-counter {
@@ -68,19 +74,102 @@
     padding: 0;
   }
 
-  .photo__description {
-    padding: 20px;
+  .photo__label {
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: bold;
+    top: 58px;
   }
 
-  .photo__description-text {
-    min-height: 155px;
+  .photo__description {
+    padding: 25px;
+    min-height: 105px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo__like-wrapper {
+    display: flex;
+    margin-top: auto;
+  }
+
+  .photo__like-counter {
+    order: 1;
+  }
+
+  .photo__heart {
+    order: 2;
+    margin-left: auto;
+    margin-right: 7px;
+  }
+
+  .photo--panorama {
+    overflow: hidden;
+
+    .photo__image {
+      max-width: none;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .photo__description {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 20px 28px;
+      min-height: 0;
+    }
+
+    .photo__username {
+      order: 1;
+    }
+
+    .photo__like-wrapper {
+      order: 2;
+      margin-left: auto;
+      margin-top: 4px;
+    }
+
+    .photo__heart {
+      margin: 3px 0;
+      margin-left: 17px;
+    }
+
+    .photo__description-text {
+      min-height: 0;
+      order: 3;
+      width: 100%;
+      padding-bottom: 5px;
+    }
+
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .photo__description {
-    .photo--panorama & {
-      margin: 0 120px;
+  .photo {
+    margin-bottom: 0;
+  }
+
+  .photo__description-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .photo--panorama {
+    margin-top: -220px;
+    background-color: $cl-white;
+    margin-bottom: 50px;
+
+    .photo__description {
+      max-width: 1200px;
+      box-sizing: border-box;
+      margin: 0 10px;
     }
+  }
+
+  .photo__label {
+    top: 53px;
+    right: 10px;
   }
 }

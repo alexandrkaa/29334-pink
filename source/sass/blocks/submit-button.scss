@@ -1,0 +1,18 @@
+.submit-button {
+  display: block;
+  background-color: $cl-green;
+  border: 2px solid $cl-green;
+  color: $cl-white;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  width: 280px;
+  padding: 15px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .submit-button {
+    width: 300px;
+  }
+}

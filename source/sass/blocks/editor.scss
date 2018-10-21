@@ -1,20 +1,59 @@
 .editor {
   background-color: $cl-grey-bg;
+  padding: 20px 0;
 }
 
 .editor__ajustment {
   padding: 0 40px;
-  margin-top: 45px;
-  border-bottom: 1px solid #dddfe0;
 }
 
 .editor__image {
   margin: 0 20px;
 }
 
+.editor__controls-wrapper {
+  margin-top: 25px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 @media (min-width: $tablet-width) {
   .editor {
     display: flex;
-    padding: 55px 0;
+    padding: 58px 0;
+    padding-bottom: 25px;
+  }
+
+  .editor__controls-wrapper {
+    margin-top: 9px;
+  }
+
+  .editor__ajustment {
+    padding-left: 20px;
+  }
+
+  .editor__image {
+    max-width: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .editor {
+    padding-left: 80px;
+  }
+
+  .editor__ajustment {
+    padding-right: 60px;
+    padding-left: 33px;
+  }
+
+  .editor__controls-wrapper {
+    padding-left: 60px;
+    margin-top: 0;
+  }
+
+  .editor__image {
+    margin: 0;
+    max-width: none;
   }
 }
