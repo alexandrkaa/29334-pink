@@ -38,11 +38,13 @@
     background: linear-gradient(176deg, $cl-white 0%, $cl-white 400px, $cl-grey-bg 400px, $cl-grey-bg 100%);
     margin: 0 auto;
     padding-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
     box-sizing: border-box;
   }
 
   .features__lead {
     font-size: 50px;
-    line-height: 50px;
+    line-height: 55px;
   }
 }
