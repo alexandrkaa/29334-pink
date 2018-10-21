@@ -33,7 +33,22 @@
   margin-right: 15px;
 }
 
-.footer__copyright-logo path {
+.footer__copyright-logo-link {
+  &:hover {
+    .footer__copyright-logo {
+      fill: $cl-grey;
+    }
+  }
+
+  &:active,
+  &:focus {
+    .footer__copyright-logo {
+      fill: $cl-grey-light;
+    }
+  }
+}
+
+.footer__copyright-logo {
   fill: $cl-pink;
 }
 

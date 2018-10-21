@@ -48,6 +48,17 @@
   display: block;
   text-decoration: none;
 
+  &:hover {
+    color: $cl-grey;
+    text-decoration: underline;
+  }
+
+  &:active,
+  &:focus {
+    color: $cl-grey-light;
+    text-decoration: none;
+  }
+
   br {
     display: none;
   }
@@ -127,7 +138,7 @@
 @media (min-width: $desktop-width) {
   .contacts__list {
     justify-content: space-between;
-    padding: 0;
+    padding: 0 35px;
     padding-bottom: 150px;
     margin-bottom: 25px;
   }
@@ -173,7 +184,7 @@
 
   .contacts__map {
     min-height: 480px;
-    margin-top: -125px;
+    margin-top: -124px;
   }
 
   .contacts__online-map {
