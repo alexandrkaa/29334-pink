@@ -7,21 +7,32 @@
   margin-right: 74px;
 }
 
-.social-list__item {
+.social-list__link {
   width: 46px;
   height: 46px;
   border: 2px solid $cl-grey-light;
   border-radius: 50%;
   box-sizing: border-box;
-}
-
-.social-list__link {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
+
+  &:hover {
+    border-color: $cl-grey;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $cl-grey-light;
+
+    .social-list__icon {
+      fill: $cl-pink-light;
+    }
+  }
+}
+
+.social-list__icon {
+  fill: $cl-pink;
 }
 
 @media (min-width: $tablet-width) {
