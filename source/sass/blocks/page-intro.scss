@@ -10,13 +10,13 @@
   margin: 0;
   line-height: 28px;
 
-  .page--photo-page & {
+  &--photo-page {
     padding: 87px 20px;
     padding-top: 95px;
     padding-bottom: 73px;
   }
 
-  .page--form & {
+  &--form {
     padding: 0 20px;
     padding-top: 95px;
     margin-bottom: 55px;
@@ -24,7 +24,7 @@
 }
 
 .page-intro__lead {
-  .page--main & {
+  &--pagemain {
     display: none;
   }
 
@@ -44,21 +44,25 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-intro__lead {
-    .page--main & {
-      display: block;
-      background-color: transparent;
-      color: $cl-white;
-    }
+  .page-intro--form {
+    margin-top: 300px;
+    margin-bottom: 0;
+  }
 
-    .page--form & {
+  .page-intro__lead {
+    &--form {
       margin-top: 85px;
       padding-bottom: 48px;
     }
 
-    .page__intro-wrapper--pagemain & {
+    &--pagemain {
       width: 300px;
       padding: 0 20px;
+      display: block;
+      background-color: transparent;
+      color: $cl-white;
+      font-size: 40px;
+      line-height: 48px;
     }
 
     font-size: 18px;
@@ -73,24 +77,20 @@
     padding-bottom: 78px;
   }
 
-  .page-intro__lead--pagemain {
-    font-size: 40px;
-    line-height: 48px;
-  }
-
   .page-intro__header {
     padding: 0;
     font-size: 50px;
     line-height: 60px;
 
-    .page--form & {
+    &--form {
       padding: 0;
     }
 
-    .page--photo-page & {
+    &--photo-page {
       padding: 0;
       padding-left: 140px;
       padding-right: 140px;
+      margin-top: 180px;
     }
   }
 
@@ -100,6 +100,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-intro--form {
+    margin-top: 278px;
+  }
+
   .page-intro__sublead {
     display: inline;
   }
@@ -107,9 +111,10 @@
   .page-intro__header {
     margin: 0 auto;
 
-    .page--photo-page & {
+    &--photo-page {
       padding-left: 140px;
       padding-right: 140px;
+      margin-top: 150px;
     }
   }
 
@@ -118,18 +123,33 @@
     margin-top: 103px;
     font-size: 18px;
     line-height: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 
     &--pagemain {
       font-size: 40px;
       line-height: 48px;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      width: 300px;
     }
 
-    .page--form & {
+    &--form {
       margin-top: 102px;
     }
 
     br {
       display: inline;
+    }
+  }
+
+  .page-intro__lead-wrapper {
+    background-color: $cl-white;
+
+    &--pagemain {
+      background-color: transparent;
     }
   }
 }

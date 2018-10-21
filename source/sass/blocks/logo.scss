@@ -2,9 +2,12 @@
   box-shadow: 0 1px 0 0 #000000;
   margin-bottom: 1px;
   display: flex;
+  height: 65px;
 
-  .main-header & {
-    height: 65px;
+  &--footer {
+    box-shadow: none;
+    justify-content: center;
+    height: auto;
   }
 }
 
@@ -15,8 +18,11 @@
 
 @media (min-width: $tablet-width) {
   .logo {
-    .main-header & {
-      height: 110px;
+    height: 110px;
+
+    &--footer {
+      height: auto;
+      margin-bottom: 15px;
     }
   }
 }

@@ -31,6 +31,10 @@
   .editor__ajustment {
     padding-left: 20px;
   }
+
+  .editor__image {
+    max-width: none;
+  }
 }
 
 @media (min-width: $desktop-width) {

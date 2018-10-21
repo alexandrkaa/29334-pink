@@ -40,11 +40,6 @@
     .page__intro-wrapper {
       margin-top: -235px;
     }
-
-    .page-intro {
-      margin-top: 300px;
-      margin-bottom: 0;
-    }
   }
 
   .page__intro-wrapper {
@@ -71,12 +66,6 @@
     width: 100%;
     min-width: $desktop-width;
     margin: 0 auto;
-
-    &--form {
-      .page-intro {
-        margin-top: 278px;
-      }
-    }
   }
 
   .page__intro {
@@ -101,10 +90,6 @@
     &--pagemain {
       background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
       background-position: -30% 208px, top center;
-
-      .page-intro__lead--pagemain {
-        padding: 0;
-      }
     }
   }
 }

@@ -18,11 +18,6 @@
 
 .footer__logo {
   text-align: center;
-
-  .logo {
-    box-shadow: none;
-    justify-content: center;
-  }
 }
 
 .footer__copyright {
@@ -43,10 +38,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer--hidden {
-    display: flex;
-  }
-
   .footer {
     flex-direction: row;
     justify-content: space-between;
@@ -55,6 +46,10 @@
     width: 620px;
     min-height: 127px;
     padding: 0 20px;
+
+    &--hidden {
+      display: flex;
+    }
   }
 
   .footer__logo,
@@ -62,13 +57,6 @@
   .footer__copyright {
     margin: 0;
     width: 25%;
-  }
-
-  .footer__logo {
-    .logo {
-      box-shadow: none;
-      margin-bottom: 15px;
-    }
   }
 
   .footer__copyright {

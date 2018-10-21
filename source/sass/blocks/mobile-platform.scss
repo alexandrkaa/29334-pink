@@ -21,6 +21,13 @@
 @media (min-width: $tablet-width) {
   .mobile-platform {
     background-color: $cl-white;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .mobile-platform {
+    background-color: $cl-white;
     padding: 0;
   }
 }
