@@ -15,6 +15,7 @@ var include = require("posthtml-include");
 var del = require("del");
 var minify = require('gulp-minify');
 var server = require("browser-sync").create();
+var concat = require('gulp-concat');
 
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -66,6 +67,8 @@ gulp.task("clean", function () {
 
 gulp.task("compress", function() {
   return gulp.src("source/js/*.js")
+    .pipe(concat('app.js'))
+    .pipe(gulp.dest('build/js'))
     .pipe(minify())
     .pipe(rename("app.min.js"))
     .pipe(gulp.dest('build/js'))
