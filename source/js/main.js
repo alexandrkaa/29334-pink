@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 function toggleMenu(e) {
   var topMenu = document.querySelector('.main-nav');
   e.preventDefault();
