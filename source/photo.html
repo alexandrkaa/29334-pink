@@ -8,6 +8,7 @@
   </head>
   <body class="page-body">
     <div style="display:none">
+      <include src="build/img/logo-sprite.svg"></include>
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="main-header">
@@ -32,12 +33,9 @@
           </ul>
         </nav>
         <a class="main-header__logo logo" href="index.html">
-          <picture class="logo__image">
-            <source media="(max-width: 659px)" srcset="img/logo-pink-white-mobile.svg">
-            <source media="(max-width: 959px))" srcset="img/logo-pink-white-tablet.svg">
-            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-            <img src="img/logo-pink-white-mobile.svg" alt="Логотип приложения PINK">
-          </picture>
+          <svg class="main-header__logo-image logo__image" width="147px" height="41px">
+            <use xlink:href="#header-logo"></use>
+          </svg>
         </a>
       </div>
     </header>
@@ -228,18 +226,27 @@
             <div class="editor__ajustment ajustment-buttons">
               <div class="ajustment-buttons__button-wrapper">
                 <button class="ajustment-buttons__button ajustment-buttons__button--checked ajustment-buttons__button--crop" type="button" name="buttonCrop">
+                  <svg class="ajustment-buttons__icon" width="44px" height="44px">
+                    <use xlink:href="#icon-editor-crop"></use>
+                  </svg>
                   <span class="visually-hidden">Обрезать изображение</span>
                 </button>
                 <input class="ajustment-buttons__button ajustment-buttons__button--range" type="range" min="1" max="100" value="90" name="ajustmentRange">
               </div>
               <div class="ajustment-buttons__button-wrapper">
                 <button class="ajustment-buttons__button ajustment-buttons__button--fill" type="button" name="buttonFill">
+                  <svg class="ajustment-buttons__icon" width="48px" height="43px">
+                    <use xlink:href="#icon-editor-fill"></use>
+                  </svg>
                   <span class="visually-hidden">Залить изображение цветом</span>
                 </button>
                 <input class="ajustment-buttons__button ajustment-buttons__button--range" type="range" min="1" max="100" value="85" name="ajustmentRange">
               </div>
               <div class="ajustment-buttons__button-wrapper">
                 <button class="ajustment-buttons__button ajustment-buttons__button--contrast" type="button" name="buttonContrast">
+                  <svg class="ajustment-buttons__icon" width="32px" height="32px">
+                    <use xlink:href="#icon-editor-contrast"></use>
+                  </svg>
                   <span class="visually-hidden">Изменить контраст изображения</span>
                 </button>
                 <input class="ajustment-buttons__button ajustment-buttons__button--range" type="range" min="1" max="100" value="85" name="ajustmentRange">
@@ -254,13 +261,11 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__logo">
-        <a href="index.html" class="logo logo--footer">
-          <picture class="logo__image">
-            <source media="(max-width: 959px)" srcset="img/logo-pink-blue-mobile.svg">
-            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения PINK">
-          </picture>
+      <div class="footer__logo-block">
+        <a class="footer__logo" href="index.html">
+          <svg class="footer__logo-image logo__image" width="147px" height="41px">
+            <use xlink:href="#footer-logo"></use>
+          </svg>
         </a>
       </div>
       <div class="footer__social-links">

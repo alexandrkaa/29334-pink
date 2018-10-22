@@ -22,19 +22,36 @@
       left: 50%;
       transform: translateX(-50%);
     }
+
+    .ajustment-buttons__icon {
+      fill: $cl-pink;
+    }
+  }
+
+  &--crop {
+    .ajustment-buttons__icon {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &--fill {
+    .ajustment-buttons__icon {
+      width: 48px;
+      height: 43px;
+    }
+  }
+
+  &--contrast {
+    .ajustment-buttons__icon {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
 
-.ajustment-buttons__button--crop {
-  background-image: url("../img/icon-editor-crop.svg");
-}
-
-.ajustment-buttons__button--fill {
-  background-image: url("../img/icon-editor-fill.svg");
-}
-
-.ajustment-buttons__button--contrast {
-  background-image: url("../img/icon-editor-contrast.svg");
+.ajustment-buttons__icon {
+  fill: $cl-grey-light;
 }
 
 // http://danielstern.ca/range.css/?ref=css-tricks#/
@@ -45,7 +62,9 @@
   width: 240px;
   height: auto;
   margin-bottom: 35px;
-  //-webkit-appearance: none;
+  /* stylelint-disable */
+  -webkit-appearance: none;
+  /* stylelint-enable */
 }
 
 .ajustment-buttons__button--range:focus {
@@ -63,7 +82,9 @@
 }
 
 .ajustment-buttons__button--range::-webkit-slider-thumb {
-  //-webkit-appearance: none;
+  /* stylelint-disable */
+  -webkit-appearance: none;
+  /* stylelint-enable */
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
   border: 2px solid #d4325d;
   height: 14px;
@@ -192,27 +213,31 @@
   }
 
   .ajustment-buttons__button-wrapper {
-    margin-bottom: 49px;
+    height: 22px;
+    border-bottom: 1px solid $cl-grey-border;
+    padding-bottom: 24px;
+    margin-bottom: 26px;
+  }
+
+  .ajustment-buttons__button--range {
+    height: 22px;
+    margin: 0;
+    margin-right: 18px;
+    display: block;
   }
 
   .ajustment-buttons__submit {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 47px;
+    padding: 0 10px;
+    margin-top: 0;
   }
 
-  .ajustment-buttons__button:not(.ajustment-buttons__button--range) {
-    width: 24px;
-    height: 24px;
-    background-position: center center;
-    position: relative;
-    margin-right: 28px;
-    margin-left: 7px;
+  .ajustment-buttons__icon {
+    fill: $cl-pink;
   }
 
   .ajustment-buttons__button {
-    background-size: 24px 24px;
     width: 100%;
+    padding: 0;
 
     &--checked {
       & + .ajustment-buttons__button--range {
@@ -223,15 +248,39 @@
         transform: translateX(0);
       }
     }
-  }
 
-  .ajustment-buttons__button--contrast {
-    background-size: 17px 17px;
-  }
+    &--crop {
+      flex: 0 0 22px;
+      height: 22px;
+      margin-right: 30px;
 
-  .ajustment-buttons__button--range {
-    display: block;
-    margin: 0;
+      .ajustment-buttons__icon {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &--fill {
+      flex: 0 0 22px;
+      height: 22px;
+      margin-right: 30px;
+
+      .ajustment-buttons__icon {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &--contrast {
+      flex: 0 0 22px;
+      height: 22px;
+      margin-right: 30px;
+
+      .ajustment-buttons__icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
   }
 
   .ajustment-buttons__form-controls {
@@ -241,32 +290,57 @@
 
 @media (min-width: $desktop-width) {
   .ajustment-buttons__button-wrapper {
-    margin-bottom: 25px;
+    margin-bottom: 13px;
+    height: 48px;
     border-bottom: 1px solid $cl-grey-border;
-  }
-
-  .ajustment-buttons__button:not(.ajustment-buttons__button--range) {
-    width: 44px;
-    height: 44px;
-    margin: 0;
-    margin-right: 55px;
+    padding-bottom: 8px;
   }
 
   .ajustment-buttons__button--range {
     margin-right: 30px;
+    height: 48px;
   }
 
   .ajustment-buttons__button {
-    background-size: 44px 44px;
-  }
+    padding: 0;
 
-  .ajustment-buttons__button--contrast {
-    background-size: 32px 32px;
+    &--crop {
+      flex: 0 0 45px;
+      height: 48px;
+      margin-right: 45px;
+
+      .ajustment-buttons__icon {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    &--fill {
+      flex: 0 0 48px;
+      height: 48px;
+      margin-right: 41px;
+
+      .ajustment-buttons__icon {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    &--contrast {
+      flex: 0 0 32px;
+      height: 48px;
+      margin-right: 57px;
+
+      .ajustment-buttons__icon {
+        width: 32px;
+        height: 32px;
+      }
+    }
   }
 
   .ajustment-buttons__submit {
     flex-direction: row;
-    margin-top: 120px;
+    margin-top: 110px;
   }
 
   .ajustment-buttons__form-controls {
