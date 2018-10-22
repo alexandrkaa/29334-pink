@@ -133,7 +133,8 @@
     margin-top: 103px;
     font-size: 18px;
     line-height: 30px;
-    max-width: 1200px;
+    //max-width: 1200px;
+    max-width: 960px;
     margin-left: auto;
     margin-right: auto;
 
@@ -161,5 +162,11 @@
     &--pagemain {
       background-color: transparent;
     }
+  }
+
+  .page-intro--pagemain {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
