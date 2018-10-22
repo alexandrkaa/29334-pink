@@ -21,7 +21,8 @@
 }
 
 .footer__logo {
-  display: block;
+  display: flex;
+  justify-content: center;
 
   &:hover {
     .footer__logo-image {
@@ -107,6 +108,10 @@
     width: 25%;
   }
 
+  .footer__logo {
+    justify-content: flex-start;
+  }
+
   .footer__copyright {
     display: flex;
     justify-content: flex-end;
@@ -120,6 +125,10 @@
   .footer__copyright-logo-link {
     display: block;
     margin-top: 10px;
+  }
+
+  .footer__logo-image {
+    margin-bottom: 15px;
   }
 }
 
@@ -163,5 +172,9 @@
 
   .footer__logo-svggroup--big {
     display: block;
+  }
+
+  .footer__logo-image {
+    margin-bottom: 5px;
   }
 }

@@ -4,11 +4,11 @@
 }
 
 .contestant-data__achievements {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .contestant-data__form-contacts {
-  margin-top: 30px;
+  margin-top: 33px;
 }
 
 .contestant-data__mobile-platform {
@@ -20,7 +20,7 @@
 }
 
 .contestant-data__submit {
-  padding-top: 3px;
+  padding-top: 22px;
 }
 
 .contestant-data__submit-button {
@@ -43,9 +43,9 @@
     order: 3;
     margin-top: 43px;
 
-    .form-group {
-      padding: 25px 38px;
-    }
+    // .form-group {
+    //   padding: 25px 38px;
+    // }
   }
 
   .contestant-data__mobile-platform {
@@ -54,7 +54,7 @@
 
   .contestant-data__feedback {
     order: 5;
-    margin-top: 45px;
+    margin-top: 44px;
     margin-bottom: 0;
   }
 
@@ -97,10 +97,10 @@
     flex-grow: 2;
     margin-top: 43px;
 
-    .form-group {
-      padding: 21px 38px;
-      padding-bottom: 14px;
-    }
+    // .form-group {
+    //   padding: 21px 38px;
+    //   padding-bottom: 14px;
+    // }
   }
 
   .contestant-data__mobile-platform {

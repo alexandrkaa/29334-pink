@@ -13,7 +13,7 @@
   &--photo-page {
     padding: 87px 20px;
     padding-top: 95px;
-    padding-bottom: 73px;
+    padding-bottom: 70px;
   }
 
   &--form {
@@ -24,19 +24,25 @@
 }
 
 .page-intro__lead {
-  &--pagemain {
-    display: none;
-  }
-
-  br {
-    display: none;
-  }
   background-color: $cl-white;
   font-size: 14px;
   line-height: 30px;
   padding: 48px 20px;
   text-align: center;
+  font-weight: 100;
   font-family: "Open Sans Light", sans-serif;
+
+  &--pagemain {
+    display: none;
+  }
+
+  &--photo-page {
+    padding: 45px 20;
+  }
+
+  br {
+    display: none;
+  }
 }
 
 .page-intro__sublead {
@@ -50,6 +56,17 @@
   }
 
   .page-intro__lead {
+    font-size: 18px;
+    line-height: 30px;
+    background-color: $cl-white;
+    color: $cl-grey;
+    margin: 0;
+    text-align: center;
+    margin-top: 138px;
+    padding: 0 60px;
+    padding-top: 90px;
+    padding-bottom: 78px;
+
     &--form {
       margin-top: 85px;
       padding-bottom: 48px;
@@ -63,18 +80,11 @@
       color: $cl-white;
       font-size: 40px;
       line-height: 48px;
-    }
 
-    font-size: 18px;
-    line-height: 30px;
-    background-color: $cl-white;
-    color: $cl-grey;
-    margin: 0;
-    text-align: center;
-    margin-top: 138px;
-    padding: 0 60px;
-    padding-top: 90px;
-    padding-bottom: 78px;
+      br {
+        display: inline;
+      }
+    }
   }
 
   .page-intro__header {
@@ -130,7 +140,7 @@
     &--pagemain {
       font-size: 50px;
       line-height: 60px;
-      margin-left: 0;
+      margin-left: 10px;
       margin-right: 0;
       padding: 0;
       width: 300px;

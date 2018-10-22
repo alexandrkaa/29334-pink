@@ -64,6 +64,10 @@
   .main-header__logo-svggroup--medium {
     display: block;
   }
+
+  .main-header__logo-image {
+    margin-bottom: 41px;
+  }
 }
 
 @media (min-width: $desktop-width) {
