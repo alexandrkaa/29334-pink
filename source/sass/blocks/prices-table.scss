@@ -47,15 +47,11 @@
   margin-right: 15px;
 
   &--avaible {
-    & path {
-      fill: $cl-green-icon;
-    }
+    fill: $cl-green-icon;
   }
 
   &--unavaible {
-    & path {
-      fill: $cl-red-icon;
-    }
+    fill: $cl-red-icon;
   }
 }
 

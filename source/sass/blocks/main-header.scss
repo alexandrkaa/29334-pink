@@ -72,6 +72,7 @@
     margin: 0 auto;
     min-height: 110px;
     background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
   }
 
   .main-header__wrapper {
@@ -82,6 +83,14 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+  }
+
+  .main-header__logo {
+    padding-left: 0;
+  }
+
+  .main-header__logo-image {
+    margin-bottom: 41px;
   }
 
   .main-header__logo-svggroup--big {

@@ -31,6 +31,12 @@
     padding-top: 145px;
     padding-bottom: 95px;
 
+    .prices__wrapper {
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .prices__toggles {
       display: none;
     }
