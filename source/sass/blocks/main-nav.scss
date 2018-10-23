@@ -20,7 +20,16 @@
       position: absolute;
       top: 20px;
       left: 7px;
-      background-image: linear-gradient(to bottom, #ffffff, #ffffff 4px, transparent 4px, transparent 10px, #ffffff 10px, #ffffff 14px, transparent 14px, transparent 20px, #ffffff 20px, #ffffff);
+      background-image: linear-gradient(to bottom, $cl-white, $cl-white 4px, transparent 4px, transparent 10px, $cl-white 10px, $cl-white 14px, transparent 14px, transparent 20px, $cl-white 20px, $cl-white);
+    }
+
+    .main-nav--closed &:hover::before {
+      background-image: linear-gradient(to bottom, $cl-pink, $cl-pink 4px, transparent 4px, transparent 10px, $cl-pink 10px, $cl-pink 14px, transparent 14px, transparent 20px, $cl-pink 20px, $cl-pink);
+    }
+
+    .main-nav--closed &:active::before,
+    .main-nav--closed &:focus::before {
+      background-image: linear-gradient(to bottom, $cl-pink-light, $cl-pink-light 4px, transparent 4px, transparent 10px, $cl-pink-light 10px, $cl-pink-light 14px, transparent 14px, transparent 20px, $cl-pink-light 20px, $cl-pink-light);
     }
 
     .main-nav--opened &::before,
@@ -32,6 +41,18 @@
       width: 28px;
       height: 3px;
       background-color: #ffffff;
+    }
+
+    .main-nav--opened &:hover::before,
+    .main-nav--opened &:hover::after {
+      background-color: $cl-pink;
+    }
+
+    .main-nav--opened &:active::before,
+    .main-nav--opened &:active::after,
+    .main-nav--opened &:focus::before,
+    .main-nav--opened &:focus::after {
+      background-color: $cl-pink-light;
     }
 
     .main-nav--opened &::before {
@@ -49,7 +70,7 @@
       display: flex;
     }
 
-    & + .logo {
+    & + .main-header__logo {
       background-color: $cl-blue-dark;
     }
   }
@@ -59,7 +80,7 @@
       display: none;
     }
 
-    & + .logo {
+    & + .main-header__logo {
       background-color: rgba(0, 0, 0, 0.3);
       box-shadow: none;
     }

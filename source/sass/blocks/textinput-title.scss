@@ -13,7 +13,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
     padding: 0 20px;
     text-indent: 0;
 
@@ -22,7 +22,7 @@
     }
 
     &--form-contacts {
-      margin-bottom: 30px;
+      margin-bottom: 26px;
 
       & span {
         order: 1;
@@ -30,7 +30,7 @@
       }
 
       flex-direction: column;
-      text-indent: 22px;
+      text-indent: 20px;
       align-items: flex-start;
 
       position: relative;
@@ -66,7 +66,7 @@
 @media (min-width: $desktop-width) {
   .textinput-title {
     padding: 0;
-    margin-bottom: 55px;
+    margin-bottom: 53px;
 
     &--form-contacts {
       flex-grow: 0;

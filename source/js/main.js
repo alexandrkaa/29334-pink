@@ -1,3 +1,5 @@
+//=require node_modules/picturefill/dist/picturefill.min.js
+
 function toggleMenu(e) {
   var topMenu = document.querySelector('.main-nav');
   e.preventDefault();

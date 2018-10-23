@@ -49,12 +49,14 @@
   .menu-list {
     flex-direction: row;
     background-color: transparent;
+    justify-content: flex-end;
   }
 
   .menu-list__item {
     box-shadow: none;
-    width: 170px;
+    width: auto;
     margin-bottom: 0;
+    margin-left: 80px;
   }
 
   .menu-list__link {

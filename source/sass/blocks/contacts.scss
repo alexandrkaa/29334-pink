@@ -22,10 +22,6 @@
 
 .contacts__list {
   @include list-reset;
-  background: transparent url("../img/bg-triangle-white-footer.svg") no-repeat center bottom;
-  background-size: 100%;
-  position: relative;
-  z-index: 1;
   padding: 0 20px;
   padding-bottom: 70px;
 }
@@ -71,6 +67,20 @@
   overflow: hidden;
   margin-top: -33px;
   display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat center top;
+    background-size: cover;
+    z-index: 1;
+  }
 }
 
 .contacts__online-map {
@@ -111,12 +121,12 @@
 
     &--come {
       flex-grow: 1;
-      margin-top: 45px;
+      margin-top: 42px;
     }
   }
 
   .contacts__contact-header {
-    margin: 6px 0;
+    margin: 7px 0;
   }
 
   .contacts__link {
@@ -126,12 +136,16 @@
   }
 
   .contacts__map {
-    min-height: 375px;
-    margin-top: -68px;
+    min-height: 376px;
+    margin-top: -72px;
+
+    &::before {
+      height: 70px;
+    }
   }
 
   .contacts__online-map {
-    min-height: 375px;
+    min-height: 376px;
   }
 }
 
@@ -141,6 +155,17 @@
     padding: 0 35px;
     padding-bottom: 150px;
     margin-bottom: 25px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &--come {
+      margin-left: 25px;
+
+      .contacts__contact-header {
+        margin-bottom: 28px;
+      }
+    }
   }
 
   .contacts__lead,
@@ -183,11 +208,24 @@
   }
 
   .contacts__map {
-    min-height: 480px;
-    margin-top: -124px;
+    min-height: 502px;
+    margin-top: -150px;
+
+    &::before {
+      height: 110px;
+    }
   }
 
   .contacts__online-map {
-    min-height: 480px;
+    min-height: 502px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts__map {
+    &::before {
+      height: 137.5px;
+      top: -1px;
+    }
   }
 }

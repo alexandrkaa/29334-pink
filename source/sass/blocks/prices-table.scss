@@ -47,15 +47,11 @@
   margin-right: 15px;
 
   &--avaible {
-    & path {
-      fill: $cl-green-icon;
-    }
+    fill: $cl-green-icon;
   }
 
   &--unavaible {
-    & path {
-      fill: $cl-red-icon;
-    }
+    fill: $cl-red-icon;
   }
 }
 
@@ -147,6 +143,12 @@
       padding: 16px;
     }
 
+    &--hit::before {
+      width: 74px;
+      height: 73px;
+      background-image: url("../img/bg-hit.svg");
+    }
+
     height: 60px;
     padding: 7px 20px;
   }
@@ -154,6 +156,11 @@
   .prices-table__package-name {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .prices-table__hit-label {
+    top: 14px;
+    left: 11px;
   }
 
   .prices-table__price {

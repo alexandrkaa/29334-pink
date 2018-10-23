@@ -24,6 +24,12 @@
     background: $cl-white url("../img/icon-quotes.svg") no-repeat center 72px;
   }
 
+  .reviews__wrapper {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .reviews__control {
     display: block;
   }

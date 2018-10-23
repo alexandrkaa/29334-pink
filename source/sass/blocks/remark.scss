@@ -1,4 +1,4 @@
-.remark {
+.remark__wrapper {
   padding: 0 20px;
   padding-top: 45px;
   display: none;
@@ -19,7 +19,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .remark {
+  .remark__wrapper {
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -87,8 +87,14 @@
 
 @media (min-width: $desktop-width) {
   .remark {
+    background-color: $cl-grey-bg;
+  }
+
+  .remark__wrapper {
     padding: 45px 0;
     padding-bottom: 70px;
+    max-width: 960px;
+    margin: 0 auto;
     background-color: $cl-grey-bg;
   }
 
@@ -104,8 +110,8 @@
     &::before {
       width: 255px;
       height: 255px;
-      top: 70px;
-      left: 31px;
+      top: 69px;
+      left: 32px;
     }
 
     &::after {
