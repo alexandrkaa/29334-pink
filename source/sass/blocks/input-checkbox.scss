@@ -63,9 +63,7 @@
   }
 
   .input-checkbox {
-    &--isBurnt,
-    &--isBoughtSouvenirs,
-    &--isSmashedHotel {
+    &:nth-child(2n) {
       margin-bottom: 10px;
     }
   }

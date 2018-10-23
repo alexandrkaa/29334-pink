@@ -103,29 +103,29 @@
     box-sizing: border-box;
     flex: 0 0 auto;
 
-    &--isSelfie {
+    &--isselfie {
       order: 1;
     }
 
-    &--isSeeChak {
+    &--isseechak {
       order: 2;
       margin-right: 5px;
     }
 
-    &--isHeldTower {
+    &--isheldtower {
       order: 3;
     }
 
-    &--isBurnt {
+    &--isburnt {
       order: 4;
       margin-right: 30px;
     }
 
-    &--isBoughtSouvenirs {
+    &--isboughtsouvenirs {
       order: 5;
     }
 
-    &--isSmashedHotel {
+    &--issmashedhotel {
       order: 6;
     }
   }
