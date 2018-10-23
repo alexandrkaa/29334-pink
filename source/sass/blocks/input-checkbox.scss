@@ -55,5 +55,18 @@
   .input-checkbox__title {
     padding-left: 60px;
     line-height: 35px;
+
+    &--isSmashedHotel {
+      padding-left: 55px;
+      margin-left: 5px;
+    }
+  }
+
+  .input-checkbox {
+    &--isBurnt,
+    &--isBoughtSouvenirs,
+    &--isSmashedHotel {
+      margin-bottom: 10px;
+    }
   }
 }

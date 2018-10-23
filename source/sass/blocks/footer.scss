@@ -99,6 +99,14 @@
     &--hidden {
       display: flex;
     }
+
+    &::after {
+      content: "";
+      width: 0;
+      min-height: inherit;
+      font-size: 0;
+      display: block;
+    }
   }
 
   .footer__logo-block,
@@ -136,6 +144,8 @@
   .footer {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
     margin: 0 auto;
     width: 960px;
     padding: 0 10px;
@@ -148,6 +158,14 @@
 
     &--hidden {
       display: flex;
+    }
+
+    &::after {
+      content: "";
+      width: 0;
+      min-height: inherit;
+      font-size: 0;
+      display: block;
     }
   }
 
