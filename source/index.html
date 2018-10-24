@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   </head>
   <body class="page-body">
     <div style="display:none">
@@ -13,7 +16,7 @@
     </div>
     <header class="main-header">
       <div class="main-header__wrapper">
-        <nav class="main-header__nav main-nav main-nav--opened">
+        <nav class="main-header__nav main-nav main-nav--opened main-nav--no-js">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть или закрыть меню</span>
           </button>
@@ -303,7 +306,7 @@
             <a class="contacts__link" href="https://yandex.ru/maps/-/CBBfmSX8-D">ул. Большая <br>Конюшенная, 19/8</a>
           </li>
         </ul>
-        <div class="contacts__map">
+        <div class="contacts__map contacts__map--no-js">
           <iframe class="contacts__online-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa62314778d88666b6965195fc751d3b3da6359c04f633d625b15169b2de146fe&amp;source=constructor"></iframe>
         </div>
       </section>

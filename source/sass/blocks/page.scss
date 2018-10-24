@@ -5,20 +5,26 @@
 
 .page__intro {
   min-height: 462px;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
 }
 
 .page__intro-wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-color: $cl-grey;
+  margin-top: -65px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: auto 462px;
   }
-
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-color: $cl-grey;
-  margin-top: -65px;
 
   &--pagemain {
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
@@ -30,6 +36,13 @@
 
     background-repeat: no-repeat, no-repeat;
     background-position: left 177px, center top;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
   }
 }
 
@@ -46,6 +59,13 @@
     .page--main & {
       margin-top: 60px;
     }
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
   }
 
   .page--form {
@@ -60,6 +80,13 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: auto 729px;
+    }
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
     }
 
     min-height: 729px;
@@ -100,31 +127,42 @@
     width: 100%;
 
     .page--main & {
-      margin-top: -20px;
+      margin-top: auto;
+    }
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 100%;
+      box-sizing: content-box;
     }
   }
 
   .page__intro-wrapper {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: auto, cover;
+    min-height: 853px;
+    padding: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-desktop@1x.jpg");
       background-size: auto 853px;
     }
 
-    background-size: auto, cover;
-    min-height: 853px;
-    padding: 0;
-
     &--pagemain {
+      height: 853px;
+      min-height: 0;
+      justify-content: flex-end;
       background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-      //background-position: -30% 208px, top center;
       background-position: 26px 208px, top center;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
         background-size: 1050px 645px, auto 853px;
       }
+    }
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: auto;
+      box-sizing: content-box;
     }
   }
 }

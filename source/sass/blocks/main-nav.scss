@@ -85,6 +85,12 @@
       box-shadow: none;
     }
   }
+
+   .main-nav--no-js {
+     .main-nav__toggle {
+       display: none;
+     }
+   }
 }
 
 .main-nav__icon {

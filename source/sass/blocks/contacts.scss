@@ -1,6 +1,13 @@
 .contacts {
   padding: 0;
   padding-top: 25px;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
 }
 
 .contacts__lead,
@@ -81,6 +88,27 @@
     background-size: cover;
     z-index: 1;
   }
+
+  &--no-js {
+    background: $cl-white url("../img/bg-map-mobile@1x.png") no-repeat center center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-map-mobile@2x.jpg");
+      background-size: auto 645px;
+    }
+
+    .contacts__online-map {
+      display: none;
+    }
+  }
+
+  &--js {
+    background: $cl-white;
+
+    .contacts__online-map {
+      display: block;
+    }
+  }
 }
 
 .contacts__online-map {
@@ -93,6 +121,13 @@
 @media (min-width: $tablet-width) {
   .contacts {
     padding-top: 60px;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
   }
 
   .contacts__lead,
@@ -142,6 +177,27 @@
     &::before {
       height: 70px;
     }
+
+    &--no-js {
+      background: $cl-white url("../img/bg-map-tablet@1x.jpg") no-repeat center center;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bg-map-tablet@2x.jpg");
+        background-size: auto 848px;
+      }
+
+      .contacts__online-map {
+        display: none;
+      }
+    }
+
+    &--js {
+      background: $cl-white;
+
+      .contacts__online-map {
+        display: block;
+      }
+    }
   }
 
   .contacts__online-map {
@@ -150,6 +206,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: auto;
+      box-sizing: content-box;
+    }
+  }
+
   .contacts__list {
     justify-content: space-between;
     padding: 0 35px;
@@ -213,6 +280,27 @@
 
     &::before {
       height: 110px;
+    }
+
+    &--no-js {
+      background: $cl-white url("../img/bg-map-desktop@1x.jpg") no-repeat center center;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bg-map-desktop@2x.jpg");
+        background-size: auto 976px;
+      }
+
+      .contacts__online-map {
+        display: none;
+      }
+    }
+
+    &--js {
+      background: $cl-white;
+
+      .contacts__online-map {
+        display: block;
+      }
     }
   }
 
