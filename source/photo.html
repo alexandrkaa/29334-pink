@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   </head>
   <body class="page-body">
     <div style="display:none">
@@ -13,6 +16,11 @@
     </div>
     <header class="main-header">
       <div class="main-header__wrapper">
+        <!--
+        main-nav--opened main-nav--no-js - открытое меню без js
+        main-nav--closed main-nav--js - закрытое меню js
+        main-nav--opened main-nav--js - открытое меню js
+        -->
         <nav class="main-header__nav main-nav main-nav--opened main-nav--no-js">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть или закрыть меню</span>

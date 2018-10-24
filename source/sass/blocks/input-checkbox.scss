@@ -36,6 +36,15 @@
     background: transparent url("../img/icon-yes.svg") no-repeat center center;
     display: none;
   }
+
+  &:hover::before {
+    border-color: $cl-grey;
+  }
+
+  &:active::before,
+  &:focus::before {
+    border-color: $cl-pink;
+  }
 }
 
 .input-checkbox__input:checked + .input-checkbox__title {

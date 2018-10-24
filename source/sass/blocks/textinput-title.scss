@@ -37,11 +37,11 @@
 
       &::after {
         content: "";
-        width: 60px;
-        height: 60px;
+        width: 58px;
+        height: 58px;
         display: block;
         position: absolute;
-        top: 1px;
+        top: 2px;
         right: 21px;
         background-color: $cl-grey-bg;
         background-position: center center;
@@ -82,7 +82,7 @@
       margin-bottom: 0;
 
       &::after {
-        right: 1px;
+        right: 2px;
       }
 
       span {

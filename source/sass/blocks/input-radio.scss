@@ -40,10 +40,25 @@
   }
 }
 
-.input-radio__input:checked + .input-radio__title {
-  &::after {
-    display: block;
-    background-color: $cl-pink;
+.input-radio__input {
+  &:checked + .input-radio__title {
+    &::after {
+      display: block;
+      background-color: $cl-pink;
+    }
+  }
+
+  &:hover + .input-radio__title {
+    &::before {
+      border-color: $cl-grey;
+    }
+  }
+
+  &:active + .input-radio__title,
+  &:focus + .input-radio__title {
+    &::before {
+      border-color: $cl-pink;
+    }
   }
 }
 

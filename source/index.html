@@ -16,6 +16,11 @@
     </div>
     <header class="main-header">
       <div class="main-header__wrapper">
+        <!--
+        main-nav--opened main-nav--no-js - открытое меню без js
+        main-nav--closed main-nav--js - закрытое меню js
+        main-nav--opened main-nav--js - открытое меню js
+        -->
         <nav class="main-header__nav main-nav main-nav--opened main-nav--no-js">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть или закрыть меню</span>
@@ -162,9 +167,15 @@
             </li>
           </ul>
           <button class="reviews__control slider__control slider__control--left" type="button">
+            <svg class="slider__control-icon" width="21px" height="41px">
+              <use xlink:href="#icon-review-arrow-left"></use>
+            </svg>
             <span class="visually-hidden">Назад</span>
           </button>
           <button class="reviews__control slider__control slider__control--right" type="button">
+            <svg class="slider__control-icon" width="21px" height="41px">
+              <use xlink:href="#icon-review-arrow-right"></use>
+            </svg>
             <span class="visually-hidden">Вперед</span>
           </button>
           <p class="reviews__toggles slider__toggles">

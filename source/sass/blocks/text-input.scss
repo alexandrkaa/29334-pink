@@ -7,6 +7,15 @@
   margin-bottom: 21px;
   box-sizing: border-box;
   width: 280px;
+
+  &:hover {
+    border-color: $cl-grey;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $cl-pink;
+  }
 }
 
 .text-input--textarea {
