@@ -1,6 +1,6 @@
 .contacts {
   padding: 0;
-  padding-top: 25px;
+  padding-top: 35px;
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     width: 320px;
@@ -35,6 +35,7 @@
 
 .contacts__item {
   padding: 10px;
+  padding-top: 12px;
 }
 
 .contacts__contact-header {
@@ -61,10 +62,6 @@
     color: $cl-grey-light;
     text-decoration: none;
   }
-
-  br {
-    display: none;
-  }
 }
 
 .contacts__map {
@@ -72,7 +69,7 @@
   width: 100%;
   height: 200px;
   overflow: hidden;
-  margin-top: -33px;
+  margin-top: -40px;
   display: block;
   position: relative;
 
@@ -80,13 +77,16 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
     display: block;
-    width: 100%;
-    height: 40px;
-    background: url("../img/bg-triangle-white-footer.svg") no-repeat center top;
-    background-size: cover;
     z-index: 1;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 12.5vw solid $cl-white;
+    border-right: 50vw solid transparent;
+    border-left: 50vw solid transparent;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &--no-js {
@@ -175,7 +175,7 @@
     margin-top: -72px;
 
     &::before {
-      height: 70px;
+      border-top: 10vw solid $cl-white;
     }
 
     &--no-js {
@@ -207,7 +207,6 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 
@@ -240,7 +239,6 @@
     font-size: 50px;
     line-height: 50px;
     font-weight: 100;
-    font-family: "Open Sans Light", sans-serif;
   }
 
   .contacts__header {
@@ -253,6 +251,7 @@
 
   .contacts__item {
     width: auto;
+    padding-top: 0;
 
     &--call {
       order: 1;
@@ -279,7 +278,9 @@
     margin-top: -150px;
 
     &::before {
-      height: 110px;
+      border-top: 11.5vw solid $cl-white;
+      border-right-width: 65vw;
+      border-left-width: 65vw;
     }
 
     &--no-js {
@@ -310,10 +311,14 @@
 }
 
 @media (min-width: 1200px) {
+  .contacts {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .contacts__map {
     &::before {
-      height: 137.5px;
-      top: -1px;
+      border-right-width: 50vw;
+      border-left-width: 50vw;
     }
   }
 }
