@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   </head>
   <body class="page-body">
     <div style="display:none">
@@ -13,7 +16,12 @@
     </div>
     <header class="main-header">
       <div class="main-header__wrapper">
-        <nav class="main-header__nav main-nav main-nav--opened">
+        <!--
+        main-nav--opened main-nav--no-js - открытое меню без js
+        main-nav--closed main-nav--js - закрытое меню js
+        main-nav--opened main-nav--js - открытое меню js
+        -->
+        <nav class="main-header__nav main-nav main-nav--opened main-nav--no-js">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть или закрыть меню</span>
           </button>
@@ -33,7 +41,8 @@
           </ul>
         </nav>
         <a class="main-header__logo logo" href="index.html">
-          <svg class="main-header__logo-image logo__image" width="147px" height="41px">
+          <svg class="main-header__logo-image logo__image" width="147px" height="41px" role="img">
+            <title>Логотип приложения PINK</title>
             <use xlink:href="#header-logo"></use>
           </svg>
         </a>
@@ -272,26 +281,26 @@
         <ul class="social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="https://twitter.com">
-              <svg class="social-list__icon" width="17.5px" height="14.663px">
+              <svg class="social-list__icon" width="17.5px" height="14.663px" aria-hidden="true" role="presentation">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
-              <span class="visually-hidden">Twitter</span>
+              <span class="visually-hidden">Наш Twitter</span>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="https://facebook.com">
-              <svg class="social-list__icon" width="8.673px" height="18.944px">
+              <svg class="social-list__icon" width="8.673px" height="18.944px" aria-hidden="true" role="presentation">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
-              <span class="visually-hidden">FaceBook</span>
+              <span class="visually-hidden">Группа на FaceBook</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--youtube" href="https://youtube.com">
+            <a class="social-list__link social-list__link--youtube" href="https://youtube.com" aria-hidden="true" role="presentation">
               <svg class="social-list__icon" width="14.64px" height="13.96px">
                 <use xlink:href="#icon-youtube"></use>
               </svg>
-              <span class="visually-hidden">YouTube</span>
+              <span class="visually-hidden">Канал на YouTube</span>
             </a>
           </li>
         </ul>

@@ -86,6 +86,10 @@
   .prices-table {
     width: 100%;
     transform: translateX(0);
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      max-width: 620px;
+    }
   }
 
   .prices-table__feature {
@@ -138,6 +142,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .prices-table {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      max-width: 100%;
+    }
+  }
+
   .prices-table__cell {
     .prices-table__row--head & {
       padding: 16px;

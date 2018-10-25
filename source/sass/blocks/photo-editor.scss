@@ -1,11 +1,47 @@
 .photo-editor {
   padding: 0;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+}
+
+.photo-editor__form {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+}
+
+.editor__image {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 280px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .photo-editor {
     padding: 25px 0;
     padding-bottom: 0;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
+  }
+
+  .photo-editor__form {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: auto;
+      box-sizing: content-box;
+    }
   }
 }
 
@@ -13,6 +49,11 @@
   .photo-editor {
     padding: 0 10px;
     margin-bottom: 28px;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: auto;
+      box-sizing: content-box;
+    }
   }
 
   .photo-editor__form {

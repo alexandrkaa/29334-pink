@@ -13,5 +13,21 @@ function toggleMenu(e) {
   }
 }
 
+var contactsMap = document.querySelector('.contacts__map--no-js');
+if(contactsMap) {
+  contactsMap.classList.remove('contacts__map--no-js');
+  contactsMap.classList.add('contacts__map--js');
+}
+
+var mainNav = document.querySelector('.main-nav--no-js');
+if(mainNav) {
+  mainNav.classList.remove('main-nav--no-js');
+  mainNav.classList.add('main-nav--js');
+  mainNav.classList.remove('main-nav--opened');
+  mainNav.classList.add('main-nav--closed');
+}
+
 var menuButton = document.querySelector('.main-nav__toggle');
-menuButton.addEventListener('click', toggleMenu);
+if(menuButton) {
+  menuButton.addEventListener('click', toggleMenu);
+}

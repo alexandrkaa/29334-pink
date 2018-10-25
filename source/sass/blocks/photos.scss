@@ -1,5 +1,12 @@
 .photos {
   margin-top: -57px;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
 }
 
 .photos__list {
@@ -8,6 +15,13 @@
 
 .photos__lead-wrapper {
   margin: 43px 0;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
 }
 
 .photos__lead {
@@ -18,6 +32,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photos {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
+  }
+
   .photos__list {
     display: flex;
     flex-wrap: wrap;
@@ -41,12 +64,24 @@
 @media (min-width: $tablet-width) {
   .photos {
     margin-top: -63px;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .photos {
     padding-bottom: 65px;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: auto;
+      box-sizing: content-box;
+    }
   }
 
   .photos__list-wrapper {

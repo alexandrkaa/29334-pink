@@ -48,6 +48,12 @@
       height: 32px;
     }
   }
+
+  &:hover {
+    .ajustment-buttons__icon {
+      fill: rgba(40, 64, 59, 0.5);
+    }
+  }
 }
 
 .ajustment-buttons__icon {
@@ -192,16 +198,40 @@
   border-style: solid;
   border-radius: (55px / 2);
   height: 55px;
+  font-weight: bold;
 }
 
 .ajustment-buttons__form-controls--submit {
   color: $cl-pink;
   border-color: $cl-pink;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $cl-pink;
+    color: $cl-white;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $cl-pink;
+    color: $cl-white-light;
+  }
 }
 
 .ajustment-buttons__form-controls--reset {
-  color: $cl-grey-border;
-  border-color: $cl-grey-border;
+  color: $cl-grey-super-light;
+  border-color: $cl-grey-super-light;
+
+  &:hover {
+    background-color: transparent;
+    color: $cl-grey-light;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $cl-grey-light;
+    color: $cl-white-light;
+  }
 }
 
 .ajustment-buttons__button-wrapper {

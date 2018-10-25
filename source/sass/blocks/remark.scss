@@ -3,6 +3,13 @@
   padding-top: 45px;
   display: none;
   background-color: $cl-white;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
 }
 
 .remark__link {
@@ -24,6 +31,13 @@
     justify-content: space-between;
     padding: 0;
     padding-top: 45px;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
   }
 
   .remark__timer,
@@ -96,6 +110,11 @@
     max-width: 960px;
     margin: 0 auto;
     background-color: $cl-grey-bg;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: auto;
+      box-sizing: content-box;
+    }
   }
 
   .remark__timer {

@@ -40,6 +40,15 @@
     top: 3px;
     left: 3px;
   }
+
+  &:hover::before {
+    background-color: $cl-grey;
+  }
+
+  &:focus::before,
+  &:active::before {
+    background-color: $cl-grey-super-light;
+  }
 }
 
 .slider__toggle--active {
@@ -64,13 +73,22 @@
   position: absolute;
   top: 90px;
 
-  &--left {
-    background-image: url("../img/icon-review-arrow-left.svg");
+  &:hover {
+    .slider__control-icon {
+      fill: $cl-grey;
+    }
   }
 
-  &--right {
-    background-image: url("../img/icon-review-arrow-right.svg");
+  &:active,
+  &:focus {
+    .slider__control-icon {
+      fill: $cl-grey-super-light;
+    }
   }
+}
+
+.slider__control-icon {
+  fill: $cl-grey-light;
 }
 
 @media (min-width: $tablet-width) {

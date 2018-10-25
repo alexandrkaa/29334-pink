@@ -1,6 +1,13 @@
 .reviews {
   padding: 20px;
   padding-bottom: 0;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
 }
 
 .reviews__toggles {
@@ -12,6 +19,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
+  }
+
   .reviews__toggles {
     margin: 17px;
   }
@@ -22,6 +38,11 @@
     padding: 0 10px;
     padding-top: 120px;
     background: $cl-white url("../img/icon-quotes.svg") no-repeat center 72px;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      width: auto;
+      box-sizing: content-box;
+    }
   }
 
   .reviews__wrapper {

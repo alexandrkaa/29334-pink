@@ -37,15 +37,22 @@
 
       &::after {
         content: "";
-        width: 60px;
-        height: 60px;
+        width: 58px;
+        height: 58px;
         display: block;
         position: absolute;
-        top: 1px;
+        top: 2px;
         right: 21px;
         background-color: $cl-grey-bg;
         background-position: center center;
         background-repeat: no-repeat;
+
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          width: 56px;
+          height: 56px;
+          top: 0;
+          right: 20px;
+        }
       }
     }
 
@@ -75,7 +82,7 @@
       margin-bottom: 0;
 
       &::after {
-        right: 1px;
+        right: 2px;
       }
 
       span {
