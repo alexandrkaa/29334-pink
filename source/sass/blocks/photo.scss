@@ -59,6 +59,12 @@
   height: 15px;
   border: 0;
   background: url("../img/icon-heart.svg") no-repeat center center;
+  background-size: 13px 15px;
+  padding: 0;
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    background-size: 13px 13px;
+  }
 }
 
 .photo__like-counter {
@@ -85,6 +91,12 @@
     min-height: 105px;
     display: flex;
     flex-direction: column;
+  }
+
+  .photo__description-text {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)  {
+      min-height: 48px;
+    }
   }
 
   .photo__like-wrapper {
