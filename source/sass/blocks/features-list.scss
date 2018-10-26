@@ -1,8 +1,7 @@
 .features-list {
   list-style: none;
-  margin: 0;
+  margin: 80px 0 0 0;
   padding: 0;
-  margin-top: 80px;
 }
 
 .features-list__lead {
@@ -11,8 +10,7 @@
   font-weight: bold;
   font-family: "Open Sans Bold", sans-serif;
   text-align: center;
-  margin: 0;
-  margin-top: 37px;
+  margin: 37px 0 0 0;
 
   br {
     display: none;
@@ -21,8 +19,7 @@
 
 .features-list__description {
   text-align: center;
-  margin: 0;
-  margin-top: 9px;
+  margin: 9px 0 0 0;
 }
 
 .features-list__item {
@@ -81,8 +78,7 @@
     display: flex;
     width: auto;
     max-width: 960px;
-    margin: 0 auto;
-    margin-top: 80px;
+    margin: 80px auto 0 auto;
   }
 
   .features-list__item {

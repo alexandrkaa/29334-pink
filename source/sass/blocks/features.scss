@@ -12,13 +12,14 @@
 }
 
 .features__lead {
-  br {
-    display: none;
-  }
   font-size: 24px;
   margin-bottom: 40px;
   margin-top: 23px;
   text-align: center;
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -52,9 +53,7 @@
     position: static;
     background: linear-gradient(175.5deg, $cl-white 0%, $cl-white 407px, $cl-grey-bg 407px, $cl-grey-bg 100%);
     margin: 0 auto;
-    padding-top: 60px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 60px 0 0 0;
     box-sizing: border-box;
 
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
