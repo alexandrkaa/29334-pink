@@ -20,32 +20,6 @@
   flex-grow: 1;
   width: 280px;
   box-sizing: border-box;
-
-  a {
-    text-decoration: none;
-    text-align: center;
-    color: $cl-white;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: bold;
-    border: 3px solid $cl-white;
-    border-radius: 28px;
-    padding: 15px 0;
-  }
-
-  & a:visited {
-    color: $cl-white;
-  }
-
-  & a:hover,
-  & a:focus {
-    color: $cl-pink;
-    background-color: $cl-white;
-  }
-
-  & a:active {
-    color: $cl-pink-light;
-  }
 }
 
 .download-buttons__item--icon {
@@ -57,6 +31,32 @@
 
 .download-buttons__link {
   display: block;
+  text-decoration: none;
+
+  &--button {
+    text-align: center;
+    color: $cl-white;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    border: 3px solid $cl-white;
+    border-radius: 28px;
+    padding: 15px 0;
+  }
+
+  &--button:visited {
+    color: $cl-white;
+  }
+
+  &--button:hover,
+  &--button:focus {
+    color: $cl-pink;
+    background-color: $cl-white;
+  }
+
+  &--button:active {
+    color: $cl-pink-light;
+  }
 }
 
 @media (min-width: $tablet-width) {

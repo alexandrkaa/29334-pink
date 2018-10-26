@@ -64,10 +64,9 @@
 // https://github.com/darlanrod/input-range-scss
 .ajustment-buttons__button--range {
   display: none;
-  margin: 0;
+  margin: 0 0 35px 0;
   width: 240px;
   height: auto;
-  margin-bottom: 35px;
   /* stylelint-disable */
   -webkit-appearance: none;
   /* stylelint-enable */
@@ -187,9 +186,7 @@
 }
 
 .ajustment-buttons__form-controls {
-  margin: 0;
-  margin-top: 11px;
-  margin-bottom: 6px;
+  margin: 11px 0 6px 0;
   border: 0;
   background-color: $cl-grey-bg;
   font-size: 18px;
@@ -248,13 +245,12 @@
     height: 22px;
     border-bottom: 1px solid $cl-grey-border;
     padding-bottom: 24px;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   .ajustment-buttons__button--range {
     height: 22px;
-    margin: 0;
-    margin-right: 18px;
+    margin: 0 18px 0 0;
     display: block;
   }
 

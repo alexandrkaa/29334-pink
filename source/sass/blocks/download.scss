@@ -18,8 +18,7 @@
     width: 310px;
     background-color: transparent;
     padding: 0 20px;
-    margin: 0;
-    margin-bottom: 100px;
+    margin: 0 0 100px 0;
   }
 
   .download__platforms {
@@ -31,8 +30,7 @@
 @media (min-width: $desktop-width) {
   .download {
     min-width: 960px;
-    margin: 0 auto;
-    margin-bottom: 114px;
+    margin: 0 auto 114px auto;
 
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       margin-bottom: 0;
