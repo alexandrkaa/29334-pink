@@ -83,6 +83,13 @@
 
       &::after {
         right: 2px;
+
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          width: 58px;
+          height: 58px;
+          top: 2px;
+          right: 20px;
+        }
       }
 
       span {
