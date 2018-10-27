@@ -16,10 +16,7 @@
   margin-bottom: 40px;
   margin-top: 23px;
   text-align: center;
-
-  br {
-    display: none;
-  }
+  letter-spacing: -0.3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -38,8 +35,10 @@
 
   .features__lead {
     font-size: 40px;
-    line-height: 40px;
-    margin: 10px 0;
+    line-height: 45px;
+    margin: 6px 0;
+    font-weight: 300;
+    letter-spacing: -0.7px;
 
     br {
       display: inline;
@@ -64,6 +63,6 @@
 
   .features__lead {
     font-size: 50px;
-    line-height: 55px;
+    line-height: 58px;
   }
 }

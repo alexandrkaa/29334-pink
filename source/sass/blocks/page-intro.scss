@@ -17,6 +17,7 @@
   &--form {
     padding: 95px 20px 0 20px;
     margin-bottom: 55px;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -27,14 +28,13 @@
   padding: 48px 20px;
   text-align: center;
   font-weight: 100;
-  font-family: "Open Sans Light", sans-serif;
 
   &--pagemain {
     display: none;
   }
 
   &--photo-page {
-    padding: 47px 20px;
+    padding: 47px 35px;
   }
 
   br {
@@ -60,10 +60,16 @@
     margin: 138px 0 0 0;
     text-align: center;
     padding: 90px 60px 78px 60px;
+    letter-spacing: -1px;
 
     &--form {
       margin-top: 85px;
       padding-bottom: 48px;
+      letter-spacing: normal;
+    }
+
+    &--photo-page {
+      letter-spacing: normal;
     }
 
     &--pagemain {
@@ -74,6 +80,7 @@
       color: $cl-white;
       font-size: 40px;
       line-height: 48px;
+      margin-top: 131px;
 
       br {
         display: inline;
@@ -88,6 +95,7 @@
 
     &--form {
       padding: 0;
+      letter-spacing: -0.9px;
     }
 
     &--photo-page {
@@ -95,6 +103,7 @@
       padding-left: 140px;
       padding-right: 140px;
       margin-top: 180px;
+      letter-spacing: -1.1px;
     }
   }
 
@@ -104,6 +113,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photo__label {
+    letter-spacing: 0.5px;
+  }
+
   .page-intro--form {
     margin-top: 278px;
   }
@@ -118,7 +131,7 @@
     &--photo-page {
       padding-left: 140px;
       padding-right: 140px;
-      margin-top: 150px;
+      margin-top: 153px;
     }
   }
 
@@ -144,13 +157,14 @@
       margin-top: 102px;
     }
 
-    br {
-      display: inline;
-    }
-
     &--photo-page {
       padding-top: 92px;
       padding-bottom: 88px;
+      margin-top: 101px;
+    }
+
+    br {
+      display: inline;
     }
   }
 

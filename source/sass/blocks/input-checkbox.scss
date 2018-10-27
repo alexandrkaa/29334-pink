@@ -12,6 +12,7 @@
   padding-left: 70px;
   position: relative;
   min-height: 40px;
+  line-height: 40px;
 
   &::before {
     content: "";
@@ -57,17 +58,19 @@
 @media (min-width: $tablet-width) {
   .input-checkbox__title {
     padding-left: 60px;
+    line-height: 37px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .input-checkbox__title {
     padding-left: 60px;
-    line-height: 35px;
+    line-height: 40px;
 
-    &--isSmashedHotel {
-      padding-left: 55px;
-      margin-left: 5px;
+    &:nth-last-of-type(2) {
+      .input-checkbox__title {
+        padding-left: 62px;
+      }
     }
   }
 

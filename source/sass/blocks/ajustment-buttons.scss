@@ -39,6 +39,7 @@
     .ajustment-buttons__icon {
       width: 48px;
       height: 43px;
+      margin-top: 8px;
     }
   }
 
@@ -64,7 +65,7 @@
 // https://github.com/darlanrod/input-range-scss
 .ajustment-buttons__button--range {
   display: none;
-  margin: 0 0 35px 0;
+  margin: 4px 0 35px 0;
   width: 240px;
   height: auto;
   /* stylelint-disable */
@@ -182,7 +183,7 @@
   flex-direction: column;
   padding: 26px 20px;
   padding-bottom: 12px;
-  margin-top: 56px;
+  margin-top: 58px;
 }
 
 .ajustment-buttons__form-controls {
@@ -196,6 +197,7 @@
   border-radius: (55px / 2);
   height: 55px;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .ajustment-buttons__form-controls--submit {
@@ -218,6 +220,7 @@
 .ajustment-buttons__form-controls--reset {
   color: $cl-grey-super-light;
   border-color: $cl-grey-super-light;
+  margin-top: 10px;
 
   &:hover {
     background-color: transparent;
@@ -296,6 +299,7 @@
       .ajustment-buttons__icon {
         width: 22px;
         height: 22px;
+        margin-top: 0;
       }
     }
 
@@ -312,7 +316,9 @@
   }
 
   .ajustment-buttons__form-controls {
-    margin: 14px 20px;
+    margin: 14px 20px 14px 18px;
+    padding-left: 0;
+    letter-spacing: 1px;
   }
 }
 
@@ -374,5 +380,7 @@
   .ajustment-buttons__form-controls {
     min-width: 183px;
     box-sizing: border-box;
+    padding-left: 15px;
+    margin: 14px 20px;
   }
 }

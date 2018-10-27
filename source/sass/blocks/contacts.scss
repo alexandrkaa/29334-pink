@@ -1,6 +1,6 @@
 .contacts {
-  padding: 0;
-  padding-top: 35px;
+  padding: 23px 0 0 0;
+  //padding-top: 35px;
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     width: 320px;
@@ -17,6 +17,8 @@
   text-align: center;
   padding: 0;
   margin: 20px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
 }
 
 .contacts__lead {
@@ -29,7 +31,7 @@
 
 .contacts__list {
   @include list-reset;
-  padding: 0 20px 38px 20px;
+  padding: 0 20px 66px 20px;
 }
 
 .contacts__item {
@@ -40,7 +42,8 @@
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  margin: 5px 0;
+  margin: 3px 0;
+  letter-spacing: 1px;
 }
 
 .contacts__link {
@@ -49,6 +52,8 @@
   text-align: center;
   display: block;
   text-decoration: none;
+  line-height: 29px;
+  letter-spacing: -0.4px;
 
   &:hover {
     color: $cl-grey;
@@ -65,7 +70,7 @@
 .contacts__map {
   border: 0;
   width: 100%;
-  height: 240px;
+  height: 205px;
   overflow: hidden;
   margin-top: -40px;
   display: block;
@@ -111,13 +116,13 @@
 .contacts__online-map {
   border: 0;
   width: 100%;
-  height: 240px;
+  height: 205px;
   background-color: transparent;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 60px;
+    padding-top: 53px;
 
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       width: 660px;
@@ -137,14 +142,14 @@
   }
 
   .contacts__lead {
-    margin-bottom: 23px;
+    margin-bottom: 20px;
     margin-top: 0;
   }
 
   .contacts__list {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 105px;
+    padding: 0 10px 102px 10px;
   }
 
   .contacts__item {
@@ -158,7 +163,7 @@
   }
 
   .contacts__contact-header {
-    margin: 7px 0;
+    margin: 4px 0;
   }
 
   .contacts__link {
@@ -215,17 +220,9 @@
 
   .contacts__list {
     justify-content: space-between;
-    padding: 0 35px 150px 35px;
+    padding: 0 35px 140px 35px;
     margin: 0 auto 25px auto;
     max-width: 960px;
-
-    &--come {
-      margin-left: 25px;
-
-      .contacts__contact-header {
-        margin-bottom: 28px;
-      }
-    }
   }
 
   .contacts__lead,
@@ -240,7 +237,7 @@
   }
 
   .contacts__lead {
-    margin: 10px 0;
+    margin: 13px 0;
   }
 
   .contacts__item {
@@ -260,6 +257,7 @@
       flex-grow: 0;
       margin-top: 0;
       order: 2;
+      margin-left: 25px;
     }
   }
 
@@ -268,7 +266,7 @@
   }
 
   .contacts__map {
-    min-height: 502px;
+    min-height: 505px;
     margin-top: -150px;
 
     &::before {
@@ -300,7 +298,7 @@
   }
 
   .contacts__online-map {
-    min-height: 502px;
+    min-height: 505px;
   }
 }
 

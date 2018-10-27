@@ -1,6 +1,18 @@
 .photo {
   padding: 0 20px;
   margin-bottom: 20px;
+
+  &:nth-last-of-type(1) {
+    .photo__like-wrapper {
+      margin-top: 9px;
+    }
+  }
+
+  &:nth-last-of-type(2) {
+    .photo__like-wrapper {
+      margin-top: 9px;
+    }
+  }
 }
 
 .photo--panorama {
@@ -9,11 +21,12 @@
 }
 
 .photo__description {
+  background-color: $cl-grey-bg;
+  padding: 18px 22px 22px 18px;
+
   .photo--panorama & {
     margin: 0 20px;
   }
-  background-color: $cl-grey-bg;
-  padding: 20px;
 }
 
 .photo__label {
@@ -29,17 +42,20 @@
   text-align: center;
   top: 0;
   right: 20px;
+  letter-spacing: -0.6px;
 }
 
 .photo__username {
   font-weight: bold;
   margin: 0;
+  letter-spacing: 0.6px;
 }
 
 .photo__uploadtime {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 100;
+  letter-spacing: normal;
 }
 
 .photo__description-text {
@@ -48,6 +64,7 @@
 
 .photo__like-wrapper {
   margin: 7px 0 0 0;
+  padding-left: 2px;
   display: flex;
 }
 
@@ -77,6 +94,18 @@
 @media (min-width: $tablet-width) {
   .photo {
     padding: 0;
+
+    &:nth-last-of-type(1) {
+      .photo__like-wrapper {
+        margin-top: auto;
+      }
+    }
+
+    &:nth-last-of-type(2) {
+      .photo__like-wrapper {
+        margin-top: auto;
+      }
+    }
   }
 
   .photo__label {
@@ -84,10 +113,11 @@
     line-height: 36px;
     font-weight: bold;
     top: 58px;
+    letter-spacing: 0.5px;
   }
 
   .photo__description {
-    padding: 25px;
+    padding: 25px 23px 25px 27px;
     min-height: 105px;
     display: flex;
     flex-direction: column;

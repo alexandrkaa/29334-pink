@@ -21,7 +21,7 @@ var htmlmin = require('gulp-htmlmin');
 
 gulp.task('minifyhtml', function () {
   return gulp.src('build/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapseWhitespace: false }))
     .pipe(gulp.dest('build'));
 });
 
