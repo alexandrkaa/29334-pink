@@ -106,7 +106,9 @@
   }
 
   .photos__lead-wrapper {
-    margin-top: 9px;
-    margin-bottom: 0;
+    max-width: 960px;
+    margin: 9px auto 0 auto;
+    // margin-top: 9px;
+    // margin-bottom: 0;
   }
 }
